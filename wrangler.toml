@@ -1,0 +1,9 @@
+name = "postervia-web"
+compatibility_date = "2024-11-01"
+
+# Serve every file in this directory as a static asset under https://postervia.app
+# (No Worker code — pure static site. Cloudflare auto-detects index.html and
+# applies the _redirects file at the repo root for pretty URLs like /privacy.)
+[assets]
+directory = "./"
+not_found_handling = "404-page"
