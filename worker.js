@@ -1,10 +1,16 @@
-// Tiny request router for postervia-web. Rewrites pretty URLs like /privacy
-// to the actual asset filename /privacy.html so the static-asset handler can
-// find them, then defers everything else (CSS-style direct file requests,
-// /index.html, /privacy.html, etc.) to ASSETS unchanged.
+// Static assets handler runs FIRST (run_worker_first omitted from
+// wrangler.toml, defaulting to false). So this Worker only sees requests
+// that didn't match an asset — i.e. requests like /privacy, /terms-de that
+// don't have a corresponding file (files are named privacy.html, terms-de.html).
 //
-// Why not _redirects: Cloudflare Workers Static Assets does not parse the
-// Pages-style _redirects file. Doing this in a Worker is the supported way.
+// We redirect those to the .html version. The browser follows the 301 and
+// the second request hits /privacy.html which IS a matching asset — the
+// static handler serves it without invoking this Worker.
+//
+// We deliberately do NOT use env.ASSETS.fetch() here because Cloudflare's
+// auto-build flow sometimes fails to inject the [assets].binding into the
+// Worker runtime, leaving env.ASSETS undefined. Sidestepping it entirely is
+// the most reliable fix.
 
 const PRETTY_TO_HTML = new Set([
   '/privacy',
@@ -16,12 +22,12 @@ const PRETTY_TO_HTML = new Set([
 ]);
 
 export default {
-  async fetch(request, env) {
+  async fetch(request) {
     const url = new URL(request.url);
     if (PRETTY_TO_HTML.has(url.pathname)) {
       url.pathname = url.pathname + '.html';
-      return env.ASSETS.fetch(new Request(url.toString(), request));
+      return Response.redirect(url.toString(), 301);
     }
-    return env.ASSETS.fetch(request);
+    return new Response('Not found', { status: 404 });
   },
 };

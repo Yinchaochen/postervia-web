@@ -2,11 +2,10 @@ name = "postervia-web"
 compatibility_date = "2024-11-01"
 main = "worker.js"
 
-# worker.js (not _worker.js — the underscore prefix is Cloudflare Pages magic
-# name and confuses wrangler in Workers Static Assets mode, causing env.ASSETS
-# to be undefined at runtime). The public/ folder holds everything served
-# unchanged via env.ASSETS.
+# Static assets in public/ are matched FIRST (run_worker_first defaults to
+# false). The Worker in worker.js only sees requests that didn't match an
+# asset (e.g. /privacy → no privacy file, only privacy.html), and 301-redirects
+# them to the .html version. This avoids needing env.ASSETS at runtime — a
+# known undefined-binding issue with Cloudflare's auto-build flow.
 [assets]
 directory = "./public"
-binding = "ASSETS"
-run_worker_first = true
