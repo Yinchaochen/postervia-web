@@ -2,10 +2,10 @@ name = "postervia-web"
 compatibility_date = "2024-11-01"
 main = "_worker.js"
 
-# Worker code in _worker.js intercepts requests, rewrites pretty URLs (e.g.
-# /privacy → /privacy.html), and delegates everything to the asset binding.
-# run_worker_first lets us catch /privacy before the asset handler 404s on it.
+# _worker.js stays in the repo root (outside the assets directory) so wrangler
+# treats it as Worker code, not as a public static asset. The public/ folder
+# holds everything served unchanged via env.ASSETS.
 [assets]
-directory = "./"
+directory = "./public"
 binding = "ASSETS"
 run_worker_first = true
