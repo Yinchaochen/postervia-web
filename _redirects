@@ -1,7 +1,0 @@
-# Cloudflare Pages rewrites — pretty URLs for legal docs
-/privacy        /privacy.html        200
-/privacy-de     /privacy-de.html     200
-/terms          /terms.html          200
-/terms-de       /terms-de.html       200
-/impressum      /impressum.html      200
-/impressum-de   /impressum-de.html   200

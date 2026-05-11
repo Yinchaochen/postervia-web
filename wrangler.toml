@@ -1,9 +1,11 @@
 name = "postervia-web"
 compatibility_date = "2024-11-01"
+main = "_worker.js"
 
-# Serve every file in this directory as a static asset under https://postervia.app
-# (No Worker code — pure static site. Cloudflare auto-detects index.html and
-# applies the _redirects file at the repo root for pretty URLs like /privacy.)
+# Worker code in _worker.js intercepts requests, rewrites pretty URLs (e.g.
+# /privacy → /privacy.html), and delegates everything to the asset binding.
+# run_worker_first lets us catch /privacy before the asset handler 404s on it.
 [assets]
 directory = "./"
-not_found_handling = "404-page"
+binding = "ASSETS"
+run_worker_first = true
