@@ -1,10 +1,11 @@
 name = "postervia-web"
 compatibility_date = "2024-11-01"
-main = "_worker.js"
+main = "worker.js"
 
-# _worker.js stays in the repo root (outside the assets directory) so wrangler
-# treats it as Worker code, not as a public static asset. The public/ folder
-# holds everything served unchanged via env.ASSETS.
+# worker.js (not _worker.js — the underscore prefix is Cloudflare Pages magic
+# name and confuses wrangler in Workers Static Assets mode, causing env.ASSETS
+# to be undefined at runtime). The public/ folder holds everything served
+# unchanged via env.ASSETS.
 [assets]
 directory = "./public"
 binding = "ASSETS"
