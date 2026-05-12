@@ -19,6 +19,8 @@ const PRETTY_TO_HTML = new Set([
   '/terms-de',
   '/impressum',
   '/impressum-de',
+  '/support',
+  '/support-de',
 ]);
 
 export default {
