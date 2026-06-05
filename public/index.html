@@ -108,7 +108,6 @@
     color: var(--coral-dark);
   }
 
-  .nav-cta,
   .button {
     display: inline-flex;
     align-items: center;
@@ -124,7 +123,6 @@
     box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
   }
 
-  .nav-cta:hover,
   .button:hover {
     background: var(--coral-dark);
   }
@@ -134,6 +132,148 @@
     color: var(--coral-dark);
     border: 2px solid var(--line);
     box-shadow: inset 0 -4px 0 rgba(92, 63, 34, 0.08);
+  }
+
+  .language-menu {
+    position: relative;
+    flex: 0 0 auto;
+  }
+
+  .language-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 46px;
+    max-width: 210px;
+    padding: 0 18px;
+    border: 2px solid var(--line);
+    border-radius: 999px;
+    background: var(--white);
+    color: var(--coral-dark);
+    font: inherit;
+    font-size: 15px;
+    font-weight: 900;
+    box-shadow: inset 0 -4px 0 rgba(92, 63, 34, 0.08);
+    cursor: pointer;
+  }
+
+  .language-button::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+  }
+
+  .language-button:hover,
+  .language-button[aria-expanded="true"] {
+    background: var(--cream);
+  }
+
+  .language-button-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .language-popover {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    z-index: 40;
+    width: min(340px, calc(100vw - 32px));
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+  }
+
+  .language-popover[hidden] {
+    display: none;
+  }
+
+  .language-search {
+    width: 100%;
+    min-height: 42px;
+    padding: 0 13px;
+    border: 2px solid var(--line);
+    border-radius: 13px;
+    background: var(--paper);
+    color: var(--ink);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 750;
+    outline: none;
+  }
+
+  .language-search:focus {
+    border-color: var(--coral);
+    box-shadow: 0 0 0 4px rgba(245, 113, 117, 0.14);
+  }
+
+  .language-list {
+    display: grid;
+    gap: 4px;
+    max-height: 320px;
+    margin-top: 10px;
+    overflow: auto;
+    padding-right: 4px;
+  }
+
+  .language-option {
+    width: 100%;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .language-option:hover,
+  .language-option[aria-selected="true"] {
+    background: var(--cream);
+    color: var(--coral-dark);
+  }
+
+  .language-option span {
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .language-option small {
+    display: block;
+    margin-top: 2px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 750;
+  }
+
+  .language-empty {
+    margin: 0;
+    padding: 18px 10px;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 750;
+    text-align: center;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 
   .hero {
@@ -658,10 +798,15 @@
       font-size: 18px;
     }
 
-    .nav-cta {
+    .language-button {
       min-height: 40px;
-      padding: 0 16px;
+      max-width: 145px;
+      padding: 0 14px;
       font-size: 14px;
+    }
+
+    .language-popover {
+      right: -6px;
     }
 
     .hero,
@@ -773,44 +918,53 @@
       <span class="brand-word">Postervia</span>
     </a>
     <div class="nav-links">
-      <a href="#odyssey">Odyssey</a>
-      <a href="#plaza">Plaza</a>
-      <a href="#buddy">Buddy</a>
-      <a href="#social">Social</a>
-      <a href="/support">Support</a>
+      <a href="#odyssey" data-i18n="nav.odyssey">Odyssey</a>
+      <a href="#plaza" data-i18n="nav.plaza">Plaza</a>
+      <a href="#buddy" data-i18n="nav.buddy">Buddy</a>
+      <a href="#social" data-i18n="nav.social">Social</a>
+      <a href="/support" data-i18n="nav.support">Support</a>
     </div>
-    <a class="nav-cta" href="mailto:support@postervia.app?subject=Postervia%20Beta">Join beta</a>
+    <div class="language-menu" data-language-menu>
+      <button class="language-button" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-list" data-language-button>
+        <span class="language-button-label" data-language-button-label>English</span>
+      </button>
+      <div class="language-popover" data-language-popover hidden>
+        <label class="sr-only" for="language-search" data-i18n="language.searchLabel">Search languages</label>
+        <input class="language-search" id="language-search" type="search" autocomplete="off" placeholder="Search languages" data-i18n-placeholder="language.searchPlaceholder" data-language-search>
+        <div class="language-list" id="language-list" role="listbox" aria-label="Languages" data-language-list></div>
+      </div>
+    </div>
   </nav>
 </header>
 
 <main id="home">
   <section class="hero" aria-labelledby="hero-title">
     <div>
-      <p class="eyebrow">Berlin first city companion</p>
-      <h1 id="hero-title"><span>Find your path.</span><span>Leave a light.</span></h1>
-      <p class="lede">Postervia helps newcomers and locals turn the messy first weeks in a city into guided tasks, local stories, Buddy help, and real social connection.</p>
+      <p class="eyebrow" data-i18n="hero.eyebrow">Berlin first city companion</p>
+      <h1 id="hero-title" data-i18n="hero.title"><span>Find your path.</span><span>Leave a light.</span></h1>
+      <p class="lede" data-i18n="hero.lede">Postervia helps newcomers and locals turn the messy first weeks in a city into guided tasks, local stories, Buddy help, and real social connection.</p>
       <div class="hero-actions">
-        <a class="button" href="mailto:support@postervia.app?subject=Postervia%20Beta">Join the beta</a>
-        <a class="button secondary" href="#features">Explore features</a>
+        <a class="button" href="mailto:support@postervia.app?subject=Postervia%20Beta" data-i18n="hero.primaryCta">Join the beta</a>
+        <a class="button secondary" href="#features" data-i18n="hero.secondaryCta">Explore features</a>
       </div>
       <div class="hero-pills" aria-label="Product highlights">
-        <span>Task navigation</span>
-        <span>Local discovery</span>
-        <span>Multilingual community</span>
+        <span data-i18n="hero.pillTasks">Task navigation</span>
+        <span data-i18n="hero.pillDiscovery">Local discovery</span>
+        <span data-i18n="hero.pillLanguage">Multilingual community</span>
       </div>
     </div>
     <div class="phone-stage" aria-label="Postervia app preview">
       <div class="sun-disc" aria-hidden="true"></div>
       <div class="floating-card one">
-        <strong>Odyssey</strong>
-        Next steps become calm, source-aware tasks.
+        <strong data-i18n="nav.odyssey">Odyssey</strong>
+        <span data-i18n="hero.floatOdyssey">Next steps become calm, source-aware tasks.</span>
       </div>
       <div class="phone hero-phone">
         <img src="/assets/screenshots/screen-8.jpeg" alt="Postervia Odyssey screen with guided city tasks">
       </div>
       <div class="floating-card two">
-        <strong>Plaza</strong>
-        Local posts can become real actions in your path.
+        <strong data-i18n="nav.plaza">Plaza</strong>
+        <span data-i18n="hero.floatPlaza">Local posts can become real actions in your path.</span>
       </div>
     </div>
   </section>
@@ -818,24 +972,24 @@
   <section class="band">
     <div class="section">
       <div class="section-heading">
-        <h2>A warmer way to land in a city.</h2>
-        <p>Postervia is designed for the moment when people do not need more tabs, forums, or random advice. They need a next step, a local signal, and sometimes another human.</p>
+        <h2 data-i18n="overview.title">A warmer way to land in a city.</h2>
+        <p data-i18n="overview.lede">Postervia is designed for the moment when people do not need more tabs, forums, or random advice. They need a next step, a local signal, and sometimes another human.</p>
       </div>
       <div class="value-grid">
         <article class="value-card">
           <div class="value-icon">1</div>
-          <h3>Know what to do next</h3>
-          <p>Odyssey turns bureaucracy, setup, and local life into a guided path with clear status and source context.</p>
+          <h3 data-i18n="overview.cardOneTitle">Know what to do next</h3>
+          <p data-i18n="overview.cardOneBody">Odyssey turns bureaucracy, setup, and local life into a guided path with clear status and source context.</p>
         </article>
         <article class="value-card">
           <div class="value-icon">2</div>
-          <h3>See the city through people</h3>
-          <p>Plaza lets users share places, experiences, events, and practical notes that stay tied to real locations.</p>
+          <h3 data-i18n="overview.cardTwoTitle">See the city through people</h3>
+          <p data-i18n="overview.cardTwoBody">Plaza lets users share places, experiences, events, and practical notes that stay tied to real locations.</p>
         </article>
         <article class="value-card">
           <div class="value-icon">3</div>
-          <h3>Ask for help without friction</h3>
-          <p>Buddy and Social give newcomers a lighter path to companionship, errands, chat, and community trust.</p>
+          <h3 data-i18n="overview.cardThreeTitle">Ask for help without friction</h3>
+          <p data-i18n="overview.cardThreeBody">Buddy and Social give newcomers a lighter path to companionship, errands, chat, and community trust.</p>
         </article>
       </div>
     </div>
@@ -844,13 +998,13 @@
   <section id="features" class="section" aria-label="Postervia features">
     <article id="odyssey" class="feature">
       <div class="feature-copy">
-        <div class="feature-kicker">Odyssey</div>
-        <h2>A task path for life in a new city.</h2>
-        <p>From SIM cards to housing confirmations, Odyssey keeps the important steps visible, ordered, and easy to act on.</p>
+        <div class="feature-kicker" data-i18n="nav.odyssey">Odyssey</div>
+        <h2 data-i18n="features.odysseyTitle">A task path for life in a new city.</h2>
+        <p data-i18n="features.odysseyBody">From SIM cards to housing confirmations, Odyssey keeps the important steps visible, ordered, and easy to act on.</p>
         <ul class="feature-list">
-          <li>Main and side tasks help users separate urgent needs from local exploration.</li>
-          <li>Source links and verification dates keep practical guidance grounded.</li>
-          <li>Completed and discarded paths are easy to restore from history.</li>
+          <li data-i18n="features.odysseyPointOne">Main and side tasks help users separate urgent needs from local exploration.</li>
+          <li data-i18n="features.odysseyPointTwo">Source links and verification dates keep practical guidance grounded.</li>
+          <li data-i18n="features.odysseyPointThree">Completed and discarded paths are easy to restore from history.</li>
         </ul>
       </div>
       <div class="feature-visual">
@@ -862,13 +1016,13 @@
 
     <article id="plaza" class="feature">
       <div class="feature-copy">
-        <div class="feature-kicker">Plaza</div>
-        <h2>Local stories that can become next steps.</h2>
-        <p>Plaza is a high-intent discovery feed for places, events, tips, warnings, and lived experience from the city.</p>
+        <div class="feature-kicker" data-i18n="nav.plaza">Plaza</div>
+        <h2 data-i18n="features.plazaTitle">Local stories that can become next steps.</h2>
+        <p data-i18n="features.plazaBody">Plaza is a high-intent discovery feed for places, events, tips, warnings, and lived experience from the city.</p>
         <ul class="feature-list">
-          <li>Waterfall cards make the city feel visual, lively, and easy to scan.</li>
-          <li>Posts can include translation, location context, comments, and saves.</li>
-          <li>Useful places and events can be added back into a user's Odyssey.</li>
+          <li data-i18n="features.plazaPointOne">Waterfall cards make the city feel visual, lively, and easy to scan.</li>
+          <li data-i18n="features.plazaPointTwo">Posts can include translation, location context, comments, and saves.</li>
+          <li data-i18n="features.plazaPointThree">Useful places and events can be added back into a user's Odyssey.</li>
         </ul>
       </div>
       <div class="feature-visual">
@@ -885,13 +1039,13 @@
 
     <article id="buddy" class="feature">
       <div class="feature-copy">
-        <div class="feature-kicker">Buddy</div>
-        <h2>Human help for the moments that feel too heavy alone.</h2>
-        <p>Buddy lets users ask for companionship, errands, and practical help around appointments, shopping, meals, and walking plans.</p>
+        <div class="feature-kicker" data-i18n="nav.buddy">Buddy</div>
+        <h2 data-i18n="features.buddyTitle">Human help for the moments that feel too heavy alone.</h2>
+        <p data-i18n="features.buddyBody">Buddy lets users ask for companionship, errands, and practical help around appointments, shopping, meals, and walking plans.</p>
         <ul class="feature-list">
-          <li>Request categories match real newcomer needs like Anmeldung and medical visits.</li>
-          <li>Users can make posts free, paid, or negotiable depending on the help needed.</li>
-          <li>The design keeps help requests clear, respectful, and easy to browse.</li>
+          <li data-i18n="features.buddyPointOne">Request categories match real newcomer needs like Anmeldung and medical visits.</li>
+          <li data-i18n="features.buddyPointTwo">Users can make posts free, paid, or negotiable depending on the help needed.</li>
+          <li data-i18n="features.buddyPointThree">The design keeps help requests clear, respectful, and easy to browse.</li>
         </ul>
       </div>
       <div class="feature-visual">
@@ -908,13 +1062,13 @@
 
     <article id="social" class="feature">
       <div class="feature-copy">
-        <div class="feature-kicker">Social</div>
-        <h2>Chat, friends, and groups without losing the practical context.</h2>
-        <p>Postervia keeps social connection close to the city journey: saved notes, Buddy conversations, group plans, and lightweight search.</p>
+        <div class="feature-kicker" data-i18n="nav.social">Social</div>
+        <h2 data-i18n="features.socialTitle">Chat, friends, and groups without losing the practical context.</h2>
+        <p data-i18n="features.socialBody">Postervia keeps social connection close to the city journey: saved notes, Buddy conversations, group plans, and lightweight search.</p>
         <ul class="feature-list">
-          <li>Friend search works around city, profile identity, and Postervia display IDs.</li>
-          <li>Message lists stay simple so users can find people and plans quickly.</li>
-          <li>Notifications bring users back to replies and community activity.</li>
+          <li data-i18n="features.socialPointOne">Friend search works around city, profile identity, and Postervia display IDs.</li>
+          <li data-i18n="features.socialPointTwo">Message lists stay simple so users can find people and plans quickly.</li>
+          <li data-i18n="features.socialPointThree">Notifications bring users back to replies and community activity.</li>
         </ul>
       </div>
       <div class="feature-visual">
@@ -931,13 +1085,13 @@
 
     <article id="approach" class="feature">
       <div class="feature-copy">
-        <div class="feature-kicker">Profile and trust</div>
-        <h2>A personal city identity, not another empty account.</h2>
-        <p>Profiles show where people are based, what they share, how they explore, and which parts of their activity they want public.</p>
+        <div class="feature-kicker" data-i18n="features.profileKicker">Profile and trust</div>
+        <h2 data-i18n="features.profileTitle">A personal city identity, not another empty account.</h2>
+        <p data-i18n="features.profileBody">Profiles show where people are based, what they share, how they explore, and which parts of their activity they want public.</p>
         <ul class="feature-list">
-          <li>Notes, comments, saves, and likes create a visible local archive.</li>
-          <li>Privacy controls help users decide which tabs other people can see.</li>
-          <li>Multilingual UI and translation keep the community open across language gaps.</li>
+          <li data-i18n="features.profilePointOne">Notes, comments, saves, and likes create a visible local archive.</li>
+          <li data-i18n="features.profilePointTwo">Privacy controls help users decide which tabs other people can see.</li>
+          <li data-i18n="features.profilePointThree">Multilingual UI and translation keep the community open across language gaps.</li>
         </ul>
       </div>
       <div class="feature-visual">
@@ -949,13 +1103,13 @@
 
     <article id="mission" class="feature">
       <div class="feature-copy">
-        <div class="feature-kicker">Map and real places</div>
-        <h2>Local discovery stays attached to the world.</h2>
-        <p>Posts can be tied to actual shops, parks, events, and landmarks, so shared experience turns into usable local context.</p>
+        <div class="feature-kicker" data-i18n="features.mapKicker">Map and real places</div>
+        <h2 data-i18n="features.mapTitle">Local discovery stays attached to the world.</h2>
+        <p data-i18n="features.mapBody">Posts can be tied to actual shops, parks, events, and landmarks, so shared experience turns into usable local context.</p>
         <ul class="feature-list">
-          <li>Map tagging helps creators attach one or more real locations.</li>
-          <li>Place cards preserve addresses, context, and add-to-Odyssey actions.</li>
-          <li>Berlin is the first city, with the product shaped around city-by-city learning.</li>
+          <li data-i18n="features.mapPointOne">Map tagging helps creators attach one or more real locations.</li>
+          <li data-i18n="features.mapPointTwo">Place cards preserve addresses, context, and add-to-Odyssey actions.</li>
+          <li data-i18n="features.mapPointThree">Berlin is the first city, with the product shaped around city-by-city learning.</li>
         </ul>
       </div>
       <div class="feature-visual">
@@ -968,9 +1122,9 @@
 
   <section id="download" class="cta-band">
     <div class="cta">
-      <h2>Built for people finding their footing.</h2>
-      <p>Postervia starts in Berlin with guided tasks, local knowledge, and warm social help for newcomers, travelers, residents, and curious locals.</p>
-      <a class="button" href="mailto:support@postervia.app?subject=Postervia%20Beta">Contact Postervia</a>
+      <h2 data-i18n="cta.title">Built for people finding their footing.</h2>
+      <p data-i18n="cta.body">Postervia starts in Berlin with guided tasks, local knowledge, and warm social help for newcomers, travelers, residents, and curious locals.</p>
+      <a class="button" href="mailto:support@postervia.app?subject=Postervia%20Beta" data-i18n="cta.button">Contact Postervia</a>
     </div>
   </section>
 </main>
@@ -983,63 +1137,64 @@
           <img src="/assets/postervia-icon.png" alt="" width="48" height="48">
           <span>Postervia</span>
         </div>
-        <p class="footer-tagline">Find your path. Leave a light.</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">Find your path. Leave a light.</p>
       </div>
-      <a class="button" href="https://yinchaochen.com/">Developer: Yinchao Chen</a>
+      <a class="button" href="https://yinchaochen.com/" data-i18n="footer.developer">Developer: Yinchao Chen</a>
     </div>
 
     <div class="footer-grid" aria-label="Footer navigation">
       <div class="footer-col">
-        <h3>About us</h3>
-        <a href="#mission">Mission</a>
-        <a href="#approach">Approach</a>
-        <a href="#features">How it works</a>
-        <a href="mailto:support@postervia.app?subject=Postervia%20Press">Press</a>
-        <a href="mailto:support@postervia.app?subject=Postervia%20Investors">Investors</a>
-        <a href="mailto:support@postervia.app">Contact us</a>
+        <h3 data-i18n="footer.about">About us</h3>
+        <a href="#mission" data-i18n="footer.mission">Mission</a>
+        <a href="#approach" data-i18n="footer.approach">Approach</a>
+        <a href="#features" data-i18n="footer.howItWorks">How it works</a>
+        <a href="mailto:support@postervia.app?subject=Postervia%20Press" data-i18n="footer.press">Press</a>
+        <a href="mailto:support@postervia.app?subject=Postervia%20Investors" data-i18n="footer.investors">Investors</a>
+        <a href="mailto:support@postervia.app" data-i18n="footer.contact">Contact us</a>
       </div>
 
       <div class="footer-col">
-        <h3>Products</h3>
+        <h3 data-i18n="footer.products">Products</h3>
         <a href="#home">Postervia</a>
-        <a href="#odyssey">Odyssey</a>
-        <a href="#plaza">Plaza</a>
-        <a href="#buddy">Buddy</a>
-        <a href="#social">Social</a>
-        <a href="#approach">Profile</a>
+        <a href="#odyssey" data-i18n="nav.odyssey">Odyssey</a>
+        <a href="#plaza" data-i18n="nav.plaza">Plaza</a>
+        <a href="#buddy" data-i18n="nav.buddy">Buddy</a>
+        <a href="#social" data-i18n="nav.social">Social</a>
+        <a href="#approach" data-i18n="footer.profile">Profile</a>
       </div>
 
       <div class="footer-col">
-        <h3>Apps</h3>
-        <a href="#download">Postervia for iOS</a>
-        <a href="#download">Postervia for Android</a>
-        <a href="mailto:support@postervia.app?subject=Postervia%20Beta">Beta access</a>
+        <h3 data-i18n="footer.apps">Apps</h3>
+        <a href="#download" data-i18n="footer.ios">Postervia for iOS</a>
+        <a href="#download" data-i18n="footer.android">Postervia for Android</a>
+        <a href="mailto:support@postervia.app?subject=Postervia%20Beta" data-i18n="footer.beta">Beta access</a>
       </div>
 
       <div class="footer-col">
-        <h3>Help and support</h3>
-        <a href="/support">Support</a>
-        <a href="/support-de">Support Deutsch</a>
-        <a href="/child-safety">Child Safety Standards</a>
-        <a href="/child-safety-de">Kinderschutzstandards</a>
+        <h3 data-i18n="footer.help">Help and support</h3>
+        <a href="/support" data-i18n="nav.support">Support</a>
+        <a href="/support-de" data-i18n="footer.supportDe">Support Deutsch</a>
+        <a href="/child-safety" data-i18n="footer.childSafety">Child Safety Standards</a>
+        <a href="/child-safety-de" data-i18n="footer.childSafetyDe">Kinderschutzstandards</a>
       </div>
 
       <div class="footer-col">
-        <h3>Privacy and terms</h3>
-        <a href="/terms">Terms</a>
-        <a href="/privacy">Privacy</a>
-        <a href="/impressum">Imprint</a>
-        <a href="/terms-de">Nutzungsbedingungen</a>
-        <a href="/privacy-de">Datenschutz</a>
-        <a href="/impressum-de">Impressum DE</a>
+        <h3 data-i18n="footer.privacyTerms">Privacy and terms</h3>
+        <a href="/terms" data-i18n="footer.terms">Terms</a>
+        <a href="/privacy" data-i18n="footer.privacy">Privacy</a>
+        <a href="/impressum" data-i18n="footer.imprint">Imprint</a>
+        <a href="/terms-de" data-i18n="footer.termsDe">Nutzungsbedingungen</a>
+        <a href="/privacy-de" data-i18n="footer.privacyDe">Datenschutz</a>
+        <a href="/impressum-de" data-i18n="footer.imprintDe">Impressum DE</a>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <span>Postervia - Berlin first.</span>
-      <span>Public legal copies are kept in sync with the mobile app where applicable.</span>
+      <span data-i18n="footer.bottomLeft">Postervia - Berlin first.</span>
+      <span data-i18n="footer.bottomRight">Public legal copies are kept in sync with the mobile app where applicable.</span>
     </div>
   </div>
 </footer>
+<script src="/assets/site-i18n.js"></script>
 </body>
 </html>
