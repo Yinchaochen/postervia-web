@@ -3,49 +3,1043 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Postervia — Legal documents</title>
+<meta name="description" content="Postervia helps newcomers and locals in Berlin find tasks, local stories, Buddy help, and social connection.">
+<meta property="og:title" content="Postervia - Find your path. Leave a light.">
+<meta property="og:description" content="A warm city companion for guided tasks, local discovery, Buddy help, and multilingual community.">
+<meta property="og:image" content="/assets/postervia-icon.png">
+<title>Postervia - Find your path. Leave a light.</title>
 <style>
-  :root { --text: #111111; --muted: #6B7280; --bg: #FFFAF2; --accent: #F47C7C; --border: #F3E9D8; }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; }
-  .container { max-width: 640px; margin: 0 auto; padding: 48px 24px; }
-  .brand { font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
-  h1 { margin: 6px 0 6px; font-size: 30px; }
-  .subtitle { color: var(--muted); margin-bottom: 28px; }
-  .doc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .doc {
-    display: block;
-    padding: 14px 16px;
-    background: #FFFFFF;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    text-decoration: none;
-    color: var(--text);
+  :root {
+    --ink: #171717;
+    --soft-ink: #5f5a56;
+    --muted: #918a82;
+    --paper: #fffaf2;
+    --cream: #fff2df;
+    --cream-2: #ffe6c7;
+    --coral: #f57175;
+    --coral-dark: #dd535a;
+    --sun: #ffd377;
+    --mint: #7dc86f;
+    --blue: #7da8d8;
+    --line: #f2dfcc;
+    --white: #ffffff;
+    --shadow: 0 22px 55px rgba(92, 63, 34, 0.16);
+    --tight-shadow: 0 10px 28px rgba(92, 63, 34, 0.12);
   }
-  .doc:hover { border-color: var(--accent); }
-  .doc .lang { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
-  .doc .title { font-weight: 700; margin-top: 2px; }
-  @media (max-width: 480px) { .doc-grid { grid-template-columns: 1fr; } }
+
+  * { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.5;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(255, 250, 242, 0.92);
+    border-bottom: 1px solid rgba(242, 223, 204, 0.72);
+    backdrop-filter: blur(18px);
+  }
+
+  .nav {
+    max-width: 1180px;
+    margin: 0 auto;
+    min-height: 74px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+  }
+
+  .brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+
+  .brand-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    background: var(--coral);
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .brand-word {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: var(--soft-ink);
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+  }
+
+  .nav-links a:hover {
+    color: var(--coral-dark);
+  }
+
+  .nav-cta,
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 22px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--coral);
+    color: var(--white);
+    font-weight: 900;
+    text-decoration: none;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-cta:hover,
+  .button:hover {
+    background: var(--coral-dark);
+  }
+
+  .button.secondary {
+    background: var(--white);
+    color: var(--coral-dark);
+    border: 2px solid var(--line);
+    box-shadow: inset 0 -4px 0 rgba(92, 63, 34, 0.08);
+  }
+
+  .hero {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 76px 24px 86px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(340px, 0.98fr);
+    gap: 56px;
+    align-items: center;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 18px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--cream);
+    color: var(--coral-dark);
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .eyebrow::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--mint);
+    box-shadow: 0 0 0 5px rgba(125, 200, 111, 0.18);
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    max-width: 680px;
+    font-size: 66px;
+    line-height: 0.95;
+    letter-spacing: 0;
+  }
+
+  h1 span {
+    display: block;
+  }
+
+  .lede {
+    max-width: 650px;
+    margin-bottom: 28px;
+    color: var(--soft-ink);
+    font-size: 24px;
+    font-weight: 650;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .hero-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero-pills span,
+  .mini-pill {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 0 13px;
+    border-radius: 999px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    color: var(--soft-ink);
+    font-size: 13px;
+    font-weight: 850;
+  }
+
+  .phone-stage {
+    position: relative;
+    min-height: 630px;
+    display: grid;
+    place-items: center;
+  }
+
+  .sun-disc {
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--sun) 0%, #ffd989 45%, rgba(255, 211, 119, 0) 70%);
+    filter: blur(1px);
+  }
+
+  .phone {
+    position: relative;
+    width: min(285px, 78vw);
+    border: 10px solid #1d1d1d;
+    border-radius: 44px;
+    background: #1d1d1d;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .phone img {
+    width: 100%;
+    border-radius: 32px;
+  }
+
+  .phone.hero-phone {
+    transform: rotate(-2deg);
+  }
+
+  .floating-card {
+    position: absolute;
+    z-index: 2;
+    max-width: 250px;
+    padding: 16px 18px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(242, 223, 204, 0.86);
+    box-shadow: var(--tight-shadow);
+    color: var(--soft-ink);
+    font-size: 14px;
+    font-weight: 750;
+  }
+
+  .floating-card strong {
+    display: block;
+    color: var(--ink);
+    font-size: 16px;
+  }
+
+  .floating-card.one {
+    top: 82px;
+    left: 0;
+  }
+
+  .floating-card.two {
+    right: 0;
+    bottom: 122px;
+  }
+
+  .band {
+    border-top: 1px solid var(--line);
+    background: var(--white);
+  }
+
+  .section {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 86px 24px;
+  }
+
+  .section-heading {
+    max-width: 780px;
+    margin: 0 auto 44px;
+    text-align: center;
+  }
+
+  .section-heading h2 {
+    margin-bottom: 14px;
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .section-heading p {
+    color: var(--soft-ink);
+    font-size: 20px;
+    font-weight: 650;
+  }
+
+  .value-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .value-card {
+    padding: 26px;
+    border: 2px solid var(--line);
+    border-radius: 28px;
+    background: var(--paper);
+    box-shadow: inset 0 -4px 0 rgba(92, 63, 34, 0.05);
+  }
+
+  .value-icon {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 18px;
+    display: grid;
+    place-items: center;
+    border-radius: 18px;
+    background: var(--coral);
+    color: var(--white);
+    font-weight: 950;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .value-card:nth-child(2) .value-icon { background: var(--sun); color: #7a4a00; }
+  .value-card:nth-child(3) .value-icon { background: var(--mint); }
+
+  .value-card h3 {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.05;
+  }
+
+  .value-card p {
+    margin-bottom: 0;
+    color: var(--soft-ink);
+    font-size: 17px;
+    font-weight: 620;
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+    gap: 58px;
+    align-items: center;
+    padding: 88px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .feature:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .feature:nth-child(even) .feature-copy {
+    order: 2;
+  }
+
+  .feature:nth-child(even) .feature-visual {
+    order: 1;
+  }
+
+  .feature-kicker {
+    color: var(--coral-dark);
+    font-size: 14px;
+    font-weight: 950;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .feature h2 {
+    margin: 8px 0 18px;
+    font-size: 54px;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .feature-copy p {
+    color: var(--soft-ink);
+    font-size: 20px;
+    font-weight: 650;
+  }
+
+  .feature-list {
+    display: grid;
+    gap: 12px;
+    margin: 26px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .feature-list li {
+    display: flex;
+    gap: 12px;
+    color: var(--soft-ink);
+    font-size: 16px;
+    font-weight: 760;
+  }
+
+  .feature-list li::before {
+    content: "";
+    flex: 0 0 12px;
+    width: 12px;
+    height: 12px;
+    margin-top: 6px;
+    border-radius: 50%;
+    background: var(--coral);
+    box-shadow: 0 0 0 5px rgba(245, 113, 117, 0.14);
+  }
+
+  .feature-visual {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 560px;
+    border-radius: 38px;
+    background:
+      radial-gradient(circle at 22% 20%, rgba(245, 113, 117, 0.2), transparent 30%),
+      radial-gradient(circle at 90% 82%, rgba(255, 211, 119, 0.35), transparent 26%),
+      var(--cream);
+    overflow: hidden;
+  }
+
+  .feature-visual .phone {
+    width: min(275px, 75vw);
+  }
+
+  .paired-phones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    transform: translateX(8px);
+  }
+
+  .paired-phones .phone {
+    width: min(235px, 42vw);
+  }
+
+  .paired-phones .phone:first-child {
+    transform: rotate(-3deg) translateY(24px);
+  }
+
+  .paired-phones .phone:last-child {
+    transform: rotate(3deg) translateY(-18px);
+  }
+
+  .cta-band {
+    background: linear-gradient(135deg, #f57175 0%, #ff8e73 48%, #ffd377 100%);
+    color: var(--white);
+  }
+
+  .cta {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 84px 24px;
+    text-align: center;
+  }
+
+  .cta h2 {
+    margin-bottom: 18px;
+    font-size: 62px;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .cta p {
+    max-width: 700px;
+    margin: 0 auto 28px;
+    font-size: 20px;
+    font-weight: 720;
+  }
+
+  .cta .button {
+    background: var(--white);
+    color: var(--coral-dark);
+  }
+
+  .footer {
+    background: #161616;
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .footer-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 64px 24px 44px;
+  }
+
+  .footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 950;
+  }
+
+  .footer-brand img {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+  }
+
+  .footer-tagline {
+    margin: 8px 0 0;
+    color: rgba(255, 255, 255, 0.56);
+    font-weight: 700;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(130px, 1fr));
+    gap: 34px 28px;
+    padding-top: 38px;
+  }
+
+  .footer-col h3 {
+    margin-bottom: 14px;
+    color: var(--white);
+    font-size: 16px;
+  }
+
+  .footer-col a,
+  .footer-col span {
+    display: block;
+    margin: 9px 0;
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .footer-col a:hover {
+    color: var(--white);
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 42px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.48);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  @media (max-width: 940px) {
+    .nav-links {
+      display: none;
+    }
+
+    .hero,
+    .feature {
+      grid-template-columns: 1fr;
+      gap: 34px;
+    }
+
+    .hero {
+      padding-top: 54px;
+    }
+
+    h1 {
+      font-size: 62px;
+    }
+
+    .lede,
+    .feature-copy p,
+    .section-heading p,
+    .cta p {
+      font-size: 20px;
+    }
+
+    .section-heading h2,
+    .feature h2,
+    .cta h2 {
+      font-size: 46px;
+    }
+
+    .phone-stage {
+      min-height: 560px;
+    }
+
+    .feature:nth-child(even) .feature-copy,
+    .feature:nth-child(even) .feature-visual {
+      order: initial;
+    }
+
+    .value-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+      grid-template-columns: repeat(3, minmax(130px, 1fr));
+    }
+  }
+
+  @media (max-width: 620px) {
+    .nav {
+      min-height: 66px;
+      padding: 0 18px;
+    }
+
+    .brand-word {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+
+    .section-heading h2,
+    .feature h2,
+    .cta h2 {
+      font-size: 38px;
+    }
+
+    .lede,
+    .feature-copy p,
+    .section-heading p,
+    .cta p {
+      font-size: 18px;
+    }
+
+    .nav-cta {
+      min-height: 40px;
+      padding: 0 16px;
+      font-size: 14px;
+    }
+
+    .hero,
+    .section {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    .hero {
+      padding-bottom: 62px;
+    }
+
+    .hero-actions {
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .button {
+      width: 100%;
+    }
+
+    .floating-card {
+      position: relative;
+      inset: auto;
+      max-width: 100%;
+      margin-top: -18px;
+    }
+
+    .floating-card.one,
+    .floating-card.two {
+      left: auto;
+      right: auto;
+      top: auto;
+      bottom: auto;
+    }
+
+    .phone-stage {
+      min-height: auto;
+      gap: 14px;
+    }
+
+    .sun-disc {
+      width: 320px;
+      height: 320px;
+    }
+
+    .section {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    .feature {
+      padding: 64px 0;
+    }
+
+    .feature-visual {
+      min-height: 485px;
+      border-radius: 28px;
+    }
+
+    .paired-phones {
+      gap: 10px;
+    }
+
+    .paired-phones .phone {
+      width: min(205px, 45vw);
+    }
+
+    .footer-top {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .footer-grid {
+      grid-template-columns: repeat(2, minmax(120px, 1fr));
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .phone.hero-phone {
+      animation: float-phone 5.5s ease-in-out infinite;
+    }
+
+    .floating-card.one {
+      animation: float-card 4.8s ease-in-out infinite;
+    }
+
+    .floating-card.two {
+      animation: float-card 5.2s ease-in-out infinite reverse;
+    }
+
+    @keyframes float-phone {
+      0%, 100% { transform: rotate(-2deg) translateY(0); }
+      50% { transform: rotate(-1deg) translateY(-12px); }
+    }
+
+    @keyframes float-card {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  }
 </style>
 </head>
 <body>
-<div class="container">
-  <div class="brand">Postervia</div>
-  <h1>Legal documents</h1>
-  <p class="subtitle">Public copies of Postervia's Privacy Policy, Terms of Use, Child Safety Standards, Support page, and Imprint. The in-app versions inside the Postervia mobile app are kept identical where applicable.</p>
-  <div class="doc-grid">
-    <a class="doc" href="/privacy"><div class="lang">English</div><div class="title">Privacy Policy</div></a>
-    <a class="doc" href="/privacy-de"><div class="lang">Deutsch</div><div class="title">Datenschutzerklärung</div></a>
-    <a class="doc" href="/terms"><div class="lang">English</div><div class="title">Terms of Use</div></a>
-    <a class="doc" href="/terms-de"><div class="lang">Deutsch</div><div class="title">Nutzungsbedingungen</div></a>
-    <a class="doc" href="/child-safety"><div class="lang">English</div><div class="title">Child Safety Standards</div></a>
-    <a class="doc" href="/child-safety-de"><div class="lang">Deutsch</div><div class="title">Kinderschutzstandards</div></a>
-    <a class="doc" href="/support"><div class="lang">English</div><div class="title">Support</div></a>
-    <a class="doc" href="/support-de"><div class="lang">Deutsch</div><div class="title">Hilfe</div></a>
-    <a class="doc" href="/impressum"><div class="lang">English</div><div class="title">Imprint</div></a>
-    <a class="doc" href="/impressum-de"><div class="lang">Deutsch</div><div class="title">Impressum</div></a>
+<header class="topbar">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand-link" href="#home" aria-label="Postervia home">
+      <img class="brand-icon" src="/assets/postervia-icon.png" alt="" width="42" height="42">
+      <span class="brand-word">Postervia</span>
+    </a>
+    <div class="nav-links">
+      <a href="#odyssey">Odyssey</a>
+      <a href="#plaza">Plaza</a>
+      <a href="#buddy">Buddy</a>
+      <a href="#social">Social</a>
+      <a href="/support">Support</a>
+    </div>
+    <a class="nav-cta" href="mailto:support@postervia.app?subject=Postervia%20Beta">Join beta</a>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="hero" aria-labelledby="hero-title">
+    <div>
+      <p class="eyebrow">Berlin first city companion</p>
+      <h1 id="hero-title"><span>Find your path.</span><span>Leave a light.</span></h1>
+      <p class="lede">Postervia helps newcomers and locals turn the messy first weeks in a city into guided tasks, local stories, Buddy help, and real social connection.</p>
+      <div class="hero-actions">
+        <a class="button" href="mailto:support@postervia.app?subject=Postervia%20Beta">Join the beta</a>
+        <a class="button secondary" href="#features">Explore features</a>
+      </div>
+      <div class="hero-pills" aria-label="Product highlights">
+        <span>Task navigation</span>
+        <span>Local discovery</span>
+        <span>Multilingual community</span>
+      </div>
+    </div>
+    <div class="phone-stage" aria-label="Postervia app preview">
+      <div class="sun-disc" aria-hidden="true"></div>
+      <div class="floating-card one">
+        <strong>Odyssey</strong>
+        Next steps become calm, source-aware tasks.
+      </div>
+      <div class="phone hero-phone">
+        <img src="/assets/screenshots/screen-8.jpeg" alt="Postervia Odyssey screen with guided city tasks">
+      </div>
+      <div class="floating-card two">
+        <strong>Plaza</strong>
+        Local posts can become real actions in your path.
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="section">
+      <div class="section-heading">
+        <h2>A warmer way to land in a city.</h2>
+        <p>Postervia is designed for the moment when people do not need more tabs, forums, or random advice. They need a next step, a local signal, and sometimes another human.</p>
+      </div>
+      <div class="value-grid">
+        <article class="value-card">
+          <div class="value-icon">1</div>
+          <h3>Know what to do next</h3>
+          <p>Odyssey turns bureaucracy, setup, and local life into a guided path with clear status and source context.</p>
+        </article>
+        <article class="value-card">
+          <div class="value-icon">2</div>
+          <h3>See the city through people</h3>
+          <p>Plaza lets users share places, experiences, events, and practical notes that stay tied to real locations.</p>
+        </article>
+        <article class="value-card">
+          <div class="value-icon">3</div>
+          <h3>Ask for help without friction</h3>
+          <p>Buddy and Social give newcomers a lighter path to companionship, errands, chat, and community trust.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section" aria-label="Postervia features">
+    <article id="odyssey" class="feature">
+      <div class="feature-copy">
+        <div class="feature-kicker">Odyssey</div>
+        <h2>A task path for life in a new city.</h2>
+        <p>From SIM cards to housing confirmations, Odyssey keeps the important steps visible, ordered, and easy to act on.</p>
+        <ul class="feature-list">
+          <li>Main and side tasks help users separate urgent needs from local exploration.</li>
+          <li>Source links and verification dates keep practical guidance grounded.</li>
+          <li>Completed and discarded paths are easy to restore from history.</li>
+        </ul>
+      </div>
+      <div class="feature-visual">
+        <div class="phone">
+          <img src="/assets/screenshots/screen-8.jpeg" alt="Odyssey task cards for German SIM and housing steps">
+        </div>
+      </div>
+    </article>
+
+    <article id="plaza" class="feature">
+      <div class="feature-copy">
+        <div class="feature-kicker">Plaza</div>
+        <h2>Local stories that can become next steps.</h2>
+        <p>Plaza is a high-intent discovery feed for places, events, tips, warnings, and lived experience from the city.</p>
+        <ul class="feature-list">
+          <li>Waterfall cards make the city feel visual, lively, and easy to scan.</li>
+          <li>Posts can include translation, location context, comments, and saves.</li>
+          <li>Useful places and events can be added back into a user's Odyssey.</li>
+        </ul>
+      </div>
+      <div class="feature-visual">
+        <div class="paired-phones">
+          <div class="phone">
+            <img src="/assets/screenshots/screen-11.jpeg" alt="Plaza feed with local Berlin posts">
+          </div>
+          <div class="phone">
+            <img src="/assets/screenshots/screen-6.jpeg" alt="Plaza post detail showing Victoria Park">
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="buddy" class="feature">
+      <div class="feature-copy">
+        <div class="feature-kicker">Buddy</div>
+        <h2>Human help for the moments that feel too heavy alone.</h2>
+        <p>Buddy lets users ask for companionship, errands, and practical help around appointments, shopping, meals, and walking plans.</p>
+        <ul class="feature-list">
+          <li>Request categories match real newcomer needs like Anmeldung and medical visits.</li>
+          <li>Users can make posts free, paid, or negotiable depending on the help needed.</li>
+          <li>The design keeps help requests clear, respectful, and easy to browse.</li>
+        </ul>
+      </div>
+      <div class="feature-visual">
+        <div class="paired-phones">
+          <div class="phone">
+            <img src="/assets/screenshots/screen-3.jpeg" alt="Buddy request feed for Anmeldung companionship">
+          </div>
+          <div class="phone">
+            <img src="/assets/screenshots/screen-4.jpeg" alt="New Buddy post composer with categories and price options">
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="social" class="feature">
+      <div class="feature-copy">
+        <div class="feature-kicker">Social</div>
+        <h2>Chat, friends, and groups without losing the practical context.</h2>
+        <p>Postervia keeps social connection close to the city journey: saved notes, Buddy conversations, group plans, and lightweight search.</p>
+        <ul class="feature-list">
+          <li>Friend search works around city, profile identity, and Postervia display IDs.</li>
+          <li>Message lists stay simple so users can find people and plans quickly.</li>
+          <li>Notifications bring users back to replies and community activity.</li>
+        </ul>
+      </div>
+      <div class="feature-visual">
+        <div class="paired-phones">
+          <div class="phone">
+            <img src="/assets/screenshots/screen-9.jpeg" alt="Social message list screen">
+          </div>
+          <div class="phone">
+            <img src="/assets/screenshots/screen-2.jpeg" alt="People search screen in Postervia">
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="approach" class="feature">
+      <div class="feature-copy">
+        <div class="feature-kicker">Profile and trust</div>
+        <h2>A personal city identity, not another empty account.</h2>
+        <p>Profiles show where people are based, what they share, how they explore, and which parts of their activity they want public.</p>
+        <ul class="feature-list">
+          <li>Notes, comments, saves, and likes create a visible local archive.</li>
+          <li>Privacy controls help users decide which tabs other people can see.</li>
+          <li>Multilingual UI and translation keep the community open across language gaps.</li>
+        </ul>
+      </div>
+      <div class="feature-visual">
+        <div class="phone">
+          <img src="/assets/screenshots/screen-5.jpeg" alt="Postervia profile screen with local notes and identity">
+        </div>
+      </div>
+    </article>
+
+    <article id="mission" class="feature">
+      <div class="feature-copy">
+        <div class="feature-kicker">Map and real places</div>
+        <h2>Local discovery stays attached to the world.</h2>
+        <p>Posts can be tied to actual shops, parks, events, and landmarks, so shared experience turns into usable local context.</p>
+        <ul class="feature-list">
+          <li>Map tagging helps creators attach one or more real locations.</li>
+          <li>Place cards preserve addresses, context, and add-to-Odyssey actions.</li>
+          <li>Berlin is the first city, with the product shaped around city-by-city learning.</li>
+        </ul>
+      </div>
+      <div class="feature-visual">
+        <div class="phone">
+          <img src="/assets/screenshots/screen-1.jpeg" alt="Map screen for tagging Berlin locations">
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="download" class="cta-band">
+    <div class="cta">
+      <h2>Built for people finding their footing.</h2>
+      <p>Postervia starts in Berlin with guided tasks, local knowledge, and warm social help for newcomers, travelers, residents, and curious locals.</p>
+      <a class="button" href="mailto:support@postervia.app?subject=Postervia%20Beta">Contact Postervia</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="/assets/postervia-icon.png" alt="" width="48" height="48">
+          <span>Postervia</span>
+        </div>
+        <p class="footer-tagline">Find your path. Leave a light.</p>
+      </div>
+      <a class="button" href="https://yinchaochen.com/">Developer: Yinchao Chen</a>
+    </div>
+
+    <div class="footer-grid" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h3>About us</h3>
+        <a href="#mission">Mission</a>
+        <a href="#approach">Approach</a>
+        <a href="#features">How it works</a>
+        <a href="mailto:support@postervia.app?subject=Postervia%20Press">Press</a>
+        <a href="mailto:support@postervia.app?subject=Postervia%20Investors">Investors</a>
+        <a href="mailto:support@postervia.app">Contact us</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Products</h3>
+        <a href="#home">Postervia</a>
+        <a href="#odyssey">Odyssey</a>
+        <a href="#plaza">Plaza</a>
+        <a href="#buddy">Buddy</a>
+        <a href="#social">Social</a>
+        <a href="#approach">Profile</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Apps</h3>
+        <a href="#download">Postervia for iOS</a>
+        <a href="#download">Postervia for Android</a>
+        <a href="mailto:support@postervia.app?subject=Postervia%20Beta">Beta access</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Help and support</h3>
+        <a href="/support">Support</a>
+        <a href="/support-de">Support Deutsch</a>
+        <a href="/child-safety">Child Safety Standards</a>
+        <a href="/child-safety-de">Kinderschutzstandards</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Privacy and terms</h3>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/impressum">Imprint</a>
+        <a href="/terms-de">Nutzungsbedingungen</a>
+        <a href="/privacy-de">Datenschutz</a>
+        <a href="/impressum-de">Impressum DE</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>Postervia - Berlin first.</span>
+      <span>Public legal copies are kept in sync with the mobile app where applicable.</span>
+    </div>
   </div>
-</div>
+</footer>
 </body>
 </html>
