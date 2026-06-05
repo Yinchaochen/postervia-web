@@ -912,8 +912,8 @@
 </head>
 <body>
 <header class="topbar">
-  <nav class="nav" aria-label="Main navigation">
-    <a class="brand-link" href="#home" aria-label="Postervia home">
+  <nav class="nav" aria-label="Main navigation" data-i18n-aria-label="a11y.mainNavigation">
+    <a class="brand-link" href="#home" aria-label="Postervia home" data-i18n-aria-label="a11y.homeLink">
       <img class="brand-icon" src="/assets/postervia-icon.png" alt="" width="42" height="42">
       <span class="brand-word">Postervia</span>
     </a>
@@ -926,12 +926,12 @@
     </div>
     <div class="language-menu" data-language-menu>
       <button class="language-button" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="language-list" data-language-button>
-        <span class="language-button-label" data-language-button-label>English</span>
+        <span class="language-button-label" data-language-button-label data-i18n="language.button">English</span>
       </button>
       <div class="language-popover" data-language-popover hidden>
         <label class="sr-only" for="language-search" data-i18n="language.searchLabel">Search languages</label>
         <input class="language-search" id="language-search" type="search" autocomplete="off" placeholder="Search languages" data-i18n-placeholder="language.searchPlaceholder" data-language-search>
-        <div class="language-list" id="language-list" role="listbox" aria-label="Languages" data-language-list></div>
+        <div class="language-list" id="language-list" role="listbox" aria-label="Languages" data-i18n-aria-label="a11y.languages" data-language-list></div>
       </div>
     </div>
   </nav>
@@ -947,20 +947,20 @@
         <a class="button" href="mailto:support@postervia.app?subject=Postervia%20Beta" data-i18n="hero.primaryCta">Join the beta</a>
         <a class="button secondary" href="#features" data-i18n="hero.secondaryCta">Explore features</a>
       </div>
-      <div class="hero-pills" aria-label="Product highlights">
+      <div class="hero-pills" aria-label="Product highlights" data-i18n-aria-label="a11y.productHighlights">
         <span data-i18n="hero.pillTasks">Task navigation</span>
         <span data-i18n="hero.pillDiscovery">Local discovery</span>
         <span data-i18n="hero.pillLanguage">Multilingual community</span>
       </div>
     </div>
-    <div class="phone-stage" aria-label="Postervia app preview">
+    <div class="phone-stage" aria-label="Postervia app preview" data-i18n-aria-label="a11y.appPreview">
       <div class="sun-disc" aria-hidden="true"></div>
       <div class="floating-card one">
         <strong data-i18n="nav.odyssey">Odyssey</strong>
         <span data-i18n="hero.floatOdyssey">Next steps become calm, source-aware tasks.</span>
       </div>
       <div class="phone hero-phone">
-        <img src="/assets/screenshots/screen-8.jpeg" alt="Postervia Odyssey screen with guided city tasks">
+        <img src="/assets/screenshots/screen-8.jpeg" alt="Postervia Odyssey screen with guided city tasks" data-i18n-alt="alt.heroOdyssey">
       </div>
       <div class="floating-card two">
         <strong data-i18n="nav.plaza">Plaza</strong>
@@ -995,7 +995,7 @@
     </div>
   </section>
 
-  <section id="features" class="section" aria-label="Postervia features">
+  <section id="features" class="section" aria-label="Postervia features" data-i18n-aria-label="a11y.features">
     <article id="odyssey" class="feature">
       <div class="feature-copy">
         <div class="feature-kicker" data-i18n="nav.odyssey">Odyssey</div>
@@ -1009,7 +1009,7 @@
       </div>
       <div class="feature-visual">
         <div class="phone">
-          <img src="/assets/screenshots/screen-8.jpeg" alt="Odyssey task cards for German SIM and housing steps">
+          <img src="/assets/screenshots/screen-8.jpeg" alt="Odyssey task cards for German SIM and housing steps" data-i18n-alt="alt.odysseyTasks">
         </div>
       </div>
     </article>
@@ -1028,10 +1028,10 @@
       <div class="feature-visual">
         <div class="paired-phones">
           <div class="phone">
-            <img src="/assets/screenshots/screen-11.jpeg" alt="Plaza feed with local Berlin posts">
+            <img src="/assets/screenshots/screen-11.jpeg" alt="Plaza feed with local Berlin posts" data-i18n-alt="alt.plazaFeed">
           </div>
           <div class="phone">
-            <img src="/assets/screenshots/screen-6.jpeg" alt="Plaza post detail showing Victoria Park">
+            <img src="/assets/screenshots/screen-6.jpeg" alt="Plaza post detail showing Victoria Park" data-i18n-alt="alt.plazaDetail">
           </div>
         </div>
       </div>
@@ -1051,10 +1051,10 @@
       <div class="feature-visual">
         <div class="paired-phones">
           <div class="phone">
-            <img src="/assets/screenshots/screen-3.jpeg" alt="Buddy request feed for Anmeldung companionship">
+            <img src="/assets/screenshots/screen-3.jpeg" alt="Buddy request feed for Anmeldung companionship" data-i18n-alt="alt.buddyFeed">
           </div>
           <div class="phone">
-            <img src="/assets/screenshots/screen-4.jpeg" alt="New Buddy post composer with categories and price options">
+            <img src="/assets/screenshots/screen-4.jpeg" alt="New Buddy post composer with categories and price options" data-i18n-alt="alt.buddyComposer">
           </div>
         </div>
       </div>
@@ -1074,10 +1074,10 @@
       <div class="feature-visual">
         <div class="paired-phones">
           <div class="phone">
-            <img src="/assets/screenshots/screen-9.jpeg" alt="Social message list screen">
+            <img src="/assets/screenshots/screen-9.jpeg" alt="Social message list screen" data-i18n-alt="alt.socialMessages">
           </div>
           <div class="phone">
-            <img src="/assets/screenshots/screen-2.jpeg" alt="People search screen in Postervia">
+            <img src="/assets/screenshots/screen-2.jpeg" alt="People search screen in Postervia" data-i18n-alt="alt.peopleSearch">
           </div>
         </div>
       </div>
@@ -1096,7 +1096,7 @@
       </div>
       <div class="feature-visual">
         <div class="phone">
-          <img src="/assets/screenshots/screen-5.jpeg" alt="Postervia profile screen with local notes and identity">
+          <img src="/assets/screenshots/screen-5.jpeg" alt="Postervia profile screen with local notes and identity" data-i18n-alt="alt.profile">
         </div>
       </div>
     </article>
@@ -1114,7 +1114,7 @@
       </div>
       <div class="feature-visual">
         <div class="phone">
-          <img src="/assets/screenshots/screen-1.jpeg" alt="Map screen for tagging Berlin locations">
+          <img src="/assets/screenshots/screen-1.jpeg" alt="Map screen for tagging Berlin locations" data-i18n-alt="alt.map">
         </div>
       </div>
     </article>
@@ -1142,7 +1142,7 @@
       <a class="button" href="https://yinchaochen.com/" data-i18n="footer.developer">Developer: Yinchao Chen</a>
     </div>
 
-    <div class="footer-grid" aria-label="Footer navigation">
+    <div class="footer-grid" aria-label="Footer navigation" data-i18n-aria-label="a11y.footerNavigation">
       <div class="footer-col">
         <h3 data-i18n="footer.about">About us</h3>
         <a href="#mission" data-i18n="footer.mission">Mission</a>
