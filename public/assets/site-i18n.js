@@ -559,6 +559,7 @@
       "productHighlights": "Produkhoogtepunte"
     },
     "alt": {
+      "appStoreBadge": "Laai af op die App Store",
       "buddyComposer": "Nuwe Buddy-plasing-samesteller met kategorieë en prysopsies",
       "buddyFeed": "Buddy-versoekstroom vir geselskap by Anmeldung",
       "heroOdyssey": "Postervia Odyssey-skerm met begeleide stadstake",
@@ -690,6 +691,7 @@
       "productHighlights": "Pikat kryesore të produktit"
     },
     "alt": {
+      "appStoreBadge": "Shkarko në App Store",
       "buddyComposer": "Krijues i ri postimesh Buddy me kategori dhe opsione çmimi",
       "buddyFeed": "Furnizimi i kërkesave Buddy për shoqëri për Anmeldung",
       "heroOdyssey": "Ekrani Odyssey i Postervia me detyra të udhëzuara të qytetit",
@@ -821,6 +823,7 @@
       "productHighlights": "የምርት ዋና ባህሪያት"
     },
     "alt": {
+      "appStoreBadge": "በApp Store ላይ ያውርዱ",
       "buddyComposer": "አዲስ የBuddy ልጥፍ አዘጋጅ ከምድቦችና የዋጋ አማራጮች ጋር",
       "buddyFeed": "ለAnmeldung አብሮነት የBuddy ጥያቄ ምግብ",
       "heroOdyssey": "የPostervia Odyssey ማያ ገጽ ከተመራ የከተማ ተግባራት ጋር",
@@ -952,6 +955,7 @@
       "productHighlights": "أبرز المزايا"
     },
     "alt": {
+      "appStoreBadge": "تنزيل من App Store",
       "buddyComposer": "منشئ منشور Buddy الجديد مع فئات وخيارات للأسعار",
       "buddyFeed": "خلاصة طلبات Buddy للرفقة في Anmeldung",
       "heroOdyssey": "شاشة Postervia Odyssey مع مهام المدينة الموجّهة",
@@ -1083,6 +1087,7 @@
       "productHighlights": "Արտադրանքի կարևորագույն բաժիններ"
     },
     "alt": {
+      "appStoreBadge": "Ներբեռնեք App Store-ից",
       "buddyComposer": "Նոր Buddy գրառման ստեղծիչ՝ կատեգորիաներով և գնի տարբերակներով",
       "buddyFeed": "Buddy-ի հարցումների հոսք՝ Anmeldung-ի համար ուղեկցության համար",
       "heroOdyssey": "Postervia Odyssey-ի էկրան՝ քաղաքային ուղղորդված առաջադրանքներով",
@@ -1214,6 +1219,7 @@
       "productHighlights": "Məhsul vurğuları"
     },
     "alt": {
+      "appStoreBadge": "App Store-dan yükləyin",
       "buddyComposer": "Kateqoriyalar və qiymət seçimləri ilə yeni Buddy paylaşım redaktoru",
       "buddyFeed": "Anmeldung üçün yoldaşlıq üzrə Buddy sorğuları lentı",
       "heroOdyssey": "Bələdçi şəhər tapşırıqları olan Postervia Odyssey ekranı",
@@ -1345,6 +1351,7 @@
       "productHighlights": "Produktuaren nabarmenduak"
     },
     "alt": {
+      "appStoreBadge": "Deskargatu App Store-n",
       "buddyComposer": "Kategoria eta prezio-aukerak dituen Buddy-ko argitalpen-sortzaile berria",
       "buddyFeed": "Anmeldung-en laguntasunerako Buddy eskaeren jarioa",
       "heroOdyssey": "Postervia Odyssey-ren pantaila, gidatutako hiriko zereginekin",
@@ -1476,6 +1483,7 @@
       "productHighlights": "Асноўныя магчымасці прадукту"
     },
     "alt": {
+      "appStoreBadge": "Спампаваць у App Store",
       "buddyComposer": "Новы рэдактар допісаў Buddy з катэгорыямі і варыянтамі цаны",
       "buddyFeed": "Стужка запытаў Buddy на кампанію для Anmeldung",
       "heroOdyssey": "Экран Postervia Odyssey з падказкамі па гарадскіх задачах",
@@ -1607,6 +1615,7 @@
       "productHighlights": "পণ্যের হাইলাইটস"
     },
     "alt": {
+      "appStoreBadge": "App Store থেকে ডাউনলোড করুন",
       "buddyComposer": "বিভাগ ও মূল্য বিকল্পসহ নতুন Buddy পোস্ট কম্পোজার",
       "buddyFeed": "Anmeldung-এ সঙ্গী খোঁজার জন্য Buddy অনুরোধ ফিড",
       "heroOdyssey": "গাইডেড সিটি টাস্কসহ Postervia Odyssey স্ক্রিন",
@@ -1738,6 +1747,7 @@
       "productHighlights": "Istaknute funkcije proizvoda"
     },
     "alt": {
+      "appStoreBadge": "Preuzmite na App Store-u",
       "buddyComposer": "Novi Buddy uređivač objava s kategorijama i opcijama cijene",
       "buddyFeed": "Buddy feed zahtjeva za društvo za Anmeldung",
       "heroOdyssey": "Ekran Postervia Odyssey s vođenim gradskim zadacima",
@@ -1869,6 +1879,7 @@
       "productHighlights": "Акценти на продукта"
     },
     "alt": {
+      "appStoreBadge": "Изтеглете от App Store",
       "buddyComposer": "Нов създател на публикации в Buddy с категории и ценови опции",
       "buddyFeed": "Фийд с заявки в Buddy за компания при Anmeldung",
       "heroOdyssey": "Екран на Postervia Odyssey с насочвани градски задачи",
@@ -2000,6 +2011,7 @@
       "productHighlights": "Destacats del producte"
     },
     "alt": {
+      "appStoreBadge": "Descarrega-la a l'App Store",
       "buddyComposer": "Nou compositor de publicacions de Buddy amb categories i opcions de preu",
       "buddyFeed": "Feed de sol·licituds de Buddy per trobar companyia per a l’Anmeldung",
       "heroOdyssey": "Pantalla d’Odyssey de Postervia amb tasques guiades per la ciutat",
@@ -2131,6 +2143,7 @@
       "productHighlights": "Mga highlight sa produkto"
     },
     "alt": {
+      "appStoreBadge": "I-download sa App Store",
       "buddyComposer": "Bag-ong composer sa post sa Buddy nga adunay mga kategorya ug mga opsyon sa presyo",
       "buddyFeed": "Feed sa mga hangyo sa Buddy para sa kauban sa Anmeldung",
       "heroOdyssey": "Screen sa Postervia Odyssey nga adunay giya nga mga buluhaton sa siyudad",
@@ -2262,6 +2275,7 @@
       "productHighlights": "产品亮点"
     },
     "alt": {
+      "appStoreBadge": "在 App Store 下载",
       "buddyComposer": "带有分类和价格选项的全新 Buddy 发帖编辑器",
       "buddyFeed": "用于寻找 Anmeldung 陪伴的 Buddy 请求动态",
       "heroOdyssey": "Postervia Odyssey 引导城市任务界面",
@@ -2393,6 +2407,7 @@
       "productHighlights": "產品亮點"
     },
     "alt": {
+      "appStoreBadge": "在 App Store 下載",
       "buddyComposer": "可選分類與價格的全新 Buddy 發文編輯器",
       "buddyFeed": "提供 Anmeldung 陪伴需求的 Buddy 需求動態",
       "heroOdyssey": "Postervia Odyssey 畫面，帶有引導式城市任務",
@@ -2524,6 +2539,7 @@
       "productHighlights": "Punti forti di u pruduttu"
     },
     "alt": {
+      "appStoreBadge": "Scaricà da l'App Store",
       "buddyComposer": "Nuovu cumpusitore di publicazione Buddy cù categurie è opzioni di prezzu",
       "buddyFeed": "Feed di richieste Buddy per cumpagnia per l'Anmeldung",
       "heroOdyssey": "Schermu Odyssey di Postervia cù attività guidate in cità",
@@ -2655,6 +2671,7 @@
       "productHighlights": "Istaknute značajke proizvoda"
     },
     "alt": {
+      "appStoreBadge": "Preuzmite u App Storeu",
       "buddyComposer": "Novi Buddy uređivač objava s kategorijama i opcijama cijene",
       "buddyFeed": "Feed Buddy zahtjeva za društvo oko Anmeldunga",
       "heroOdyssey": "Zaslon Postervia Odyssey s vođenim gradskim zadacima",
@@ -2786,6 +2803,7 @@
       "productHighlights": "Hlavní přednosti produktu"
     },
     "alt": {
+      "appStoreBadge": "Stáhnout v App Storu",
       "buddyComposer": "Nový editor příspěvků Buddy s kategoriemi a možnostmi ceny",
       "buddyFeed": "Kanál žádostí Buddy o doprovod při Anmeldung",
       "heroOdyssey": "Obrazovka Postervia Odyssey s vedenými úkoly po městě",
@@ -2917,6 +2935,7 @@
       "productHighlights": "Produkt-højdepunkter"
     },
     "alt": {
+      "appStoreBadge": "Hent i App Store",
       "buddyComposer": "Ny Buddy-opslagskomponist med kategorier og prisvalg",
       "buddyFeed": "Buddy-anmodningsfeed til selskab ved Anmeldung",
       "heroOdyssey": "Postervia Odyssey-skærm med guidede byopgaver",
@@ -3048,6 +3067,7 @@
       "productHighlights": "Producthoogtepunten"
     },
     "alt": {
+      "appStoreBadge": "Download in de App Store",
       "buddyComposer": "Nieuwe Buddy-postmaker met categorieën en prijsopties",
       "buddyFeed": "Buddy-verzoekfeed voor gezelschap bij Anmeldung",
       "heroOdyssey": "Postervia Odyssey-scherm met begeleide stadstaken",
@@ -3173,6 +3193,7 @@
       "productHighlights": "Product highlights"
     },
     "alt": {
+      "appStoreBadge": "Download on the App Store",
       "buddyComposer": "New Buddy post composer with categories and price options",
       "buddyFeed": "Buddy request feed for Anmeldung companionship",
       "heroOdyssey": "Postervia Odyssey screen with guided city tasks",
@@ -3310,6 +3331,7 @@
       "productHighlights": "produktaj elstaroj"
     },
     "alt": {
+      "appStoreBadge": "Elŝutu en la App Store",
       "buddyComposer": "Nova komponaĵo por Buddy-afiŝoj kun kategorioj kaj prezopcioj",
       "buddyFeed": "flueto de Buddy-petoj por akompano ĉe Anmeldung",
       "heroOdyssey": "ekrano de Postervia Odyssey kun gvidataj urbaj taskoj",
@@ -3441,6 +3463,7 @@
       "productHighlights": "Toote esiletõstmised"
     },
     "alt": {
+      "appStoreBadge": "Laadi alla App Store'ist",
       "buddyComposer": "Uue Buddy postituse koostaja kategooriate ja hinnavalikutega",
       "buddyFeed": "Buddy päringuvoog Anmeldungi jaoks kaaslase leidmiseks",
       "heroOdyssey": "Postervia Odyssey ekraan juhendatud linnatoimingutega",
@@ -3572,6 +3595,7 @@
       "productHighlights": "Tuotteen kohokohdat"
     },
     "alt": {
+      "appStoreBadge": "Lataa App Storesta",
       "buddyComposer": "Uusi Buddy-julkaisun kirjoitustila, jossa on kategoriat ja hintavaihtoehdot",
       "buddyFeed": "Buddy-pyyntösyöte Anmeldung-seuraa varten",
       "heroOdyssey": "Postervia Odyssey -näkymä ohjatuilla kaupunkitehtävillä",
@@ -3703,6 +3727,7 @@
       "productHighlights": "Points forts du produit"
     },
     "alt": {
+      "appStoreBadge": "Télécharger dans l'App Store",
       "buddyComposer": "Nouveau rédacteur de publication Buddy avec catégories et options de prix",
       "buddyFeed": "Fil des demandes Buddy pour trouver de la compagnie pour l’Anmeldung",
       "heroOdyssey": "Écran Odyssey de Postervia avec des tâches urbaines guidées",
@@ -3834,6 +3859,7 @@
       "productHighlights": "Produktútljochtsingen"
     },
     "alt": {
+      "appStoreBadge": "Download yn de App Store",
       "buddyComposer": "Nije Buddy-postmakker mei kategoryen en priisopsjes",
       "buddyFeed": "Buddy-oanfraachfeed foar begelieding by Anmeldung",
       "heroOdyssey": "Skerm fan Postervia Odyssey mei begeliede stêdstaken",
@@ -3965,6 +3991,7 @@
       "productHighlights": "Destacados do produto"
     },
     "alt": {
+      "appStoreBadge": "Descarga na App Store",
       "buddyComposer": "Novo compositor de publicacións de Buddy con categorías e opcións de prezo",
       "buddyFeed": "Feed de solicitudes de Buddy para compañía en Anmeldung",
       "heroOdyssey": "Pantalla de Postervia Odyssey con tarefas guiadas pola cidade",
@@ -4096,6 +4123,7 @@
       "productHighlights": "პროდუქტის გამორჩეული მახასიათებლები"
     },
     "alt": {
+      "appStoreBadge": "ჩამოტვირთეთ App Store-დან",
       "buddyComposer": "Buddy-ის ახალი პოსტის შემქმნელი კატეგორიებითა და ფასის ვარიანტებით",
       "buddyFeed": "Buddy-ის მოთხოვნების არხი Anmeldung-ისთვის თანამგზავრობისთვის",
       "heroOdyssey": "Postervia Odyssey-ის ეკრანი ქალაქის გზამკვლევი დავალებებით",
@@ -4227,6 +4255,7 @@
       "productHighlights": "Produkt-Highlights"
     },
     "alt": {
+      "appStoreBadge": "Laden im App Store",
       "buddyComposer": "Neuer Buddy-Beitragseditor mit Kategorien und Preisoptionen",
       "buddyFeed": "Buddy-Anfrage-Feed für Begleitung bei der Anmeldung",
       "heroOdyssey": "Odyssey-Bildschirm von Postervia mit geführten Stadtschritten",
@@ -4358,6 +4387,7 @@
       "productHighlights": "Κύρια σημεία του προϊόντος"
     },
     "alt": {
+      "appStoreBadge": "Λήψη από το App Store",
       "buddyComposer": "Νέος συντάκτης δημοσίευσης Buddy με κατηγορίες και επιλογές τιμής",
       "buddyFeed": "Ροή αιτημάτων Buddy για παρέα στο Anmeldung",
       "heroOdyssey": "Οθόνη Postervia Odyssey με καθοδηγούμενες εργασίες πόλης",
@@ -4489,6 +4519,7 @@
       "productHighlights": "ઉત્પાદન હાઇલાઇટ્સ"
     },
     "alt": {
+      "appStoreBadge": "App Store પરથી ડાઉનલોડ કરો",
       "buddyComposer": "શ્રેણીઓ અને કિંમત વિકલ્પો સાથે નવો Buddy પોસ્ટ કમ્પોઝર",
       "buddyFeed": "Anmeldung માટે સાથસહકાર દર્શાવતો Buddy વિનંતી ફીડ",
       "heroOdyssey": "માર્ગદર્શિત શહેર કાર્યો સાથે Postervia Odyssey સ્ક્રીન",
@@ -4620,6 +4651,7 @@
       "productHighlights": "Pwen enpòtan sou pwodwi yo"
     },
     "alt": {
+      "appStoreBadge": "Telechaje sou App Store",
       "buddyComposer": "Nouvo konpozitè pòs Buddy ak kategori ak opsyon pri",
       "buddyFeed": "Fil demann Buddy pou konpayon pou Anmeldung",
       "heroOdyssey": "Ekran Postervia Odyssey ak travay vil gide yo",
@@ -4751,6 +4783,7 @@
       "productHighlights": "Muhimman abubuwan samfur"
     },
     "alt": {
+      "appStoreBadge": "Sauke daga App Store",
       "buddyComposer": "Sabon mai rubuta sakon Buddy tare da rukuni da zaɓukan farashi",
       "buddyFeed": "Nuni na buƙatun Buddy don neman abokin rakiyar Anmeldung",
       "heroOdyssey": "Allon Postervia Odyssey mai nuna ayyukan birni da aka shirya maka",
@@ -4882,6 +4915,7 @@
       "productHighlights": "Nā hiʻohiʻona nui o ka huahana"
     },
     "alt": {
+      "appStoreBadge": "Hoʻoiho ma ka App Store",
       "buddyComposer": "Mea kākau pou Buddy hou me nā māhele a me nā koho kumukūʻai",
       "buddyFeed": "Hānai noi Buddy no ka hoa hele no Anmeldung",
       "heroOdyssey": "ʻAoʻao Postervia Odyssey me nā hana kūlanakauhale alakaʻi ʻia",
@@ -5013,6 +5047,7 @@
       "productHighlights": "הדגשי המוצר"
     },
     "alt": {
+      "appStoreBadge": "הורדה ב‑App Store",
       "buddyComposer": "מסך יצירת פוסט חדש ב‑Buddy עם קטגוריות ואפשרויות מחיר",
       "buddyFeed": "פיד בקשות Buddy לליווי ב‑Anmeldung",
       "heroOdyssey": "מסך Odyssey של Postervia עם משימות עירוניות מודרכות",
@@ -5144,6 +5179,7 @@
       "productHighlights": "उत्पाद की मुख्य झलकियाँ"
     },
     "alt": {
+      "appStoreBadge": "App Store से डाउनलोड करें",
       "buddyComposer": "श्रेणियों और मूल्य विकल्पों के साथ नया Buddy पोस्ट कंपोज़र",
       "buddyFeed": "Anmeldung साथियों के लिए Buddy अनुरोध फ़ीड",
       "heroOdyssey": "निर्देशित शहर कार्यों के साथ Postervia Odyssey स्क्रीन",
@@ -5275,6 +5311,7 @@
       "productHighlights": "Cov ntsiab lus tseem ceeb ntawm cov khoom"
     },
     "alt": {
+      "appStoreBadge": "Rub tawm ntawm App Store",
       "buddyComposer": "Tus tsim ntawv tshaj tawm Buddy tshiab nrog pawg thiab kev xaiv nqi",
       "buddyFeed": "Daim ntawv pub Buddy thov kev nrog rau kev pab rau Anmeldung",
       "heroOdyssey": "Postervia Odyssey npo nrog cov haujlwm hauv nroog uas coj raws kauj ruam",
@@ -5406,6 +5443,7 @@
       "productHighlights": "Kiemelt termékfunkciók"
     },
     "alt": {
+      "appStoreBadge": "Letöltés az App Store-ból",
       "buddyComposer": "Új Buddy bejegyzésszerkesztő kategóriákkal és árlehetőségekkel",
       "buddyFeed": "Buddy-kérések hírfolyama Anmeldunghoz kapcsolódó társas segítséghez",
       "heroOdyssey": "Postervia Odyssey képernyő vezetett városi feladatokkal",
@@ -5537,6 +5575,7 @@
       "productHighlights": "Helstu atriði vörunnar"
     },
     "alt": {
+      "appStoreBadge": "Sækja í App Store",
       "buddyComposer": "Nýr Buddy-færsluritill með flokkum og verðvalkostum",
       "buddyFeed": "Buddy-beiðnifæða fyrir félagsskap við Anmeldung",
       "heroOdyssey": "Skjár Postervia Odyssey með leiðsögn um borgarverkefni",
@@ -5668,6 +5707,7 @@
       "productHighlights": "Ihe ndị pụtara ìhè n’ahịa"
     },
     "alt": {
+      "appStoreBadge": "Budata na App Store",
       "buddyComposer": "Onye na-ede post Buddy ọhụrụ nwere ụdị na nhọrọ ọnụahịa",
       "buddyFeed": "Ndepụta arịrịọ Buddy maka ịga ọnụ na Anmeldung",
       "heroOdyssey": "Ihuenyo Postervia Odyssey nwere ọrụ obodo a na-eduzi",
@@ -5799,6 +5839,7 @@
       "productHighlights": "Sorotan produk"
     },
     "alt": {
+      "appStoreBadge": "Unduh di App Store",
       "buddyComposer": "Pembuat posting Buddy baru dengan kategori dan opsi harga",
       "buddyFeed": "Umpan permintaan Buddy untuk menemani urusan Anmeldung",
       "heroOdyssey": "Layar Postervia Odyssey dengan tugas kota terpandu",
@@ -5930,6 +5971,7 @@
       "productHighlights": "Buaicphointí an táirge"
     },
     "alt": {
+      "appStoreBadge": "Íoslódáil ar an App Store",
       "buddyComposer": "Cumadóir nua postála Buddy le catagóirí agus roghanna praghais",
       "buddyFeed": "Fotha iarrataí Buddy le haghaidh comhluadar le haghaidh Anmeldung",
       "heroOdyssey": "Scáileán Odyssey Postervia le tascanna treoraithe cathrach",
@@ -6061,6 +6103,7 @@
       "productHighlights": "In evidenza del prodotto"
     },
     "alt": {
+      "appStoreBadge": "Scarica su App Store",
       "buddyComposer": "Nuovo compositore di post Buddy con categorie e opzioni di prezzo",
       "buddyFeed": "Feed delle richieste Buddy per compagnia per l’Anmeldung",
       "heroOdyssey": "Schermata Odyssey di Postervia con attività guidate in città",
@@ -6192,6 +6235,7 @@
       "productHighlights": "注目の機能"
     },
     "alt": {
+      "appStoreBadge": "App Storeでダウンロード",
       "buddyComposer": "カテゴリと料金オプション付きの新しい Buddy 投稿作成画面",
       "buddyFeed": "Anmeldung の付き添いを募集する Buddy リクエスト一覧",
       "heroOdyssey": "ガイド付きの街タスクを表示する Postervia Odyssey 画面",
@@ -6323,6 +6367,7 @@
       "productHighlights": "Sorotan produk"
     },
     "alt": {
+      "appStoreBadge": "Undhuh ing App Store",
       "buddyComposer": "Panyiptaan posting Buddy anyar kanthi kategori lan pilihan rega",
       "buddyFeed": "Umpan panjaluk Buddy kanggo kancan ing Anmeldung",
       "heroOdyssey": "Layar Odyssey Postervia kanthi tugas kutha sing dipandu",
@@ -6454,6 +6499,7 @@
       "productHighlights": "ಉತ್ಪನ್ನದ ಮುಖ್ಯಾಂಶಗಳು"
     },
     "alt": {
+      "appStoreBadge": "App Store ನಿಂದ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
       "buddyComposer": "ವರ್ಗಗಳು ಮತ್ತು ಬೆಲೆ ಆಯ್ಕೆಗಳೊಂದಿಗೆ ಹೊಸ Buddy ಪೋಸ್ಟ್ ರಚನೆ",
       "buddyFeed": "Anmeldung ಗೆ ಜೊತೆಯಾಳು ಬೇಕೆಂಬ Buddy ವಿನಂತಿಗಳ ಫೀಡ್",
       "heroOdyssey": "ಮಾರ್ಗದರ್ಶಿತ ನಗರ ಕಾರ್ಯಗಳೊಂದಿಗೆ Postervia Odyssey ಪರದೆ",
@@ -6585,6 +6631,7 @@
       "productHighlights": "Өнімнің негізгі мүмкіндіктері"
     },
     "alt": {
+      "appStoreBadge": "App Store-дан жүктеп алыңыз",
       "buddyComposer": "Санаттар мен баға нұсқалары бар Buddy үшін жаңа жазба құрастырушы",
       "buddyFeed": "Anmeldung үшін серіктестік іздеуге арналған Buddy сұраныстар лентасы",
       "heroOdyssey": "Бағытталған қала тапсырмалары бар Postervia Odyssey экраны",
@@ -6716,6 +6763,7 @@
       "productHighlights": "ចំណុចលេចធ្លោរបស់ផលិតផល"
     },
     "alt": {
+      "appStoreBadge": "ទាញយកនៅលើ App Store",
       "buddyComposer": "កម្មវិធីបង្កើតប្រកាស Buddy ថ្មី ជាមួយប្រភេទ និងជម្រើសតម្លៃ",
       "buddyFeed": "ផ្ទាំងព័ត៌មានសំណើ Buddy សម្រាប់ការជួយជាមួយ Anmeldung",
       "heroOdyssey": "អេក្រង់ Postervia Odyssey ជាមួយភារកិច្ចណែនាំក្នុងទីក្រុង",
@@ -6847,6 +6895,7 @@
       "productHighlights": "Iby’ingenzi by’umusaruro"
     },
     "alt": {
+      "appStoreBadge": "Kuramo kuri App Store",
       "buddyComposer": "Umwanditsi mushya w’inyandiko ya Buddy ufite ibyiciro n’amahitamo y’igiciro",
       "buddyFeed": "Urutonde rw’ibisabwa bya Buddy ku bufatanye mu bijyanye na Anmeldung",
       "heroOdyssey": "Mugaragaza ya Postervia Odyssey ifite imirimo yo mu mujyi iyobowe",
@@ -6978,6 +7027,7 @@
       "productHighlights": "제품 하이라이트"
     },
     "alt": {
+      "appStoreBadge": "App Store에서 다운로드",
       "buddyComposer": "카테고리와 가격 옵션이 있는 새로운 Buddy 게시물 작성기",
       "buddyFeed": "Anmeldung 동행 요청 피드",
       "heroOdyssey": "가이드형 도시 과제가 있는 Postervia Odyssey 화면",
@@ -7109,6 +7159,7 @@
       "productHighlights": "تایبەتمەندییە سەرەکییەکان"
     },
     "alt": {
+      "appStoreBadge": "لە App Store دایبگرە",
       "buddyComposer": "دروستکەری نوێی پۆستی Buddy لەگەڵ پۆلەکان و هەڵبژاردەکانی نرخ",
       "buddyFeed": "خۆڵەکەی داواکاریی Buddy بۆ هاوڕێیی لە Anmeldung",
       "heroOdyssey": "شاشەی Postervia Odyssey لەگەڵ ئەرکە شارەوانییە ڕێنماییکراوەکان",
@@ -7240,6 +7291,7 @@
       "productHighlights": "Өнүмдүн негизги өзгөчөлүктөрү"
     },
     "alt": {
+      "appStoreBadge": "App Store'дон жүктөп алыңыз",
       "buddyComposer": "Категориялар жана баа варианттары бар Buddy үчүн жаңы пост түзгүч",
       "buddyFeed": "Anmeldung үчүн шериктештикке арналган Buddy сурамдарынын лентасы",
       "heroOdyssey": "Жетектелген шаардык тапшырмалар менен Postervia Odyssey экраны",
@@ -7371,6 +7423,7 @@
       "productHighlights": "ຈຸດເດັ່ນຂອງຜະລິດຕະພັນ"
     },
     "alt": {
+      "appStoreBadge": "ດາວໂຫຼດໃນ App Store",
       "buddyComposer": "ຕົວສ້າງໂພສ Buddy ໃໝ່ ພ້ອມໝວດໝູ່ ແລະຕົວເລືອກລາຄາ",
       "buddyFeed": "ຟີດຄຳຂໍ Buddy ສຳລັບການມີເພື່ອນໄປດ້ວຍກັນທີ່ Anmeldung",
       "heroOdyssey": "ໜ້າຈໍ Postervia Odyssey ພ້ອມວຽກເມືອງແນະນຳທີ່ມີຂັ້ນຕອນຊັດເຈນ",
@@ -7502,6 +7555,7 @@
       "productHighlights": "Produkta svarīgākie elementi"
     },
     "alt": {
+      "appStoreBadge": "Lejupielādēt no App Store",
       "buddyComposer": "Jauns Buddy ieraksta veidotājs ar kategorijām un cenu iespējām",
       "buddyFeed": "Buddy pieprasījumu plūsma pavadonim uz Anmeldung",
       "heroOdyssey": "Postervia Odyssey ekrāns ar vadītiem pilsētas uzdevumiem",
@@ -7633,6 +7687,7 @@
       "productHighlights": "Produkto akcentai"
     },
     "alt": {
+      "appStoreBadge": "Atsisiųsti iš App Store",
       "buddyComposer": "Naujas Buddy įrašų kūrimo langas su kategorijomis ir kainos pasirinkimais",
       "buddyFeed": "Buddy užklausų srautas dėl pagalbos su Anmeldung",
       "heroOdyssey": "Postervia Odyssey ekranas su vedamomis miesto užduotimis",
@@ -7764,6 +7819,7 @@
       "productHighlights": "Produkt-Highlights"
     },
     "alt": {
+      "appStoreBadge": "Eroflueden am App Store",
       "buddyComposer": "Neie Buddy-Post-Editor mat Kategorien a Präisoptiounen",
       "buddyFeed": "Buddy-Ufro-Feed fir Begleedung bei der Anmeldung",
       "heroOdyssey": "Postervia-Odyssey-Bildschierm mat guidéierte Stad-Aufgaben",
@@ -7895,6 +7951,7 @@
       "productHighlights": "истакнати производи"
     },
     "alt": {
+      "appStoreBadge": "Преземете од App Store",
       "buddyComposer": "Нов составувач на објава за Buddy со категории и опции за цена",
       "buddyFeed": "фид со барања за Buddy за придружба при Anmeldung",
       "heroOdyssey": "екран на Postervia Odyssey со водени задачи низ градот",
@@ -8026,6 +8083,7 @@
       "productHighlights": "Zava-nisongadina amin’ny vokatra"
     },
     "alt": {
+      "appStoreBadge": "Alaivo ao amin'ny App Store",
       "buddyComposer": "Mpamorona lahatsoratra Buddy vaovao misy sokajy sy safidy vidiny",
       "buddyFeed": "Fahana fangatahana Buddy ho an’ny fiarahana amin’ny Anmeldung",
       "heroOdyssey": "Efijerin’ny Postervia Odyssey misy asa an-tanàna tarihina",
@@ -8157,6 +8215,7 @@
       "productHighlights": "Sorotan produk"
     },
     "alt": {
+      "appStoreBadge": "Muat turun di App Store",
       "buddyComposer": "Penggubah siaran Buddy baharu dengan kategori dan pilihan harga",
       "buddyFeed": "Suapan permintaan Buddy untuk teman Anmeldung",
       "heroOdyssey": "Skrin Odyssey Postervia dengan tugasan bandar berpandu",
@@ -8288,6 +8347,7 @@
       "productHighlights": "ഉൽപ്പന്ന ഹൈലൈറ്റുകൾ"
     },
     "alt": {
+      "appStoreBadge": "App Store-ൽ നിന്ന് ഡൗൺലോഡ് ചെയ്യുക",
       "buddyComposer": "വിഭാഗങ്ങളും വില ഓപ്ഷനുകളും ഉള്ള പുതിയ Buddy പോസ്റ്റ് കോംപോസർ",
       "buddyFeed": "Anmeldung കൂട്ടായ്മയ്ക്കുള്ള Buddy അഭ്യർത്ഥന ഫീഡ്",
       "heroOdyssey": "ഗൈഡഡ് നഗര ടാസ്കുകളുള്ള Postervia Odyssey സ്ക്രീൻ",
@@ -8419,6 +8479,7 @@
       "productHighlights": "Karatteristiċi ta’ Postervia"
     },
     "alt": {
+      "appStoreBadge": "Niżżel mill-App Store",
       "buddyComposer": "Skrin tal-kompożitur tal-post Buddy ġdid b’kategoriji u għażliet ta’ prezz",
       "buddyFeed": "Feed tat-talbiet Buddy għall-kumpanija għall-Anmeldung",
       "heroOdyssey": "Skrin ta’ Postervia Odyssey b’kompiti gwidati tal-belt",
@@ -8550,6 +8611,7 @@
       "productHighlights": "Ngā tino āhuatanga o te hua"
     },
     "alt": {
+      "appStoreBadge": "Tikiake i te App Store",
       "buddyComposer": "Kaihanga pou Buddy hou me ngā kāwai me ngā kōwhiringa utu",
       "buddyFeed": "Rārangi tono Buddy mō te hoa haere mō Anmeldung",
       "heroOdyssey": "Mata Postervia Odyssey me ngā mahi ārahi o te tāone",
@@ -8681,6 +8743,7 @@
       "productHighlights": "उत्पादनातील ठळक वैशिष्ट्ये"
     },
     "alt": {
+      "appStoreBadge": "App Store वरून डाउनलोड करा",
       "buddyComposer": "श्रेणी आणि किंमत पर्यायांसह Buddy साठी नवीन पोस्ट तयार करणारा",
       "buddyFeed": "Anmeldung सोबत साथीसाठी Buddy विनंत्यांचा फीड",
       "heroOdyssey": "मार्गदर्शित शहरातील कामांसह Postervia Odyssey स्क्रीन",
@@ -8812,6 +8875,7 @@
       "productHighlights": "Бүтээгдэхүүний онцлогууд"
     },
     "alt": {
+      "appStoreBadge": "App Store-оос татаж авах",
       "buddyComposer": "Ангилал болон үнэний сонголттой Buddy-ийн шинэ нийтлэл үүсгэгч",
       "buddyFeed": "Anmeldung-д хамт явах Buddy хүсэлтийн хангамж",
       "heroOdyssey": "Удирдамжтай хотын даалгавартай Postervia Odyssey дэлгэц",
@@ -8943,6 +9007,7 @@
       "productHighlights": "ထုတ်ကုန် အထူးအချက်များ"
     },
     "alt": {
+      "appStoreBadge": "App Store တွင် ဒေါင်းလုဒ်လုပ်ပါ",
       "buddyComposer": "အမျိုးအစားများနှင့် ဈေးနှုန်းရွေးချယ်မှုများပါသော Buddy ပို့စ်အသစ် ရေးသားရန် အယ်ဒီတာ",
       "buddyFeed": "Anmeldung အတွက် အဖော်လိုအပ်ချက်များကို ပြသထားသော Buddy တောင်းဆိုမှု ဖိဒ်",
       "heroOdyssey": "လမ်းညွှန်ထားသော မြို့တွင်း လုပ်ဆောင်ချက်များပါသည့် Postervia Odyssey မျက်နှာပြင်",
@@ -9074,6 +9139,7 @@
       "productHighlights": "उत्पादनका मुख्य झलकहरू"
     },
     "alt": {
+      "appStoreBadge": "App Store बाट डाउनलोड गर्नुहोस्",
       "buddyComposer": "श्रेणी र मूल्य विकल्पसहितको नयाँ Buddy पोस्ट कम्पोजर",
       "buddyFeed": "Anmeldung का लागि साथसाथै जाने Buddy अनुरोध फिड",
       "heroOdyssey": "निर्देशित सहरका कार्यहरू भएको Postervia Odyssey स्क्रिन",
@@ -9205,6 +9271,7 @@
       "productHighlights": "Produktutvalgte høydepunkter"
     },
     "alt": {
+      "appStoreBadge": "Last ned fra App Store",
       "buddyComposer": "Ny Buddy-innleggskomponist med kategorier og prisalternativer",
       "buddyFeed": "Buddy-forespørselsfeed for følge til Anmeldung",
       "heroOdyssey": "Postervia Odyssey-skjerm med veiledede byoppgaver",
@@ -9336,6 +9403,7 @@
       "productHighlights": "Zowunikira za zinthu"
     },
     "alt": {
+      "appStoreBadge": "Tsitsani pa App Store",
       "buddyComposer": "Wolemba positi watsopano wa Buddy wokhala ndi magulu ndi zosankha za mtengo",
       "buddyFeed": "Mndandanda wa zopempha za Buddy za anzawo pa Anmeldung",
       "heroOdyssey": "Chithunzi cha Postervia Odyssey chokhala ndi ntchito zotsogozedwa za mumzinda",
@@ -9467,6 +9535,7 @@
       "productHighlights": "ପ୍ରଡକ୍ଟ ହାଇଲାଇଟ୍ସ"
     },
     "alt": {
+      "appStoreBadge": "App Store ରୁ ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
       "buddyComposer": "ଶ୍ରେଣୀ ଏବଂ ମୂଲ୍ୟ ବିକଳ୍ପ ସହିତ ନୂଆ Buddy ପୋଷ୍ଟ କମ୍ପୋଜର",
       "buddyFeed": "Anmeldung ସହଯାତ୍ରା ପାଇଁ Buddy ଅନୁରୋଧ ଫିଡ୍",
       "heroOdyssey": "ନିର୍ଦ୍ଦେଶିତ ସହର କାର୍ଯ୍ୟଗୁଡ଼ିକ ସହିତ Postervia Odyssey ସ୍କ୍ରିନ୍",
@@ -9598,6 +9667,7 @@
       "productHighlights": "د محصول مهم ټکي"
     },
     "alt": {
+      "appStoreBadge": "له App Store څخه ډاونلوډ کړئ",
       "buddyComposer": "د Buddy د نوې پوسټ لیکنې برخه، له کټګوریو او د بیې له انتخابونو سره",
       "buddyFeed": "د Buddy د غوښتنو فیډ د Anmeldung لپاره د ملګرتیا په موخه",
       "heroOdyssey": "د Postervia د Odyssey سکرین د ښار د لارښوول شوو دندو سره",
@@ -9729,6 +9799,7 @@
       "productHighlights": "برجسته‌های محصول"
     },
     "alt": {
+      "appStoreBadge": "دانلود از App Store",
       "buddyComposer": "ایجاد پست جدید Buddy با دسته‌بندی‌ها و گزینه‌های قیمت",
       "buddyFeed": "فید درخواست‌های Buddy برای همراهی در Anmeldung",
       "heroOdyssey": "صفحهٔ Odyssey در Postervia با وظایف هدایت‌شدهٔ شهری",
@@ -9860,6 +9931,7 @@
       "productHighlights": "Najważniejsze funkcje produktu"
     },
     "alt": {
+      "appStoreBadge": "Pobierz z App Store",
       "buddyComposer": "Nowy edytor posta Buddy z kategoriami i opcjami ceny",
       "buddyFeed": "Kanał próśb Buddy o towarzystwo przy Anmeldung",
       "heroOdyssey": "Ekran Postervia Odyssey z prowadzonymi zadaniami miejskimi",
@@ -9991,6 +10063,7 @@
       "productHighlights": "destaques do produto"
     },
     "alt": {
+      "appStoreBadge": "Descarregar na App Store",
       "buddyComposer": "Novo compositor de publicações do Buddy com categorias e opções de preço",
       "buddyFeed": "feed de pedidos do Buddy para companhia na Anmeldung",
       "heroOdyssey": "tela do Postervia Odyssey com tarefas guiadas pela cidade",
@@ -10122,6 +10195,7 @@
       "productHighlights": "ਉਤਪਾਦ ਦੀਆਂ ਮੁੱਖ ਖਾਸੀਅਤਾਂ"
     },
     "alt": {
+      "appStoreBadge": "App Store ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ",
       "buddyComposer": "ਸ਼੍ਰੇਣੀਆਂ ਅਤੇ ਕੀਮਤ ਦੇ ਵਿਕਲਪਾਂ ਨਾਲ ਨਵਾਂ Buddy ਪੋਸਟ ਕਮਪੋਜ਼ਰ",
       "buddyFeed": "Anmeldung ਲਈ ਸਾਥ-ਸਹਾਇਤਾ ਵਾਲਾ Buddy ਬੇਨਤੀ ਫੀਡ",
       "heroOdyssey": "ਮਾਰਗਦਰਸ਼ਿਤ ਸ਼ਹਿਰੀ ਕੰਮਾਂ ਵਾਲੀ Postervia Odyssey ਸਕ੍ਰੀਨ",
@@ -10253,6 +10327,7 @@
       "productHighlights": "Reperele produsului"
     },
     "alt": {
+      "appStoreBadge": "Descarcă din App Store",
       "buddyComposer": "Creator de postări Buddy nou, cu categorii și opțiuni de preț",
       "buddyFeed": "Fluxul de cereri Buddy pentru companie la Anmeldung",
       "heroOdyssey": "Ecranul Postervia Odyssey cu sarcini ghidate prin oraș",
@@ -10384,6 +10459,7 @@
       "productHighlights": "Основные возможности продукта"
     },
     "alt": {
+      "appStoreBadge": "Загрузите в App Store",
       "buddyComposer": "Новый редактор публикаций Buddy с категориями и вариантами цены",
       "buddyFeed": "Лента запросов Buddy для поиска компании на Anmeldung",
       "heroOdyssey": "Экран Odyssey в Postervia с пошаговыми заданиями по городу",
@@ -10515,6 +10591,7 @@
       "productHighlights": "Mata'ina o oloa"
     },
     "alt": {
+      "appStoreBadge": "Sii mai i le App Store",
       "buddyComposer": "Fausiaina fou o le Buddy mo le tusia o pou ma vaega ma filifiliga o tau",
       "buddyFeed": "Fafaga o talosaga a le Buddy mo le fa'atasi i le Anmeldung",
       "heroOdyssey": "Va'aiga o le Postervia Odyssey ma galuega ta'ita'iina i le taulaga",
@@ -10646,6 +10723,7 @@
       "productHighlights": "Prìomh thachartasan an toraidh"
     },
     "alt": {
+      "appStoreBadge": "Luchdaich a-nuas air an App Store",
       "buddyComposer": "Deasaiche puist ùr Buddy le roinnean agus roghainnean prìse",
       "buddyFeed": "Sruth iarrtasan Buddy airson companas airson Anmeldung",
       "heroOdyssey": "Sgrìn Odyssey Postervia le gnìomhan baile treòraichte",
@@ -10777,6 +10855,7 @@
       "productHighlights": "Istaknute funkcije proizvoda"
     },
     "alt": {
+      "appStoreBadge": "Preuzmite u App Store-u",
       "buddyComposer": "Novi Buddy uređivač objava sa kategorijama i opcijama cene",
       "buddyFeed": "Buddy feed zahteva za društvo pri Anmeldung-u",
       "heroOdyssey": "Ekran Postervia Odyssey sa vođenim gradskim zadacima",
@@ -10908,6 +10987,7 @@
       "productHighlights": "Lintlha-khōlō tsa sehlahisoa"
     },
     "alt": {
+      "appStoreBadge": "Khoasolla ho App Store",
       "buddyComposer": "Moqapi oa poso e ncha ea Buddy o nang le mekhahlelo le likhetho tsa theko",
       "buddyFeed": "Phallo ea likopo tsa Buddy bakeng sa ho tsamaea le motho bakeng sa Anmeldung",
       "heroOdyssey": "Skrine sa Postervia Odyssey se nang le mesebetsi e tataisoang ea toropo",
@@ -11039,6 +11119,7 @@
       "productHighlights": "Zvinonyanya kuratidzwa zvechigadzirwa"
     },
     "alt": {
+      "appStoreBadge": "Dhaunirodha pa App Store",
       "buddyComposer": "Mugadziri mutsva wepositi yeBuddy une zvikamu nesarudzo dzemitengo",
       "buddyFeed": "Kuyerera kwezvikumbiro zveBuddy zvekutsvaga shamwari paAnmeldung",
       "heroOdyssey": "Sikirini yePostervia Odyssey ine mabasa eguta anotungamirirwa",
@@ -11170,6 +11251,7 @@
       "productHighlights": "پراڊڪٽ جون نمايان خاصيتون"
     },
     "alt": {
+      "appStoreBadge": "App Store تان ڊائون لوڊ ڪريو",
       "buddyComposer": "نئين Buddy پوسٽ ڪمپوزر، جنهن ۾ ڪيٽيگريون ۽ قيمت جا آپشن آهن",
       "buddyFeed": "Anmeldung لاءِ ساٿ جي Buddy درخواست فيڊ",
       "heroOdyssey": "Postervia Odyssey اسڪرين، رهنمائي ڪيل شهرِي ڪمن سان",
@@ -11301,6 +11383,7 @@
       "productHighlights": "නිෂ්පාදන විශේෂාංග"
     },
     "alt": {
+      "appStoreBadge": "App Store වෙතින් බාගන්න",
       "buddyComposer": "ප්‍රවර්ග සහ මිල විකල්ප සහිත නව Buddy පෝස්ට් සම්පාදකය",
       "buddyFeed": "Anmeldung සඳහා සහය සෙවීමේ Buddy ඉල්ලීම් පෝෂණය",
       "heroOdyssey": "මාර්ගෝපදේශිත නගර කාර්යයන් සහිත Postervia Odyssey තිරය",
@@ -11432,6 +11515,7 @@
       "productHighlights": "Hlavné prvky produktu"
     },
     "alt": {
+      "appStoreBadge": "Stiahnuť v App Store",
       "buddyComposer": "Nový tvorca príspevkov Buddy s kategóriami a možnosťami ceny",
       "buddyFeed": "Kanál žiadostí Buddy o spoločnosť pri Anmeldung",
       "heroOdyssey": "Obrazovka Postervia Odyssey s vedenými úlohami v meste",
@@ -11563,6 +11647,7 @@
       "productHighlights": "Poudarki izdelka"
     },
     "alt": {
+      "appStoreBadge": "Prenesite iz trgovine App Store",
       "buddyComposer": "Nov urejevalnik objav Buddy z kategorijami in možnostmi cene",
       "buddyFeed": "Vir prošenj Buddy za družbo pri Anmeldung",
       "heroOdyssey": "Zaslon Postervia Odyssey z vodenimi opravili po mestu",
@@ -11694,6 +11779,7 @@
       "productHighlights": "Waxyaabaha ugu muhiimsan ee badeecadda"
     },
     "alt": {
+      "appStoreBadge": "Ka soo dejiso App Store",
       "buddyComposer": "Abuuraha cusub ee qoraallada Buddy oo leh qaybo iyo xulashooyin qiime",
       "buddyFeed": "Quudinta codsiyada Buddy ee wehelka Anmeldung",
       "heroOdyssey": "Shaashadda Postervia Odyssey oo leh hawlo magaalada lagu hago",
@@ -11825,6 +11911,7 @@
       "productHighlights": "Destacados del producto"
     },
     "alt": {
+      "appStoreBadge": "Descárgalo en el App Store",
       "buddyComposer": "Nuevo compositor de publicaciones de Buddy con categorías y opciones de precio",
       "buddyFeed": "Feed de solicitudes de Buddy para compañía con Anmeldung",
       "heroOdyssey": "Pantalla de Postervia Odyssey con tareas guiadas por la ciudad",
@@ -11956,6 +12043,7 @@
       "productHighlights": "Sorotan produk"
     },
     "alt": {
+      "appStoreBadge": "Undeur dina App Store",
       "buddyComposer": "Panyusun pos Buddy anyar kalayan kategori jeung pilihan harga",
       "buddyFeed": "Feed pamundut Buddy pikeun babaturan dina Anmeldung",
       "heroOdyssey": "Layar Postervia Odyssey kalayan tugas kota nu dipandu",
@@ -12087,6 +12175,7 @@
       "productHighlights": "Vivutio vya bidhaa"
     },
     "alt": {
+      "appStoreBadge": "Pakua kwenye App Store",
       "buddyComposer": "Kihariri kipya cha chapisho la Buddy chenye kategoria na chaguo za bei",
       "buddyFeed": "Mtiririko wa maombi ya Buddy kwa ushirika wa Anmeldung",
       "heroOdyssey": "Skrini ya Postervia Odyssey yenye kazi za jiji zinazoongozwa",
@@ -12218,6 +12307,7 @@
       "productHighlights": "Produktens höjdpunkter"
     },
     "alt": {
+      "appStoreBadge": "Hämta i App Store",
       "buddyComposer": "Ny Buddy-inläggskompositör med kategorier och prisalternativ",
       "buddyFeed": "Buddy-förfrågningsflöde för sällskap vid Anmeldung",
       "heroOdyssey": "Skärm för Postervia Odyssey med vägledda stadsuppgifter",
@@ -12349,6 +12439,7 @@
       "productHighlights": "Mga tampok ng produkto"
     },
     "alt": {
+      "appStoreBadge": "I-download sa App Store",
       "buddyComposer": "Bagong composer ng post sa Buddy na may mga kategorya at mga opsyon sa presyo",
       "buddyFeed": "Feed ng mga kahilingan sa Buddy para sa kasama sa Anmeldung",
       "heroOdyssey": "Screen ng Postervia Odyssey na may mga gabay na gawain sa lungsod",
@@ -12480,6 +12571,7 @@
       "productHighlights": "Нуктаҳои муҳими маҳсулот"
     },
     "alt": {
+      "appStoreBadge": "Аз App Store боргирӣ кунед",
       "buddyComposer": "Эҷодкунандаи нави паёми Buddy бо категорияҳо ва имконоти нарх",
       "buddyFeed": "Лентаи дархостҳои Buddy барои ҳамроҳӣ дар Anmeldung",
       "heroOdyssey": "Экрани Odyssey-и Postervia бо вазифаҳои роҳнамоишудаи шаҳрӣ",
@@ -12611,6 +12703,7 @@
       "productHighlights": "தயாரிப்பு சிறப்பம்சங்கள்"
     },
     "alt": {
+      "appStoreBadge": "App Store இல் பதிவிறக்கவும்",
       "buddyComposer": "வகைகள் மற்றும் விலை விருப்பங்களுடன் புதிய Buddy பதிவு உருவாக்கி",
       "buddyFeed": "Anmeldung துணைநட்புக்கான Buddy கோரிக்கை ஊட்டம்",
       "heroOdyssey": "வழிகாட்டப்பட்ட நகரப் பணிகளுடன் Postervia Odyssey திரை",
@@ -12742,6 +12835,7 @@
       "productHighlights": "Продуктның төп үзенчәлекләре"
     },
     "alt": {
+      "appStoreBadge": "App Store-дан йөкләп алыгыз",
       "buddyComposer": "Категорияләр һәм бәя вариантлары белән Buddy өчен яңа пост төзүче",
       "buddyFeed": "Anmeldung өчен юлдашлык сораулары тасмасы",
       "heroOdyssey": "Юнәлтелгән шәһәр бурычлары белән Postervia Odyssey экраны",
@@ -12873,6 +12967,7 @@
       "productHighlights": "ఉత్పత్తి ముఖ్యాంశాలు"
     },
     "alt": {
+      "appStoreBadge": "App Store నుండి డౌన్‌లోడ్ చేయండి",
       "buddyComposer": "వర్గాలు మరియు ధర ఎంపికలతో కొత్త Buddy పోస్ట్ కంపోజర్",
       "buddyFeed": "Anmeldung కోసం తోడుగా ఉండే Buddy అభ్యర్థన ఫీడ్",
       "heroOdyssey": "గైడ్ చేసిన నగర పనులతో Postervia Odyssey స్క్రీన్",
@@ -13004,6 +13099,7 @@
       "productHighlights": "ไฮไลต์ผลิตภัณฑ์"
     },
     "alt": {
+      "appStoreBadge": "ดาวน์โหลดบน App Store",
       "buddyComposer": "ตัวเขียนโพสต์ Buddy ใหม่ พร้อมหมวดหมู่และตัวเลือกราคา",
       "buddyFeed": "ฟีดคำขอ Buddy สำหรับการเป็นเพื่อนร่วมทางเรื่อง Anmeldung",
       "heroOdyssey": "หน้าจอ Odyssey ของ Postervia พร้อมภารกิจนำทางในเมือง",
@@ -13135,6 +13231,7 @@
       "productHighlights": "Ürün öne çıkanları"
     },
     "alt": {
+      "appStoreBadge": "App Store'dan indirin",
       "buddyComposer": "Kategoriler ve fiyat seçenekleriyle yeni Buddy gönderi oluşturucu",
       "buddyFeed": "Anmeldung için eşlik etmeye yönelik Buddy istek akışı",
       "heroOdyssey": "Yol gösterici şehir görevleriyle Postervia Odyssey ekranı",
@@ -13266,6 +13363,7 @@
       "productHighlights": "Önüm aýratynlyklary"
     },
     "alt": {
+      "appStoreBadge": "App Store-dan ýükläp alyň",
       "buddyComposer": "Kategoriýalar we baha mümkinçilikleri bolan täze Buddy ýazgy dörediji",
       "buddyFeed": "Anmeldung üçin ýoldaşlyk baradaky Buddy islegleriniň akymy",
       "heroOdyssey": "Şäher boýunça ýolbaşçylyk edýän tabşyryklar bilen Postervia Odyssey ekrany",
@@ -13397,6 +13495,7 @@
       "productHighlights": "Основні можливості продукту"
     },
     "alt": {
+      "appStoreBadge": "Завантажте в App Store",
       "buddyComposer": "Новий редактор дописів Buddy з категоріями та варіантами ціни",
       "buddyFeed": "Стрічка запитів Buddy на компанію для Anmeldung",
       "heroOdyssey": "Екран Postervia Odyssey із покроковими завданнями по місту",
@@ -13528,6 +13627,7 @@
       "productHighlights": "پروڈکٹ کی جھلکیاں"
     },
     "alt": {
+      "appStoreBadge": "App Store سے ڈاؤن لوڈ کریں",
       "buddyComposer": "زمرہ جات اور قیمت کے اختیارات کے ساتھ نیا Buddy پوسٹ کمپوزر",
       "buddyFeed": "Anmeldung کے لیے ساتھ دینے کی Buddy درخواستوں کی فیڈ",
       "heroOdyssey": "Postervia Odyssey اسکرین، رہنمائی شدہ شہر کے کاموں کے ساتھ",
@@ -13659,6 +13759,7 @@
       "productHighlights": "مەھسۇلات نۇقتىلىرى"
     },
     "alt": {
+      "appStoreBadge": "App Store دىن چۈشۈرۈڭ",
       "buddyComposer": "كاتېگورىيە ۋە باھا تاللانمىلىرى بار يېڭى Buddy يازما قۇرغۇچىسى",
       "buddyFeed": "Anmeldung ئۈچۈن ھەمراھلىق تەلەپلىرىنىڭ Buddy ئاقمىسى",
       "heroOdyssey": "يولباشچىلىق قىلىنىدىغان شەھەر ۋەزىپىلىرى بار Postervia Odyssey ئېكرانى",
@@ -13790,6 +13891,7 @@
       "productHighlights": "Mahsulotning asosiy jihatlari"
     },
     "alt": {
+      "appStoreBadge": "App Store-dan yuklab oling",
       "buddyComposer": "Kategoriyalar va narx variantlari bilan yangi Buddy post yozish oynasi",
       "buddyFeed": "Anmeldung uchun hamroh topish so‘rovlari tasmasi",
       "heroOdyssey": "Yo‘naltirilgan shahar vazifalari bilan Postervia Odyssey ekrani",
@@ -13921,6 +14023,7 @@
       "productHighlights": "Điểm nổi bật của sản phẩm"
     },
     "alt": {
+      "appStoreBadge": "Tải về trên App Store",
       "buddyComposer": "Trình soạn bài đăng Buddy mới với danh mục và tùy chọn giá",
       "buddyFeed": "Bảng tin yêu cầu Buddy cho việc đồng hành khi làm Anmeldung",
       "heroOdyssey": "Màn hình Odyssey của Postervia với các nhiệm vụ thành phố có hướng dẫn",
@@ -14052,6 +14155,7 @@
       "productHighlights": "Uchafbwyntiau’r cynnyrch"
     },
     "alt": {
+      "appStoreBadge": "Lawrlwytho ar yr App Store",
       "buddyComposer": "Cyfansoddwr post newydd Buddy gyda chategorïau ac opsiynau pris",
       "buddyFeed": "Porthiant ceisiadau Buddy am gwmni ar gyfer Anmeldung",
       "heroOdyssey": "Sgrin Odyssey Postervia gyda thasgau dinas dan arweiniad",
@@ -14183,6 +14287,7 @@
       "productHighlights": "Iimbalasane zemveliso"
     },
     "alt": {
+      "appStoreBadge": "Khuphela ku-App Store",
       "buddyComposer": "Umqambi omtsha weposi yeBuddy oneendidi kunye neenketho zexabiso",
       "buddyFeed": "Umsinga wezicelo zeBuddy zokufuna inkampani yeAnmeldung",
       "heroOdyssey": "Isikrini sePostervia Odyssey esinemisebenzi yesixeko ekhokelwayo",
@@ -14314,6 +14419,7 @@
       "productHighlights": "פּראָדוקט־הויכפּונקטן"
     },
     "alt": {
+      "appStoreBadge": "אראָפּלאָדן אויף App Store",
       "buddyComposer": "נײַער Buddy־פּאָסט־קאָמפּאָזיטאָר מיט קאַטעגאָריעס און פּרײַז־אָפּציעס",
       "buddyFeed": "Buddy־בעטן־פֿיד פֿאַר באַגלייטונג בײַ Anmeldung",
       "heroOdyssey": "Postervia Odyssey־סקרין מיט געפֿירטע שטאָט־טאַסקס",
@@ -14445,6 +14551,7 @@
       "productHighlights": "Àwọn àfihàn ọja"
     },
     "alt": {
+      "appStoreBadge": "Ṣe igbasilẹ lori App Store",
       "buddyComposer": "Olùkọ̀wé ifiweranṣẹ Buddy tuntun pẹ̀lú àwọn ẹ̀ka àti àwọn aṣayan owó",
       "buddyFeed": "Àkójọ ìbéèrè Buddy fún ìbáṣepọ̀ nípa Anmeldung",
       "heroOdyssey": "Ojú iboju Postervia Odyssey pẹ̀lú àwọn iṣẹ́ ìlú tí a ń tọ́sọ́nà",
@@ -14576,6 +14683,7 @@
       "productHighlights": "Okuvelele komkhiqizo"
     },
     "alt": {
+      "appStoreBadge": "Landa ku-App Store",
       "buddyComposer": "Umqambi omusha wokuthumela ku-Buddy onezigaba nezinketho zentengo",
       "buddyFeed": "Ukuphakelwa kwezicelo ze-Buddy zokuhambisana ne-Anmeldung",
       "heroOdyssey": "Isikrini se-Postervia Odyssey esinemisebenzi yedolobha eqondisiwe",

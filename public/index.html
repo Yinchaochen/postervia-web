@@ -134,6 +134,29 @@
     box-shadow: inset 0 -4px 0 rgba(92, 63, 34, 0.08);
   }
 
+  .store-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .store-badge img {
+    height: 54px;
+    width: auto;
+  }
+
+  .store-badge:hover img {
+    opacity: 0.86;
+  }
+
+  .cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
   .language-menu {
     position: relative;
     flex: 0 0 auto;
@@ -944,6 +967,9 @@
       <h1 id="hero-title" data-i18n="hero.title"><span>Find your path.</span><span>Leave a light.</span></h1>
       <p class="lede" data-i18n="hero.lede">Postervia helps newcomers and locals turn the messy first weeks in a city into guided tasks, local stories, Buddy help, and real social connection.</p>
       <div class="hero-actions">
+        <a class="store-badge" href="https://apps.apple.com/de/app/postervia/id6768678629?l=en-GB">
+          <img src="/assets/app-store-badge.svg" alt="Download on the App Store" data-i18n-alt="alt.appStoreBadge" width="162" height="54">
+        </a>
         <a class="button secondary" href="#features" data-i18n="hero.secondaryCta">Explore features</a>
       </div>
       <div class="hero-pills" aria-label="Product highlights" data-i18n-aria-label="a11y.productHighlights">
@@ -1123,7 +1149,12 @@
     <div class="cta">
       <h2 data-i18n="cta.title">Built for people finding their footing.</h2>
       <p data-i18n="cta.body">Postervia starts in Berlin with guided tasks, local knowledge, and warm social help for newcomers, travelers, residents, and curious locals.</p>
-      <a class="button" href="mailto:support@postervia.app?subject=Postervia%20Beta" data-i18n="cta.button">Contact Postervia</a>
+      <div class="cta-actions">
+        <a class="store-badge" href="https://apps.apple.com/de/app/postervia/id6768678629?l=en-GB">
+          <img src="/assets/app-store-badge.svg" alt="Download on the App Store" data-i18n-alt="alt.appStoreBadge" width="162" height="54">
+        </a>
+        <a class="button" href="mailto:support@postervia.app?subject=Postervia%20Beta" data-i18n="cta.button">Contact Postervia</a>
+      </div>
     </div>
   </section>
 </main>
