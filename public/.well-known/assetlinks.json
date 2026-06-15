@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.novaku.mobile",
+      "sha256_cert_fingerprints": ["DE:20:9C:41:F9:EE:5E:9B:AF:D0:19:97:FD:E8:34:43:D2:5E:CF:BD:89:34:CD:6A:B8:AE:92:D7:09:E0:AD:CA"]
+    }
+  }
+]

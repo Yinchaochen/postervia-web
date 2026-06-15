@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["VSGAM6433B.app.novaku.mobile"],
+        "components": [
+          { "/": "/p/*", "comment": "Shared Postervia posts open in the app" }
+        ]
+      }
+    ]
+  }
+}
