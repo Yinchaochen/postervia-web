@@ -23,6 +23,7 @@ const PRETTY_TO_HTML = new Set([
   '/support-de',
   '/child-safety',
   '/child-safety-de',
+  '/ui-preview',
 ]);
 
 const APP_STORE_URL = 'https://apps.apple.com/de/app/postervia/id6768678629?l=en-GB';

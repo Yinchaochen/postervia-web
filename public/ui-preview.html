@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Postervia · UI Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<style>
+  /* Brand tokens — copied verbatim from novaku-app/theme/tokens.ts so the
+     mirror stays honest. Edit here to prototype a change, then port back. */
+  :root{
+    --bgCream:#FFF8F1; --bgWarm:#FBEDE1; --bgWarmDeep:#F8E4D2;
+    --brandCoral:#F67673; --brandPeach:#FFAA7A;
+    --textMain:#241A16; --textBrown:#3B2A22; --textMuted:#81746D; --textSubtle:#A89A92;
+    --lineWarm:#F2DCCB; --lineSofter:rgba(98,57,40,0.06);
+    --cardWhite:#FFFFFF; --danger:#F47C7C; --dangerSoft:rgba(244,124,124,0.16);
+    --disp:'Plus Jakarta Sans',-apple-system,system-ui,sans-serif;
+    --body:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;-webkit-font-smoothing:antialiased}
+  body{
+    margin:0;font-family:var(--body);color:var(--textMain);
+    background:#2A2622;
+    background-image:radial-gradient(1200px 600px at 50% -10%, #3a352f 0%, #232019 70%);
+    min-height:100vh;padding:36px 24px 64px;
+  }
+  .page-head{max-width:1280px;margin:0 auto 30px;color:#F4EBE0}
+  .page-head h1{font-family:var(--disp);font-weight:800;font-size:24px;letter-spacing:-.3px;margin:0 0 8px}
+  .page-head p{margin:0;font-size:14px;line-height:1.6;color:#C9BCAD;max-width:760px}
+  .note{
+    margin:16px auto 0;max-width:1280px;display:flex;gap:10px;align-items:flex-start;
+    background:rgba(246,118,115,0.12);border:1px solid rgba(246,118,115,0.4);
+    border-radius:14px;padding:13px 15px;color:#F2D9D4;font-size:13px;line-height:1.6;
+  }
+  .note b{color:#FFB7B2}
+  .note ion-icon{font-size:18px;color:#FF9A95;flex:none;margin-top:1px}
+
+  .rail{display:flex;gap:40px;justify-content:flex-start;align-items:flex-start;
+        max-width:1280px;margin:34px auto 0;flex-wrap:wrap}
+  .stage{display:flex;flex-direction:column;align-items:center;gap:12px}
+  .stage > .cap{font-size:13px;color:#C9BCAD;font-weight:600;letter-spacing:.2px}
+  .stage > .cap small{display:block;font-weight:400;color:#8c8073;font-size:11px;margin-top:2px;text-align:center}
+
+  /* ── Phone frame (390×844 = iPhone-ish ratio, NOT responsive) ── */
+  .phone{
+    width:390px;height:844px;border-radius:52px;background:#000;
+    padding:11px;box-shadow:0 30px 70px rgba(0,0,0,.5),0 0 0 2px #2c2723;
+    flex:none;position:relative;
+  }
+  .screen{
+    width:100%;height:100%;border-radius:42px;overflow:hidden;position:relative;
+    background:var(--bgCream);display:flex;flex-direction:column;
+  }
+  .statusbar{
+    height:50px;flex:none;display:flex;align-items:flex-end;justify-content:space-between;
+    padding:0 26px 7px;font-weight:600;font-size:15px;color:var(--textMain);
+    position:relative;z-index:5;
+  }
+  .statusbar .r{display:flex;gap:6px;align-items:center;font-size:16px}
+  .statusbar.onwarm,.statusbar.onwarm .r{color:#3a2a12}
+
+  /* App header (the warm marigold bar with title + language pill) */
+  .apphead{
+    flex:none;padding:4px 20px 18px;
+    background:linear-gradient(180deg,#F8C24E 0%,#F7BC42 62%,#F6B93E 100%);
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .apphead.cream-fade{box-shadow:0 16px 22px -18px rgba(246,185,62,.9)}
+  .apphead h2{font-family:var(--disp);font-weight:800;font-size:30px;color:#fff;margin:0;letter-spacing:-.4px;
+              text-shadow:0 1px 0 rgba(180,120,20,.18)}
+  .langpill{display:flex;align-items:center;gap:5px;background:#F59389;color:#fff;
+            font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px}
+  .langpill ion-icon{font-size:14px}
+
+  .body{flex:1;overflow:hidden;position:relative}
+  .scroll{position:absolute;inset:0;overflow:hidden;padding:16px 16px 96px}
+
+  /* ── Tab bar (bottom) ── */
+  .tabbar{
+    position:absolute;left:0;right:0;bottom:0;height:84px;flex:none;
+    background:rgba(255,250,245,0.96);border-top:1px solid var(--lineWarm);
+    display:flex;justify-content:space-around;align-items:flex-start;padding:11px 8px 0;
+    backdrop-filter:blur(8px);
+  }
+  .tab{display:flex;flex-direction:column;align-items:center;gap:4px;color:var(--textSubtle);font-size:11px;font-weight:600}
+  .tab ion-icon{font-size:23px}
+  .tab.on{color:var(--brandCoral)}
+
+  /* ── Odyssey CTA cards ── */
+  .cta{display:flex;align-items:center;gap:13px;background:#fff;border-radius:22px;
+       padding:17px 16px;margin-bottom:13px;box-shadow:0 14px 26px -18px rgba(122,74,44,.5);}
+  .cta .ic{width:46px;height:46px;border-radius:15px;display:flex;align-items:center;justify-content:center;flex:none}
+  .cta .ic ion-icon{font-size:23px}
+  .cta .tx{flex:1;min-width:0}
+  .cta .tx h3{font-family:var(--disp);margin:0 0 3px;font-size:16px;font-weight:800;color:var(--textMain)}
+  .cta .tx p{margin:0;font-size:12.5px;line-height:1.45;color:var(--textMuted)}
+  .cta .tx .quota{display:block;margin-top:5px;font-size:12.5px;font-weight:700;color:#6269D9}
+  .cta .chev{color:var(--textSubtle);font-size:18px;flex:none}
+
+  .overline{font-family:var(--disp);font-weight:700;font-size:12px;letter-spacing:1.2px;
+            text-transform:uppercase;color:var(--textSubtle);margin:18px 2px 12px;display:flex;align-items:center;gap:10px}
+  .overline::before{content:"";width:18px;height:2px;background:var(--textSubtle);opacity:.5;border-radius:2px}
+
+  /* ── Odyssey TaskLineCard — the layout the screenshot got wrong ──
+     Real RN: lineCard {flexDirection:'row', alignItems:'center'} →
+     icon LEFT · text column MIDDLE · chevron RIGHT. */
+  .linecard{
+    min-height:118px;width:100%;border-radius:28px;border:1px solid;
+    padding:16px;display:flex;flex-direction:row;align-items:center;background:#fff;
+    margin-bottom:12px;box-shadow:0 12px 22px -16px rgba(122,74,44,.45);
+  }
+  .linecard .lic{width:52px;height:52px;border-radius:18px;display:flex;align-items:center;justify-content:center;margin-right:14px;flex:none}
+  .linecard .lic ion-icon{font-size:23px}
+  .linecard .lcol{flex:1;min-width:0}
+  .linecard .lt{font-family:var(--disp);font-size:17px;line-height:22px;font-weight:800;color:var(--textMain);margin:0}
+  .linecard .ls{margin:4px 0 0;font-size:12.5px;line-height:18px;color:var(--textMuted)}
+  .linecard .chip{align-self:flex-start;margin-top:10px;border-radius:999px;padding:5px 11px;display:inline-block}
+  .linecard .chip span{font-size:11px;font-weight:800}
+  .linecard .lchev{margin-left:10px;font-size:19px;flex:none}
+
+  /* ── Plaza waterfall ── */
+  .masonry{column-count:2;column-gap:11px}
+  .pcard{break-inside:avoid;margin-bottom:11px;background:#fff;border-radius:20px;overflow:hidden;
+         box-shadow:0 12px 22px -16px rgba(122,74,44,.4)}
+  .pcard .img{width:100%;display:block;background-size:cover;background-position:center}
+  .pcard .pc-b{padding:11px 12px 13px}
+  .pcard .pc-b h4{font-family:var(--disp);margin:0;font-size:15px;line-height:1.25;font-weight:800;color:#1F2937}
+  .pcard .trans{display:block;margin:7px 0 0;font-size:12px;font-weight:600;color:var(--brandCoral);line-height:1.35}
+  .pcard .meta{display:flex;align-items:center;gap:7px;margin-top:10px}
+  .pcard .av{width:24px;height:24px;border-radius:50%;background:#FFE8DA;color:var(--brandCoral);
+             display:flex;align-items:center;justify-content:center;font-weight:800;font-size:11px;flex:none;overflow:hidden}
+  .pcard .nm{font-size:12.5px;color:#4b4b4b;font-weight:600;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .pcard .lk{display:flex;align-items:center;gap:3px;color:#9aa0a6;font-size:13px}
+  .pcard .lk ion-icon{font-size:16px}
+  .pcard .dots{color:#b9bcc0;font-size:16px;margin-left:2px}
+
+  /* ── ActionSheet (Post options) — labels MUST be visible ── */
+  .scrim{position:absolute;inset:0;background:rgba(36,26,22,0.52);z-index:20;display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 16px}
+  .sheet{width:calc(100% - 32px);margin:0 auto;border-radius:28px;border:1px solid var(--lineWarm);
+         background:var(--bgCream);box-shadow:0 24px 60px rgba(0,0,0,.3);overflow:hidden}
+  .sheet .grip{width:42px;height:5px;border-radius:999px;background:var(--bgWarmDeep);margin:8px auto 0}
+  .sheet .stitle{display:flex;align-items:center;gap:12px;padding:12px 16px}
+  .sheet .stitle .mascot{width:42px;height:42px;border-radius:15px;background:var(--brandCoral);
+                         display:flex;align-items:center;justify-content:center;flex:none}
+  .sheet .stitle .mascot ion-icon{font-size:24px;color:#fff}
+  .sheet .stitle h3{font-family:var(--disp);font-weight:700;font-size:18px;color:var(--textMain);margin:0}
+  .sheet .rows{margin:0 12px;border-radius:24px;overflow:hidden;background:var(--cardWhite)}
+  .arow{min-height:62px;display:flex;flex-direction:row;align-items:center;padding:8px 12px;border-top:1px solid var(--lineSofter)}
+  .arow:first-child{border-top:0}
+  .arow .ac{width:40px;height:40px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex:none}
+  .arow .ac ion-icon{font-size:21px}
+  .arow .alabel{flex:1;margin-left:12px;font-family:var(--disp);font-weight:600;font-size:15.5px}
+  .arow .achev{font-size:18px}
+  .sheet .cancel{min-height:54px;margin:8px 12px 12px;border-radius:24px;background:var(--bgWarm);
+                 display:flex;align-items:center;justify-content:center;gap:8px}
+  .sheet .cancel ion-icon{font-size:19px;color:var(--textMuted)}
+  .sheet .cancel span{font-family:var(--disp);font-weight:700;font-size:15px;color:var(--textBrown)}
+
+  .tagcorrect{display:inline-flex;align-items:center;gap:5px;background:#1f7a4d;color:#cdeed8;
+              font-size:11px;font-weight:700;padding:4px 9px;border-radius:999px;margin-top:6px}
+  .tagcorrect ion-icon{font-size:13px}
+</style>
+</head>
+<body>
+  <div class="page-head">
+    <h1>Postervia · UI Preview <span style="font-weight:600;font-size:14px;color:#9c8f7f">phone-ratio mirror of current <code style="color:#FFB7B2">master</code></span></h1>
+    <p>A faithful, instant-loading reproduction of the live app screens — built straight from the React Native component code &amp; <code style="color:#e6c9a8">theme/tokens.ts</code>, at true 390×844 phone proportions. Use it to eyeball layout and prototype fixes without waiting on an EAS build.</p>
+  </div>
+  <div class="note">
+    <ion-icon name="information-circle-outline"></ion-icon>
+    <div>This mirrors what the <b>current code</b> renders: the <b>Post&nbsp;options</b> menu shows its labels (<b>Share / Hide / Report / Block</b>), and the Odyssey task-line cards are <b>horizontal</b> (icon left · text right). If your installed app shows blank labels or vertically-stacked cards, that build is <b>behind this code</b> — the fixes landed June 20–21. Honest limit: this is a hand-faithful translation of the code's layout, not the RN engine itself, so it confirms intended layout &amp; lets us iterate visually — it can't catch a device-only render bug.</div>
+  </div>
+
+  <div class="rail">
+
+    <!-- ════ Odyssey (task lines) ════ -->
+    <div class="stage">
+      <div class="cap">Odyssey · task lines<small>cards are horizontal — icon left, text right</small></div>
+      <div class="phone"><div class="screen">
+        <div class="statusbar onwarm"><span>00:35</span><span class="r"><ion-icon name="wifi"></ion-icon><ion-icon name="battery-full"></ion-icon></span></div>
+        <div class="apphead cream-fade"><h2>Odyssey</h2><div class="langpill">English <ion-icon name="chevron-down"></ion-icon></div></div>
+        <div class="body"><div class="scroll">
+          <div class="cta">
+            <div class="ic" style="background:#FFD9CB"><ion-icon name="compass-outline" style="color:var(--brandCoral)"></ion-icon></div>
+            <div class="tx"><h3>Explore Plaza</h3><p>See what's happening in your city — places, events and tips from locals.</p></div>
+            <ion-icon class="chev" name="chevron-forward"></ion-icon>
+          </div>
+          <div class="cta">
+            <div class="ic" style="background:#E9DEFF"><ion-icon name="sparkles-outline" style="color:#6269D9"></ion-icon></div>
+            <div class="tx"><h3>Let AI build a task line for you</h3><p>Tell it what you want to do — it researches and drafts sourced steps</p><span class="quota">2 left this month</span></div>
+            <ion-icon class="chev" name="chevron-forward"></ion-icon>
+          </div>
+
+          <div class="overline">Task lines</div>
+
+          <div class="linecard" style="border-color:rgba(229,183,97,0.35)">
+            <div class="lic" style="background:#FFE2A7"><ion-icon name="home-outline" style="color:#B27A18"></ion-icon></div>
+            <div class="lcol">
+              <p class="lt">Settle down in Germany</p>
+              <p class="ls">Housing, registration, insurance and the core steps that belong together.</p>
+              <span class="chip" style="background:#FFE2A7"><span style="color:#B27A18">7 active tasks</span></span>
+            </div>
+            <ion-icon class="lchev" name="chevron-forward" style="color:#B27A18"></ion-icon>
+          </div>
+
+          <div class="linecard" style="border-color:rgba(118,166,92,0.26)">
+            <div class="lic" style="background:#DDF3D2"><ion-icon name="leaf-outline" style="color:#5C8A48"></ion-icon></div>
+            <div class="lcol">
+              <p class="lt">Local side quests</p>
+              <p class="ls">Places and personal tasks you saved from Plaza.</p>
+              <span class="chip" style="background:#DDF3D2"><span style="color:#5C8A48">1 active task</span></span>
+            </div>
+            <ion-icon class="lchev" name="chevron-forward" style="color:#5C8A48"></ion-icon>
+          </div>
+        </div></div>
+        <div class="tabbar">
+          <div class="tab on"><ion-icon name="compass"></ion-icon>Odyssey</div>
+          <div class="tab"><ion-icon name="grid-outline"></ion-icon>Plaza</div>
+          <div class="tab"><ion-icon name="people-outline"></ion-icon>Social</div>
+          <div class="tab"><ion-icon name="walk-outline"></ion-icon>Buddy</div>
+          <div class="tab"><ion-icon name="person-outline"></ion-icon>Profile</div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- ════ Plaza feed ════ -->
+    <div class="stage">
+      <div class="cap">Plaza · discovery feed<small>two-column waterfall</small></div>
+      <div class="phone"><div class="screen">
+        <div class="statusbar onwarm"><span>00:35</span><span class="r"><ion-icon name="wifi"></ion-icon><ion-icon name="battery-full"></ion-icon></span></div>
+        <div class="apphead cream-fade"><h2>Plaza</h2><div class="langpill">English <ion-icon name="chevron-down"></ion-icon></div></div>
+        <div class="body"><div class="scroll">
+          <div class="masonry">
+            <div class="pcard">
+              <div class="img" style="height:188px;background-image:linear-gradient(160deg,#7fb4e8,#9ad0a0)"></div>
+              <div class="pc-b"><h4>Victoria Park</h4>
+                <span class="trans">Translated from Chinese (Simplified) · Show original</span>
+                <div class="meta"><div class="av">L</div><div class="nm">Lisumchen</div><div class="lk"><ion-icon name="heart-outline"></ion-icon>3</div></div>
+              </div>
+            </div>
+            <div class="pcard">
+              <div class="img" style="height:150px;background-image:linear-gradient(160deg,#caa46a,#6f7f8d)"></div>
+              <div class="pc-b"><h4>Android Google I/O Event</h4>
+                <span class="trans">Show original</span>
+                <div class="meta"><div class="av">B</div><div class="nm">Barath</div><div class="lk"><ion-icon name="heart-outline"></ion-icon>0</div><span class="dots"><ion-icon name="ellipsis-horizontal"></ion-icon></span></div>
+              </div>
+            </div>
+            <div class="pcard">
+              <div class="img" style="height:210px;background-image:linear-gradient(160deg,#9aa7b5,#6b7686)"></div>
+              <div class="pc-b"><h4>Friends in Görlitzer Park</h4>
+                <div class="meta"><div class="av">M</div><div class="nm">Mira</div><div class="lk"><ion-icon name="heart-outline"></ion-icon>5</div></div>
+              </div>
+            </div>
+            <div class="pcard">
+              <div class="img" style="height:150px;background-image:linear-gradient(160deg,#e0c98f,#c9a25c)"></div>
+              <div class="pc-b"><h4>Photo wall café in Kreuzberg</h4>
+                <div class="meta"><div class="av">A</div><div class="nm">Anh</div><div class="lk"><ion-icon name="heart-outline"></ion-icon>8</div></div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <div class="tabbar">
+          <div class="tab"><ion-icon name="compass-outline"></ion-icon>Odyssey</div>
+          <div class="tab on"><ion-icon name="grid"></ion-icon>Plaza</div>
+          <div class="tab"><ion-icon name="people-outline"></ion-icon>Social</div>
+          <div class="tab"><ion-icon name="walk-outline"></ion-icon>Buddy</div>
+          <div class="tab"><ion-icon name="person-outline"></ion-icon>Profile</div>
+        </div>
+      </div></div>
+    </div>
+
+    <!-- ════ Post options (ActionSheet) ════ -->
+    <div class="stage">
+      <div class="cap">Post options · ActionSheet<small>labels render: Share / Hide / Report / Block</small></div>
+      <div class="phone"><div class="screen">
+        <div class="statusbar"><span>00:34</span><span class="r"><ion-icon name="wifi"></ion-icon><ion-icon name="battery-full"></ion-icon></span></div>
+        <div class="apphead cream-fade" style="background:linear-gradient(180deg,#f0eae3,#ece5dc)">
+          <div style="display:flex;align-items:center;gap:10px">
+            <ion-icon name="chevron-back" style="font-size:24px;color:#4a4036"></ion-icon>
+            <div class="av" style="width:34px;height:34px;background:#e9d6cf;color:#9a6a5a;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px">B</div>
+            <div><div style="font-family:var(--disp);font-weight:800;font-size:17px;color:#2b2420">Barath</div><div style="font-size:12px;color:#8c8073">Berlin</div></div>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center">
+            <span style="background:#f0d9d3;color:#b06a5e;font-weight:700;font-size:12px;padding:6px 11px;border-radius:999px">Experience</span>
+            <ion-icon name="ellipsis-horizontal" style="font-size:20px;color:#4a4036"></ion-icon>
+          </div>
+        </div>
+        <div class="body">
+          <div class="scroll" style="padding-top:0">
+            <div class="img" style="height:100%;border-radius:0;background-image:linear-gradient(160deg,#b7c2cd,#7c8794)"></div>
+          </div>
+          <!-- ActionSheet -->
+          <div class="scrim">
+            <div class="sheet">
+              <div class="grip"></div>
+              <div class="stitle"><div class="mascot"><ion-icon name="reader-outline"></ion-icon></div><h3>Post options</h3></div>
+              <div class="rows">
+                <div class="arow"><div class="ac" style="background:var(--bgWarm)"><ion-icon name="share-social-outline" style="color:var(--textBrown)"></ion-icon></div><div class="alabel" style="color:var(--textBrown)">Share</div><ion-icon class="achev" name="chevron-forward" style="color:var(--textSubtle)"></ion-icon></div>
+                <div class="arow"><div class="ac" style="background:var(--bgWarm)"><ion-icon name="eye-off-outline" style="color:var(--textBrown)"></ion-icon></div><div class="alabel" style="color:var(--textBrown)">Hide</div><ion-icon class="achev" name="chevron-forward" style="color:var(--textSubtle)"></ion-icon></div>
+                <div class="arow"><div class="ac" style="background:var(--dangerSoft)"><ion-icon name="flag-outline" style="color:var(--danger)"></ion-icon></div><div class="alabel" style="color:var(--danger)">Report</div><ion-icon class="achev" name="chevron-forward" style="color:var(--danger)"></ion-icon></div>
+                <div class="arow"><div class="ac" style="background:var(--dangerSoft)"><ion-icon name="person-remove-outline" style="color:var(--danger)"></ion-icon></div><div class="alabel" style="color:var(--danger)">Block</div><ion-icon class="achev" name="chevron-forward" style="color:var(--danger)"></ion-icon></div>
+              </div>
+              <div class="cancel"><ion-icon name="close"></ion-icon><span>Cancel</span></div>
+            </div>
+          </div>
+        </div>
+      </div></div>
+      <div class="tagcorrect"><ion-icon name="checkmark-circle"></ion-icon>labels present in current code</div>
+    </div>
+
+  </div>
+</body>
+</html>
