@@ -33,11 +33,15 @@
   * { box-sizing: border-box; }
 
   html {
+    max-width: 100%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
   }
 
   body {
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
     background: var(--paper);
     color: var(--ink);
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -63,6 +67,7 @@
   }
 
   .nav {
+    width: 100%;
     max-width: 1180px;
     margin: 0 auto;
     min-height: 74px;
@@ -187,10 +192,12 @@
     font-weight: 900;
     box-shadow: inset 0 -4px 0 rgba(92, 63, 34, 0.08);
     cursor: pointer;
+    overflow: hidden;
   }
 
   .language-button::after {
     content: "";
+    flex: 0 0 auto;
     width: 7px;
     height: 7px;
     border-right: 2px solid currentColor;
@@ -204,6 +211,8 @@
   }
 
   .language-button-label {
+    flex: 1 1 auto;
+    min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -308,6 +317,7 @@
   }
 
   .hero {
+    width: 100%;
     max-width: 1180px;
     margin: 0 auto;
     padding: 76px 24px 86px;
@@ -315,6 +325,10 @@
     grid-template-columns: minmax(0, 1.02fr) minmax(340px, 0.98fr);
     gap: 56px;
     align-items: center;
+  }
+
+  .hero > div {
+    min-width: 0;
   }
 
   .eyebrow {
@@ -354,6 +368,8 @@
     font-size: 66px;
     line-height: 0.95;
     letter-spacing: 0;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
   }
 
   h1 span {
@@ -366,6 +382,7 @@
     color: var(--soft-ink);
     font-size: 24px;
     font-weight: 650;
+    overflow-wrap: anywhere;
   }
 
   .hero-actions {
@@ -466,6 +483,7 @@
   }
 
   .section {
+    width: 100%;
     max-width: 1180px;
     margin: 0 auto;
     padding: 86px 24px;
@@ -804,6 +822,7 @@
 
   @media (max-width: 620px) {
     .nav {
+      gap: 14px;
       min-height: 66px;
       padding: 0 18px;
     }
@@ -813,7 +832,8 @@
     }
 
     h1 {
-      font-size: 48px;
+      font-size: 42px;
+      line-height: 1;
     }
 
     .section-heading h2,
@@ -831,8 +851,8 @@
 
     .language-button {
       min-height: 40px;
-      max-width: 145px;
-      padding: 0 14px;
+      max-width: 135px;
+      padding: 0 12px;
       font-size: 14px;
     }
 
@@ -981,7 +1001,7 @@
         <a class="store-badge google-play" href="https://play.google.com/store/apps/details?id=app.novaku.mobile">
           <img src="/assets/google-play-badge.png" alt="Get it on Google Play" width="207" height="80">
         </a>
-        <a class="button secondary" href="#features" data-i18n="hero.secondaryCta">Explore features</a>
+        <a class="button secondary" href="https://app.postervia.app/" data-i18n="hero.secondaryCta">Explore web app</a>
       </div>
       <div class="hero-pills" aria-label="Product highlights" data-i18n-aria-label="a11y.productHighlights">
         <span data-i18n="hero.pillTasks">Task navigation</span>

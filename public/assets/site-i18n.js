@@ -649,7 +649,7 @@
       "pillLanguage": "Veeltalige gemeenskap",
       "pillTasks": "Taaknavigasie",
       "primaryCta": "Sluit aan by die beta",
-      "secondaryCta": "Verken funksies",
+      "secondaryCta": "Explore web app",
       "title": "Vind jou pad. Laat ’n lig agter."
     },
     "meta": {
@@ -781,7 +781,7 @@
       "pillLanguage": "Komunitet shumëgjuhësh",
       "pillTasks": "Navigim i detyrave",
       "primaryCta": "Bashkohu në beta",
-      "secondaryCta": "Eksploro veçoritë",
+      "secondaryCta": "Explore web app",
       "title": "Gjej rrugën tënde. Lër një dritë."
     },
     "meta": {
@@ -913,7 +913,7 @@
       "pillLanguage": "ባለብዙ ቋንቋ ማህበረሰብ",
       "pillTasks": "የተግባር መመሪያ",
       "primaryCta": "ወደ ቤታ ይቀላቀሉ",
-      "secondaryCta": "ባህሪያትን ያስሱ",
+      "secondaryCta": "Explore web app",
       "title": "መንገድዎን ያግኙ። ብርሃን ይተዉ።"
     },
     "meta": {
@@ -1045,7 +1045,7 @@
       "pillLanguage": "مجتمع متعدد اللغات",
       "pillTasks": "تنقّل المهام",
       "primaryCta": "انضم إلى النسخة التجريبية",
-      "secondaryCta": "استكشف الميزات",
+      "secondaryCta": "افتح نسخة الويب",
       "title": "اعثر على طريقك. واترك أثرًا من النور."
     },
     "meta": {
@@ -1177,7 +1177,7 @@
       "pillLanguage": "Բազմալեզու համայնք",
       "pillTasks": "Առաջադրանքների նավարկում",
       "primaryCta": "Միացեք բետային",
-      "secondaryCta": "Բացահայտեք հնարավորությունները",
+      "secondaryCta": "Explore web app",
       "title": "Գտեք ձեր ճանապարհը։ Թողեք մի լույս։"
     },
     "meta": {
@@ -1309,7 +1309,7 @@
       "pillLanguage": "Çoxdilli icma",
       "pillTasks": "Tapşırıq naviqasiyası",
       "primaryCta": "Beta versiyaya qoşulun",
-      "secondaryCta": "Xüsusiyyətləri kəşf edin",
+      "secondaryCta": "Explore web app",
       "title": "Yolunuzu tapın. Bir işıq buraxın."
     },
     "meta": {
@@ -1441,7 +1441,7 @@
       "pillLanguage": "Komunitate eleanitza",
       "pillTasks": "Zereginen nabigazioa",
       "primaryCta": "Betea probatzeko batu",
-      "secondaryCta": "Ezaugarriak arakatu",
+      "secondaryCta": "Explore web app",
       "title": "Aurkitu zure bidea. Utzi argi bat."
     },
     "meta": {
@@ -1573,7 +1573,7 @@
       "pillLanguage": "Шматмоўная супольнасць",
       "pillTasks": "Навігацыя па задачах",
       "primaryCta": "Далучыцца да бэта-версіі",
-      "secondaryCta": "Даследаваць магчымасці",
+      "secondaryCta": "Explore web app",
       "title": "Знайдзі свой шлях. Пакінь святло."
     },
     "meta": {
@@ -1705,7 +1705,7 @@
       "pillLanguage": "বহুভাষিক সম্প্রদায়",
       "pillTasks": "কাজের পথনির্দেশ",
       "primaryCta": "বেটায় যোগ দিন",
-      "secondaryCta": "ফিচারগুলো দেখুন",
+      "secondaryCta": "Explore web app",
       "title": "আপনার পথ খুঁজে নিন। একটি আলো রেখে যান।"
     },
     "meta": {
@@ -1837,7 +1837,7 @@
       "pillLanguage": "Višejezična zajednica",
       "pillTasks": "Navigacija zadacima",
       "primaryCta": "Pridružite se beta verziji",
-      "secondaryCta": "Istražite funkcije",
+      "secondaryCta": "Explore web app",
       "title": "Pronađite svoj put. Ostavite trag svjetla."
     },
     "meta": {
@@ -1969,7 +1969,7 @@
       "pillLanguage": "Многоезична общност",
       "pillTasks": "Навигация по задачи",
       "primaryCta": "Присъединете се към бета версията",
-      "secondaryCta": "Разгледайте функциите",
+      "secondaryCta": "Explore web app",
       "title": "Намери своя път. Остави светлина."
     },
     "meta": {
@@ -2101,7 +2101,7 @@
       "pillLanguage": "Comunitat multilingüe",
       "pillTasks": "Navegació de tasques",
       "primaryCta": "Uneix-te a la beta",
-      "secondaryCta": "Explora les funcions",
+      "secondaryCta": "Explore web app",
       "title": "Troba el teu camí. Deixa una llum."
     },
     "meta": {
@@ -2233,7 +2233,7 @@
       "pillLanguage": "Komunidad nga daghang pinulongan",
       "pillTasks": "Paggiya sa mga buluhaton",
       "primaryCta": "Apil sa beta",
-      "secondaryCta": "Susihon ang mga feature",
+      "secondaryCta": "Explore web app",
       "title": "Pangitaa ang imong dalan. Bilin og kahayag."
     },
     "meta": {
@@ -2365,7 +2365,7 @@
       "pillLanguage": "多语言社区",
       "pillTasks": "任务导航",
       "primaryCta": "加入测试版",
-      "secondaryCta": "探索功能",
+      "secondaryCta": "探索网页版",
       "title": "找到你的路。留下一束光。"
     },
     "meta": {
@@ -2497,7 +2497,7 @@
       "pillLanguage": "多語社群",
       "pillTasks": "任務導引",
       "primaryCta": "加入 Beta 版",
-      "secondaryCta": "探索功能",
+      "secondaryCta": "探索網頁版",
       "title": "找到你的路，留下微光。"
     },
     "meta": {
@@ -2629,7 +2629,7 @@
       "pillLanguage": "Cumunità multilingue",
       "pillTasks": "Navigazione di i compiti",
       "primaryCta": "Unitevi à a beta",
-      "secondaryCta": "Esplorate e funziunalità",
+      "secondaryCta": "Explore web app",
       "title": "Truvate a vostra strada. Lasciate una luce."
     },
     "meta": {
@@ -2761,7 +2761,7 @@
       "pillLanguage": "Višejezična zajednica",
       "pillTasks": "Navigacija zadacima",
       "primaryCta": "Pridruži se beta verziji",
-      "secondaryCta": "Istraži značajke",
+      "secondaryCta": "Explore web app",
       "title": "Pronađi svoj put. Ostavi trag svjetla."
     },
     "meta": {
@@ -2893,7 +2893,7 @@
       "pillLanguage": "Vícejazyčná komunita",
       "pillTasks": "Navigace úkoly",
       "primaryCta": "Připojit se k beta verzi",
-      "secondaryCta": "Prozkoumat funkce",
+      "secondaryCta": "Explore web app",
       "title": "Najděte svou cestu. Zanechte světlo."
     },
     "meta": {
@@ -3025,7 +3025,7 @@
       "pillLanguage": "Flersproget fællesskab",
       "pillTasks": "Opgavenavigation",
       "primaryCta": "Bliv med i betaen",
-      "secondaryCta": "Udforsk funktioner",
+      "secondaryCta": "Explore web app",
       "title": "Find din vej. Efterlad et lys."
     },
     "meta": {
@@ -3157,7 +3157,7 @@
       "pillLanguage": "Meertalige community",
       "pillTasks": "Taaknavigatie",
       "primaryCta": "Doe mee aan de bèta",
-      "secondaryCta": "Ontdek functies",
+      "secondaryCta": "Webversie openen",
       "title": "Vind je weg. Laat een licht achter."
     },
     "meta": {
@@ -3283,7 +3283,7 @@
       "pillLanguage": "Multilingual community",
       "pillTasks": "Task navigation",
       "primaryCta": "Join the beta",
-      "secondaryCta": "Explore features",
+      "secondaryCta": "Explore web app",
       "title": "Find your path. Leave a light."
     },
     "language": {
@@ -3421,7 +3421,7 @@
       "pillLanguage": "Plurlingva komunumo",
       "pillTasks": "Taska navigado",
       "primaryCta": "Aliĝu al la beta-versio",
-      "secondaryCta": "Esploru funkciojn",
+      "secondaryCta": "Explore web app",
       "title": "Trovu vian vojon. Lasu lumon."
     },
     "meta": {
@@ -3553,7 +3553,7 @@
       "pillLanguage": "Mitmekeelne kogukond",
       "pillTasks": "Ülesannete navigeerimine",
       "primaryCta": "Liitu beetaga",
-      "secondaryCta": "Tutvu võimalustega",
+      "secondaryCta": "Explore web app",
       "title": "Leia oma tee. Jäta valgus."
     },
     "meta": {
@@ -3685,7 +3685,7 @@
       "pillLanguage": "Monikielinen yhteisö",
       "pillTasks": "Tehtävien navigointi",
       "primaryCta": "Liity betaan",
-      "secondaryCta": "Tutustu ominaisuuksiin",
+      "secondaryCta": "Explore web app",
       "title": "Löydä oma polkusi. Jätä jälki."
     },
     "meta": {
@@ -3817,7 +3817,7 @@
       "pillLanguage": "Communauté multilingue",
       "pillTasks": "Navigation des tâches",
       "primaryCta": "Rejoindre la bêta",
-      "secondaryCta": "Découvrir les fonctionnalités",
+      "secondaryCta": "Explorer la version web",
       "title": "Trouvez votre chemin. Laissez une lumière."
     },
     "meta": {
@@ -3949,7 +3949,7 @@
       "pillLanguage": "Meartalige mienskip",
       "pillTasks": "Taken navigearje",
       "primaryCta": "Doch mei oan de beta",
-      "secondaryCta": "Ferken de funksjes",
+      "secondaryCta": "Explore web app",
       "title": "Fyn dyn paad. Lit in ljocht efter."
     },
     "meta": {
@@ -4081,7 +4081,7 @@
       "pillLanguage": "Comunidade multilingüe",
       "pillTasks": "Navegación de tarefas",
       "primaryCta": "Únete á beta",
-      "secondaryCta": "Explorar funcións",
+      "secondaryCta": "Explore web app",
       "title": "Atopa o teu camiño. Deixa unha luz."
     },
     "meta": {
@@ -4213,7 +4213,7 @@
       "pillLanguage": "მრავალენოვანი საზოგადოება",
       "pillTasks": "დავალებების ნავიგაცია",
       "primaryCta": "ბეტაში გაწევრიანება",
-      "secondaryCta": "ფუნქციების დათვალიერება",
+      "secondaryCta": "Explore web app",
       "title": "იპოვე შენი გზა. დატოვე შუქი."
     },
     "meta": {
@@ -4345,7 +4345,7 @@
       "pillLanguage": "Mehrsprachige Community",
       "pillTasks": "Aufgaben-Navigation",
       "primaryCta": "Beta beitreten",
-      "secondaryCta": "Funktionen entdecken",
+      "secondaryCta": "Webversion öffnen",
       "title": "Finde deinen Weg. Hinterlasse ein Licht."
     },
     "meta": {
@@ -4477,7 +4477,7 @@
       "pillLanguage": "Πολυγλωσσική κοινότητα",
       "pillTasks": "Πλοήγηση σε εργασίες",
       "primaryCta": "Γίνε μέλος της beta",
-      "secondaryCta": "Εξερεύνησε τις δυνατότητες",
+      "secondaryCta": "Explore web app",
       "title": "Βρες τον δρόμο σου. Άφησε ένα φως."
     },
     "meta": {
@@ -4609,7 +4609,7 @@
       "pillLanguage": "બહુભાષી સમુદાય",
       "pillTasks": "કાર્ય માર્ગદર્શન",
       "primaryCta": "બીટામાં જોડાઓ",
-      "secondaryCta": "વિશેષતાઓ શોધો",
+      "secondaryCta": "Explore web app",
       "title": "તમારો માર્ગ શોધો. એક પ્રકાશ છોડી જાઓ."
     },
     "meta": {
@@ -4741,7 +4741,7 @@
       "pillLanguage": "Kominote miltileng",
       "pillTasks": "Navigasyon pou travay",
       "primaryCta": "Antre nan beta a",
-      "secondaryCta": "Eksplore fonksyon yo",
+      "secondaryCta": "Explore web app",
       "title": "Jwenn chemen ou. Kite yon limyè."
     },
     "meta": {
@@ -4873,7 +4873,7 @@
       "pillLanguage": "Al’umma mai harsuna da yawa",
       "pillTasks": "Jagorar ayyuka",
       "primaryCta": "Shiga beta",
-      "secondaryCta": "Binciko fasaloli",
+      "secondaryCta": "Explore web app",
       "title": "Nemo hanyarka. Ka bar haske."
     },
     "meta": {
@@ -5005,7 +5005,7 @@
       "pillLanguage": "Kaiāulu ʻōlelo lehulehu",
       "pillTasks": "Hoʻokele hana",
       "primaryCta": "E hui i ka beta",
-      "secondaryCta": "E ʻimi i nā hiʻohiʻona",
+      "secondaryCta": "Explore web app",
       "title": "E ʻimi i kou ala. E waiho i kukui."
     },
     "meta": {
@@ -5137,7 +5137,7 @@
       "pillLanguage": "קהילה רב־לשונית",
       "pillTasks": "ניווט במשימות",
       "primaryCta": "הצטרפו לגרסת הבטא",
-      "secondaryCta": "גלו את התכונות",
+      "secondaryCta": "Explore web app",
       "title": "מצאו את הדרך שלכם. השאירו אור."
     },
     "meta": {
@@ -5269,7 +5269,7 @@
       "pillLanguage": "बहुभाषी समुदाय",
       "pillTasks": "कार्य-नेविगेशन",
       "primaryCta": "बीटा में शामिल हों",
-      "secondaryCta": "फ़ीचर्स देखें",
+      "secondaryCta": "Explore web app",
       "title": "अपना रास्ता खोजें। एक रोशनी छोड़ें।"
     },
     "meta": {
@@ -5401,7 +5401,7 @@
       "pillLanguage": "Zeeg lus ntau hom lus",
       "pillTasks": "Kev taw qhia haujlwm",
       "primaryCta": "Koom nrog beta",
-      "secondaryCta": "Tshawb nrhiav cov yam ntxwv",
+      "secondaryCta": "Explore web app",
       "title": "Nrhiav koj txoj kev. Tso ib lub teeb tseg."
     },
     "meta": {
@@ -5533,7 +5533,7 @@
       "pillLanguage": "Többnyelvű közösség",
       "pillTasks": "Feladatnavigáció",
       "primaryCta": "Csatlakozás a bétához",
-      "secondaryCta": "Funkciók felfedezése",
+      "secondaryCta": "Explore web app",
       "title": "Találd meg az utad. Hagyj egy fényt."
     },
     "meta": {
@@ -5665,7 +5665,7 @@
       "pillLanguage": "Fjöltyngt samfélag",
       "pillTasks": "Verkefnaleiðsögn",
       "primaryCta": "Gakktu í beta-útgáfuna",
-      "secondaryCta": "Skoða eiginleika",
+      "secondaryCta": "Explore web app",
       "title": "Finndu leiðina þína. Skildu eftir ljós."
     },
     "meta": {
@@ -5797,7 +5797,7 @@
       "pillLanguage": "Obodo nwere ọtụtụ asụsụ",
       "pillTasks": "Ịnyagharị ọrụ",
       "primaryCta": "Sonye na beta",
-      "secondaryCta": "Nyochaa atụmatụ",
+      "secondaryCta": "Explore web app",
       "title": "Chọta ụzọ gị. Hapụ ìhè."
     },
     "meta": {
@@ -5929,7 +5929,7 @@
       "pillLanguage": "Komunitas multibahasa",
       "pillTasks": "Navigasi tugas",
       "primaryCta": "Gabung beta",
-      "secondaryCta": "Jelajahi fitur",
+      "secondaryCta": "Explore web app",
       "title": "Temukan jalanmu. Tinggalkan cahaya."
     },
     "meta": {
@@ -6061,7 +6061,7 @@
       "pillLanguage": "Pobal ilteangach",
       "pillTasks": "Nascleanúint tascanna",
       "primaryCta": "Bí páirteach sa béite",
-      "secondaryCta": "Féach ar na gnéithe",
+      "secondaryCta": "Explore web app",
       "title": "Aimsigh do chosán. Fág solas i do dhiaidh."
     },
     "meta": {
@@ -6193,7 +6193,7 @@
       "pillLanguage": "Comunità multilingue",
       "pillTasks": "Navigazione dei compiti",
       "primaryCta": "Unisciti alla beta",
-      "secondaryCta": "Esplora le funzionalità",
+      "secondaryCta": "Apri la versione web",
       "title": "Trova la tua strada. Lascia una luce."
     },
     "meta": {
@@ -6325,7 +6325,7 @@
       "pillLanguage": "多言語コミュニティ",
       "pillTasks": "タスクの案内",
       "primaryCta": "ベータに参加",
-      "secondaryCta": "機能を見る",
+      "secondaryCta": "Web版を開く",
       "title": "自分の道を見つけよう。光を残そう。"
     },
     "meta": {
@@ -6457,7 +6457,7 @@
       "pillLanguage": "Komunitas multibasa",
       "pillTasks": "Navigasi tugas",
       "primaryCta": "Gabung beta",
-      "secondaryCta": "Jelajahi fitur",
+      "secondaryCta": "Explore web app",
       "title": "Temokake dalanmu. Ninggalna cahya."
     },
     "meta": {
@@ -6589,7 +6589,7 @@
       "pillLanguage": "ಬಹುಭಾಷಾ ಸಮುದಾಯ",
       "pillTasks": "ಕಾರ್ಯ ನಾವಿಗೇಶನ್",
       "primaryCta": "ಬೀಟಾಗೆ ಸೇರಿ",
-      "secondaryCta": "ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಅನ್ವೇಷಿಸಿ",
+      "secondaryCta": "Explore web app",
       "title": "ನಿಮ್ಮ ದಾರಿಯನ್ನು ಕಂಡುಕೊಳ್ಳಿ. ಒಂದು ಬೆಳಕು ಬಿಡಿ."
     },
     "meta": {
@@ -6721,7 +6721,7 @@
       "pillLanguage": "Көптілді қауымдастық",
       "pillTasks": "Тапсырмаларға бағыттау",
       "primaryCta": "Бета-нұсқаға қосылу",
-      "secondaryCta": "Мүмкіндіктерді зерттеу",
+      "secondaryCta": "Explore web app",
       "title": "Өз жолыңды тап. Із қалдыр."
     },
     "meta": {
@@ -6853,7 +6853,7 @@
       "pillLanguage": "សហគមន៍ពហុភាសា",
       "pillTasks": "ការណែនាំភារកិច្ច",
       "primaryCta": "ចូលរួមបេតា",
-      "secondaryCta": "ស្វែងរកមុខងារ",
+      "secondaryCta": "Explore web app",
       "title": "ស្វែងរកផ្លូវរបស់អ្នក។ ទុកពន្លឺមួយចោល។"
     },
     "meta": {
@@ -6985,7 +6985,7 @@
       "pillLanguage": "Umuryango uvuga indimi nyinshi",
       "pillTasks": "Kuyobora imirimo",
       "primaryCta": "Injira muri beta",
-      "secondaryCta": "Reba ibiranga",
+      "secondaryCta": "Explore web app",
       "title": "Shaka inzira yawe. Siga urumuri."
     },
     "meta": {
@@ -7117,7 +7117,7 @@
       "pillLanguage": "다국어 커뮤니티",
       "pillTasks": "할 일 안내",
       "primaryCta": "베타에 참여하기",
-      "secondaryCta": "기능 둘러보기",
+      "secondaryCta": "웹 버전 열기",
       "title": "나만의 길을 찾고, 작은 빛을 남기세요."
     },
     "meta": {
@@ -7249,7 +7249,7 @@
       "pillLanguage": "کۆمەڵگەی چەندزمانە",
       "pillTasks": "ڕێنمایی ئەرکەکان",
       "primaryCta": "بەتا بپەیوەندە",
-      "secondaryCta": "تایبەتمەندییەکان بگەڕێ",
+      "secondaryCta": "Explore web app",
       "title": "ڕێگەت بدۆزەوە. ڕووناکییەک بەجێبهێڵە."
     },
     "meta": {
@@ -7381,7 +7381,7 @@
       "pillLanguage": "Көп тилдүү коомчулук",
       "pillTasks": "Тапшырмалар боюнча багыттоо",
       "primaryCta": "Бетага кошулуу",
-      "secondaryCta": "Мүмкүнчүлүктөрдү изилдөө",
+      "secondaryCta": "Explore web app",
       "title": "Өз жолуңду тап. Жарык калтыр."
     },
     "meta": {
@@ -7513,7 +7513,7 @@
       "pillLanguage": "ຊຸມຊົນຫຼາຍພາສາ",
       "pillTasks": "ການນຳທາງວຽກງານ",
       "primaryCta": "ເຂົ້າຮ່ວມເບຕ້າ",
-      "secondaryCta": "ສຳຫຼວດຟີເຈີ",
+      "secondaryCta": "Explore web app",
       "title": "ຫາເສັ້ນທາງຂອງທ່ານ. ຝາກແສງໄວ້."
     },
     "meta": {
@@ -7645,7 +7645,7 @@
       "pillLanguage": "Daudzvalodu kopiena",
       "pillTasks": "Uzdevumu navigācija",
       "primaryCta": "Pievienoties beta versijai",
-      "secondaryCta": "Izpētīt funkcijas",
+      "secondaryCta": "Explore web app",
       "title": "Atrodi savu ceļu. Atstāj gaismu."
     },
     "meta": {
@@ -7777,7 +7777,7 @@
       "pillLanguage": "Daugiakalbė bendruomenė",
       "pillTasks": "Užduočių navigacija",
       "primaryCta": "Prisijunkite prie beta versijos",
-      "secondaryCta": "Atraskite funkcijas",
+      "secondaryCta": "Explore web app",
       "title": "Raskite savo kelią. Palikite šviesą."
     },
     "meta": {
@@ -7909,7 +7909,7 @@
       "pillLanguage": "Multilingual Gemeinschaft",
       "pillTasks": "Aufgaben-Navigatioun",
       "primaryCta": "An d'Beta bäitrieden",
-      "secondaryCta": "Fonctiounen entdecken",
+      "secondaryCta": "Explore web app",
       "title": "Fënn däi Wee. Hannerloos e Liicht."
     },
     "meta": {
@@ -8041,7 +8041,7 @@
       "pillLanguage": "Мултијазична заедница",
       "pillTasks": "Навигација низ задачи",
       "primaryCta": "Приклучи се на бета-верзијата",
-      "secondaryCta": "Истражи ги функциите",
+      "secondaryCta": "Explore web app",
       "title": "Најди го својот пат. Остави светлина."
     },
     "meta": {
@@ -8173,7 +8173,7 @@
       "pillLanguage": "Fiarahamonina amin’ny fiteny maro",
       "pillTasks": "Fitarihana asa",
       "primaryCta": "Midira amin’ny beta",
-      "secondaryCta": "Jereo ireo endri-javatra",
+      "secondaryCta": "Explore web app",
       "title": "Tadiavo ny lalanao. Avelao hisy hazavana."
     },
     "meta": {
@@ -8305,7 +8305,7 @@
       "pillLanguage": "Komuniti berbilang bahasa",
       "pillTasks": "Navigasi tugasan",
       "primaryCta": "Sertai beta",
-      "secondaryCta": "Terokai ciri-ciri",
+      "secondaryCta": "Explore web app",
       "title": "Cari jalan anda. Tinggalkan cahaya."
     },
     "meta": {
@@ -8437,7 +8437,7 @@
       "pillLanguage": "ബഹുഭാഷാ സമൂഹം",
       "pillTasks": "ടാസ്‌ക് നാവിഗേഷൻ",
       "primaryCta": "ബീറ്റയിൽ ചേരുക",
-      "secondaryCta": "സവിശേഷതകൾ അന്വേഷിക്കുക",
+      "secondaryCta": "Explore web app",
       "title": "നിങ്ങളുടെ വഴി കണ്ടെത്തൂ. ഒരു പ്രകാശം വിടൂ."
     },
     "meta": {
@@ -8569,7 +8569,7 @@
       "pillLanguage": "Komunità multilingwi",
       "pillTasks": "Navigazzjoni tal-kompiti",
       "primaryCta": "Ingħaqad mal-beta",
-      "secondaryCta": "Esplora l-karatteristiċi",
+      "secondaryCta": "Explore web app",
       "title": "Sib it-triq tiegħek. Ħalli dawl warajk."
     },
     "meta": {
@@ -8701,7 +8701,7 @@
       "pillLanguage": "Hapori reo-maha",
       "pillTasks": "Whakatere mahi",
       "primaryCta": "Hono atu ki te beta",
-      "secondaryCta": "Torotoro ngā āhuatanga",
+      "secondaryCta": "Explore web app",
       "title": "Kimihia tō ara. Waiho he rama."
     },
     "meta": {
@@ -8833,7 +8833,7 @@
       "pillLanguage": "बहुभाषिक समुदाय",
       "pillTasks": "कामांची दिशा",
       "primaryCta": "बीटा मध्ये सहभागी व्हा",
-      "secondaryCta": "वैशिष्ट्ये पाहा",
+      "secondaryCta": "Explore web app",
       "title": "तुमचा मार्ग शोधा. एक प्रकाश मागे ठेवा."
     },
     "meta": {
@@ -8965,7 +8965,7 @@
       "pillLanguage": "Олон хэлт нийгэмлэг",
       "pillTasks": "Даалгаврын чиглүүлэг",
       "primaryCta": "Бета хувилбарт нэгдэх",
-      "secondaryCta": "Онцлогуудыг судлах",
+      "secondaryCta": "Explore web app",
       "title": "Өөрийн замаа ол. Гэрэл үлдээ."
     },
     "meta": {
@@ -9097,7 +9097,7 @@
       "pillLanguage": "ဘာသာစကားမျိုးစုံအသိုင်းအဝိုင်း",
       "pillTasks": "လုပ်ငန်းတာဝန်လမ်းညွှန်",
       "primaryCta": "ဘီတာတွင် ပါဝင်ရန်",
-      "secondaryCta": "အင်္ဂါရပ်များကို စူးစမ်းရန်",
+      "secondaryCta": "Explore web app",
       "title": "သင့်လမ်းကို ရှာပါ။ အလင်းတစ်စင်း ချန်ထားပါ။"
     },
     "meta": {
@@ -9229,7 +9229,7 @@
       "pillLanguage": "बहुभाषी समुदाय",
       "pillTasks": "कार्य नेभिगेसन",
       "primaryCta": "बेटामा सामेल हुनुहोस्",
-      "secondaryCta": "सुविधाहरू अन्वेषण गर्नुहोस्",
+      "secondaryCta": "Explore web app",
       "title": "आफ्नो बाटो खोज्नुहोस्। एउटा उज्यालो छोड्नुहोस्।"
     },
     "meta": {
@@ -9361,7 +9361,7 @@
       "pillLanguage": "Flerspråklig fellesskap",
       "pillTasks": "Oppgaveveiledning",
       "primaryCta": "Bli med i betaen",
-      "secondaryCta": "Utforsk funksjonene",
+      "secondaryCta": "Explore web app",
       "title": "Finn veien din. Sett igjen et lys."
     },
     "meta": {
@@ -9493,7 +9493,7 @@
       "pillLanguage": "Gulu la zinenero zambiri",
       "pillTasks": "Kuyenda pa ntchito",
       "primaryCta": "Lowani mu beta",
-      "secondaryCta": "Onani zinthu zomwe zilipo",
+      "secondaryCta": "Explore web app",
       "title": "Pezani njira yanu. Siyani kuwala."
     },
     "meta": {
@@ -9625,7 +9625,7 @@
       "pillLanguage": "ବହୁଭାଷୀ ସମୁଦାୟ",
       "pillTasks": "କାର୍ଯ୍ୟ ନାଭିଗେସନ୍",
       "primaryCta": "ବେଟାରେ ଯୋଗଦିଅନ୍ତୁ",
-      "secondaryCta": "ବୈଶିଷ୍ଟ୍ୟଗୁଡ଼ିକ ଅନୁସନ୍ଧାନ କରନ୍ତୁ",
+      "secondaryCta": "Explore web app",
       "title": "ନିଜ ପଥ ଖୋଜନ୍ତୁ। ଏକ ଆଲୋକ ଛାଡ଼ନ୍ତୁ।"
     },
     "meta": {
@@ -9757,7 +9757,7 @@
       "pillLanguage": "څوژبنۍ ټولنه",
       "pillTasks": "د دندو لارښوونه",
       "primaryCta": "بیټا ته ورشئ",
-      "secondaryCta": "ځانګړنې وپلټئ",
+      "secondaryCta": "Explore web app",
       "title": "خپله لاره ومومئ. یو څرک پرېږدئ."
     },
     "meta": {
@@ -9889,7 +9889,7 @@
       "pillLanguage": "جامعه چندزبانه",
       "pillTasks": "راهنمایی کارها",
       "primaryCta": "پیوستن به نسخه آزمایشی",
-      "secondaryCta": "امکانات را ببینید",
+      "secondaryCta": "Explore web app",
       "title": "راه خود را پیدا کنید. ردّی از نور بگذارید."
     },
     "meta": {
@@ -10021,7 +10021,7 @@
       "pillLanguage": "Społeczność wielojęzyczna",
       "pillTasks": "Nawigacja po zadaniach",
       "primaryCta": "Dołącz do wersji beta",
-      "secondaryCta": "Poznaj funkcje",
+      "secondaryCta": "Otwórz wersję web",
       "title": "Znajdź swoją drogę. Zostaw po sobie ślad."
     },
     "meta": {
@@ -10153,7 +10153,7 @@
       "pillLanguage": "Comunidade multilíngue",
       "pillTasks": "Navegação de tarefas",
       "primaryCta": "Entrar na beta",
-      "secondaryCta": "Explorar recursos",
+      "secondaryCta": "Abrir versão web",
       "title": "Encontre o seu caminho. Deixe uma luz."
     },
     "meta": {
@@ -10285,7 +10285,7 @@
       "pillLanguage": "ਬਹੁਭਾਸ਼ੀ ਕਮਿਊਨਿਟੀ",
       "pillTasks": "ਕੰਮਾਂ ਦੀ ਰਹਿਨੁਮਾਈ",
       "primaryCta": "ਬੀਟਾ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
-      "secondaryCta": "ਫੀਚਰਾਂ ਦੀ ਖੋਜ ਕਰੋ",
+      "secondaryCta": "Explore web app",
       "title": "ਆਪਣਾ ਰਸਤਾ ਲੱਭੋ। ਇੱਕ ਰੌਸ਼ਨੀ ਛੱਡੋ।"
     },
     "meta": {
@@ -10417,7 +10417,7 @@
       "pillLanguage": "Comunitate multilingvă",
       "pillTasks": "Navigarea sarcinilor",
       "primaryCta": "Alătură-te versiunii beta",
-      "secondaryCta": "Explorează funcțiile",
+      "secondaryCta": "Explore web app",
       "title": "Găsește-ți drumul. Lasă o lumină."
     },
     "meta": {
@@ -10549,7 +10549,7 @@
       "pillLanguage": "Многоязычное сообщество",
       "pillTasks": "Навигация по задачам",
       "primaryCta": "Присоединиться к бета-версии",
-      "secondaryCta": "Изучить возможности",
+      "secondaryCta": "Открыть веб-версию",
       "title": "Найдите свой путь. Оставьте свет."
     },
     "meta": {
@@ -10681,7 +10681,7 @@
       "pillLanguage": "Nu'u e tele gagana",
       "pillTasks": "Fa'atautaiga o galuega",
       "primaryCta": "Auai i le beta",
-      "secondaryCta": "Su'esu'e foliga",
+      "secondaryCta": "Explore web app",
       "title": "Su'e lou ala. Tu'u se malamalama."
     },
     "meta": {
@@ -10813,7 +10813,7 @@
       "pillLanguage": "Coimhearsnachd ioma-chànanach",
       "pillTasks": "Seòladh ghnìomhan",
       "primaryCta": "Thig dhan beta",
-      "secondaryCta": "Rannsaich na feartan",
+      "secondaryCta": "Explore web app",
       "title": "Lorg do shlighe. Fàg solas."
     },
     "meta": {
@@ -10945,7 +10945,7 @@
       "pillLanguage": "Višejezična zajednica",
       "pillTasks": "Navigacija kroz zadatke",
       "primaryCta": "Pridružite se beta verziji",
-      "secondaryCta": "Istražite funkcije",
+      "secondaryCta": "Explore web app",
       "title": "Pronađite svoj put. Ostavite trag svetlosti."
     },
     "meta": {
@@ -11077,7 +11077,7 @@
       "pillLanguage": "Sechaba sa lipuo tse ngata",
       "pillTasks": "Tsamaiso ea mesebetsi",
       "primaryCta": "Kenya letsoho ho beta",
-      "secondaryCta": "Lekola likarolo",
+      "secondaryCta": "Explore web app",
       "title": "Fumana tsela ea hao. Tlohela leseli."
     },
     "meta": {
@@ -11209,7 +11209,7 @@
       "pillLanguage": "Nharaunda ine mitauro yakawanda",
       "pillTasks": "Kufamba kwemabasa",
       "primaryCta": "Joina beta",
-      "secondaryCta": "Ongorora maficha",
+      "secondaryCta": "Explore web app",
       "title": "Tsvaga nzira yako. Siya chiedza."
     },
     "meta": {
@@ -11341,7 +11341,7 @@
       "pillLanguage": "گهڻ ٻوليائي برادري",
       "pillTasks": "ڪمن جي رهنمائي",
       "primaryCta": "بيٽا ۾ شامل ٿيو",
-      "secondaryCta": "خاصيتون ڏسو",
+      "secondaryCta": "Explore web app",
       "title": "پنهنجو رستو ڳوليو. هڪ روشني ڇڏي وڃو."
     },
     "meta": {
@@ -11473,7 +11473,7 @@
       "pillLanguage": "බහුභාෂා ප්‍රජාව",
       "pillTasks": "කාර්ය මාර්ගෝපදේශනය",
       "primaryCta": "බීටාට එක්වන්න",
-      "secondaryCta": "විශේෂාංග ගවේෂණය කරන්න",
+      "secondaryCta": "Explore web app",
       "title": "ඔබේ මාර්ගය සොයන්න. ආලෝකයක් තබන්න."
     },
     "meta": {
@@ -11605,7 +11605,7 @@
       "pillLanguage": "Viacjazyčná komunita",
       "pillTasks": "Navigácia úlohami",
       "primaryCta": "Pridať sa do beta verzie",
-      "secondaryCta": "Preskúmať funkcie",
+      "secondaryCta": "Explore web app",
       "title": "Nájdite si svoju cestu. Zanechajte svetlo."
     },
     "meta": {
@@ -11737,7 +11737,7 @@
       "pillLanguage": "Večjezična skupnost",
       "pillTasks": "Krmarjenje po opravilih",
       "primaryCta": "Pridruži se beta različici",
-      "secondaryCta": "Razišči funkcije",
+      "secondaryCta": "Explore web app",
       "title": "Najdi svojo pot. Pusti sled."
     },
     "meta": {
@@ -11869,7 +11869,7 @@
       "pillLanguage": "Bulsho luqado badan leh",
       "pillTasks": "Hagidda hawlaha",
       "primaryCta": "Ku biir beta-ga",
-      "secondaryCta": "Sahami astaamaha",
+      "secondaryCta": "Explore web app",
       "title": "Raadi jidkaaga. Ka tag iftiin."
     },
     "meta": {
@@ -12001,7 +12001,7 @@
       "pillLanguage": "Comunidad multilingüe",
       "pillTasks": "Navegación de tareas",
       "primaryCta": "Únete a la beta",
-      "secondaryCta": "Explorar funciones",
+      "secondaryCta": "Abrir la versión web",
       "title": "Encuentra tu camino. Deja una luz."
     },
     "meta": {
@@ -12133,7 +12133,7 @@
       "pillLanguage": "Komunitas multibasa",
       "pillTasks": "Napigasi tugas",
       "primaryCta": "Gabung kana béta",
-      "secondaryCta": "Jelajah fitur",
+      "secondaryCta": "Explore web app",
       "title": "Teangan jalur anjeun. Ninggalkeun cahaya."
     },
     "meta": {
@@ -12265,7 +12265,7 @@
       "pillLanguage": "Jamii ya lugha nyingi",
       "pillTasks": "Uelekezaji wa kazi",
       "primaryCta": "Jiunge na beta",
-      "secondaryCta": "Chunguza vipengele",
+      "secondaryCta": "Explore web app",
       "title": "Pata njia yako. Acha mwanga."
     },
     "meta": {
@@ -12397,7 +12397,7 @@
       "pillLanguage": "Flerspråkig gemenskap",
       "pillTasks": "Uppgiftsnavigering",
       "primaryCta": "Gå med i betan",
-      "secondaryCta": "Utforska funktioner",
+      "secondaryCta": "Explore web app",
       "title": "Hitta din väg. Lämna ett ljus."
     },
     "meta": {
@@ -12529,7 +12529,7 @@
       "pillLanguage": "Multilingguwal na komunidad",
       "pillTasks": "Pag-navigate ng mga gawain",
       "primaryCta": "Sumali sa beta",
-      "secondaryCta": "Tuklasin ang mga tampok",
+      "secondaryCta": "Explore web app",
       "title": "Hanapin ang iyong landas. Mag-iwan ng liwanag."
     },
     "meta": {
@@ -12661,7 +12661,7 @@
       "pillLanguage": "Ҷомеаи бисёрзабона",
       "pillTasks": "Навигатсияи вазифаҳо",
       "primaryCta": "Ба бета ҳамроҳ шавед",
-      "secondaryCta": "Хусусиятҳоро омӯзед",
+      "secondaryCta": "Explore web app",
       "title": "Роҳи худро пайдо кунед. Нуре боқӣ гузоред."
     },
     "meta": {
@@ -12793,7 +12793,7 @@
       "pillLanguage": "பலமொழி சமூகம",
       "pillTasks": "பணிகள் வழிசெலுத்தல்",
       "primaryCta": "பீட்டாவில் சேரவும்",
-      "secondaryCta": "அம்சங்களை ஆராயவும்",
+      "secondaryCta": "Explore web app",
       "title": "உங்கள் பாதையை கண்டுபிடியுங்கள். ஒரு ஒளியை விடுங்கள்."
     },
     "meta": {
@@ -12925,7 +12925,7 @@
       "pillLanguage": "Күптелле җәмгыять",
       "pillTasks": "Биремнәр буенча юнәлеш",
       "primaryCta": "Бетага кушылу",
-      "secondaryCta": "Функцияләрне карау",
+      "secondaryCta": "Explore web app",
       "title": "Юлыңны тап. Яктылык калдыр."
     },
     "meta": {
@@ -13057,7 +13057,7 @@
       "pillLanguage": "బహుభాషా సముదాయం",
       "pillTasks": "పనుల మార్గనిర్దేశం",
       "primaryCta": "బీటాలో చేరండి",
-      "secondaryCta": "ఫీచర్లను అన్వేషించండి",
+      "secondaryCta": "Explore web app",
       "title": "మీ దారిని కనుగొనండి. ఒక వెలుగు వదిలి వెళ్లండి."
     },
     "meta": {
@@ -13189,7 +13189,7 @@
       "pillLanguage": "ชุมชนหลายภาษา",
       "pillTasks": "การนำทางงาน",
       "primaryCta": "เข้าร่วมเบต้า",
-      "secondaryCta": "สำรวจฟีเจอร์",
+      "secondaryCta": "Explore web app",
       "title": "หาทางของคุณ แล้วทิ้งแสงไว้"
     },
     "meta": {
@@ -13321,7 +13321,7 @@
       "pillLanguage": "Çok dilli topluluk",
       "pillTasks": "Görev yönlendirmesi",
       "primaryCta": "Beta sürümüne katıl",
-      "secondaryCta": "Özellikleri keşfet",
+      "secondaryCta": "Explore web app",
       "title": "Kendi yolunu bul. Bir ışık bırak."
     },
     "meta": {
@@ -13453,7 +13453,7 @@
       "pillLanguage": "Köp dilli jemgyýet",
       "pillTasks": "Tabşyryk boýunça ýol görkezme",
       "primaryCta": "Beta wersiýasyna goşul",
-      "secondaryCta": "Aýratynlyklary öwren",
+      "secondaryCta": "Explore web app",
       "title": "Öz ýoluňy tap. Yzyňda ýagtylyk goý."
     },
     "meta": {
@@ -13585,7 +13585,7 @@
       "pillLanguage": "Багатомовна спільнота",
       "pillTasks": "Навігація завданнями",
       "primaryCta": "Приєднатися до бета-версії",
-      "secondaryCta": "Переглянути можливості",
+      "secondaryCta": "Відкрити вебверсію",
       "title": "Знайдіть свій шлях. Залиште світло."
     },
     "meta": {
@@ -13717,7 +13717,7 @@
       "pillLanguage": "کثیراللسانی کمیونٹی",
       "pillTasks": "کاموں کی رہنمائی",
       "primaryCta": "بیٹا میں شامل ہوں",
-      "secondaryCta": "خصوصیات دریافت کریں",
+      "secondaryCta": "Explore web app",
       "title": "اپنا راستہ تلاش کریں۔ ایک روشنی چھوڑیں۔"
     },
     "meta": {
@@ -13849,7 +13849,7 @@
       "pillLanguage": "كۆپ تىللىق جەمئىيەت",
       "pillTasks": "ۋەزىپە يول باشلاش",
       "primaryCta": "Beta سىناققا قوشۇلۇڭ",
-      "secondaryCta": "ئىقتىدارلارنى كۆرۈپ چىقىڭ",
+      "secondaryCta": "Explore web app",
       "title": "يولىڭىزنى تېپىڭ. بىر نۇر قالدۇرۇڭ."
     },
     "meta": {
@@ -13981,7 +13981,7 @@
       "pillLanguage": "Ko‘p tilli hamjamiyat",
       "pillTasks": "Vazifalar bo‘yicha yo‘naltirish",
       "primaryCta": "Beta-versiyaga qo‘shiling",
-      "secondaryCta": "Imkoniyatlarni ko‘rish",
+      "secondaryCta": "Explore web app",
       "title": "Yo‘lingizni toping. Iz qoldiring."
     },
     "meta": {
@@ -14113,7 +14113,7 @@
       "pillLanguage": "Cộng đồng đa ngôn ngữ",
       "pillTasks": "Điều hướng nhiệm vụ",
       "primaryCta": "Tham gia bản beta",
-      "secondaryCta": "Khám phá tính năng",
+      "secondaryCta": "Explore web app",
       "title": "Tìm lối đi của bạn. Để lại một dấu sáng."
     },
     "meta": {
@@ -14245,7 +14245,7 @@
       "pillLanguage": "Cymuned amlieithog",
       "pillTasks": "Llywio tasgau",
       "primaryCta": "Ymuno â’r beta",
-      "secondaryCta": "Archwilio’r nodweddion",
+      "secondaryCta": "Explore web app",
       "title": "Dewch o hyd i’ch llwybr. Gadewch olau."
     },
     "meta": {
@@ -14377,7 +14377,7 @@
       "pillLanguage": "Uluntu ngeelwimi ezininzi",
       "pillTasks": "Ukuhamba kwemisebenzi",
       "primaryCta": "Joyina i-beta",
-      "secondaryCta": "Jonga iimpawu",
+      "secondaryCta": "Explore web app",
       "title": "Fumana indlela yakho. Shiya ukukhanya."
     },
     "meta": {
@@ -14509,7 +14509,7 @@
       "pillLanguage": "מולטי־שפּראַכיקע קהילה",
       "pillTasks": "טאַסק־נאַוויגאַציע",
       "primaryCta": "באַהעפֿט זיך צום ביתא",
-      "secondaryCta": "אַנטדעק פֿעיִטשערז",
+      "secondaryCta": "Explore web app",
       "title": "געפֿין דײַן וועג. לאָז אַ ליכט."
     },
     "meta": {
@@ -14641,7 +14641,7 @@
       "pillLanguage": "Àwùjọ ọ̀pọ̀ èdè",
       "pillTasks": "Ìtọ́sọ́nà iṣẹ́-ṣiṣe",
       "primaryCta": "Darapọ̀ mọ́ beta",
-      "secondaryCta": "Ṣàwárí àwọn ànfàní",
+      "secondaryCta": "Explore web app",
       "title": "Wa ọ̀nà rẹ. Fi ìmọ́lẹ̀ sílẹ̀."
     },
     "meta": {
@@ -14773,7 +14773,7 @@
       "pillLanguage": "Umphakathi onezilimi eziningi",
       "pillTasks": "Ukuzulazula kwemisebenzi",
       "primaryCta": "Joyina i-beta",
-      "secondaryCta": "Hlola izici",
+      "secondaryCta": "Explore web app",
       "title": "Thola indlela yakho. Shiya ukukhanya."
     },
     "meta": {
