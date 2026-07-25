@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/test-worker.mjs",
+    "preview:share": "node scripts/preview-share-page.mjs"
+  }
+}
