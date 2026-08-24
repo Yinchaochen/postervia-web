@@ -181,7 +181,7 @@ function watermarkMarkup() {
   return `<span class="watermark" data-watermark aria-hidden="true"><img src="/assets/postervia-icon.png" alt="">Postervia</span>`;
 }
 
-function mediaMarkup(preview, copy) {
+function mediaMarkup(preview, copy, appHref, storeData) {
   const total = integer(preview.total_media_count);
   const media = Array.isArray(preview.media_items)
     ? preview.media_items
@@ -203,7 +203,7 @@ function mediaMarkup(preview, copy) {
     return `<figure class="media-slide${locked ? ' is-locked' : ''}" data-media-state="${state}">
       <img src="${escapeHtml(item.url)}" alt="${escapeHtml(alt)}" ${index === 0 ? 'fetchpriority="high"' : locked ? 'loading="eager"' : 'loading="lazy"'} referrerpolicy="no-referrer">
       ${watermarkMarkup()}
-      ${locked ? `<a class="locked-media-link js-app-link" href="__APP_LINK__"__STORE_DATA__><span class="locked-count">4 / ${displayTotal}</span><strong>${escapeHtml(copy.seeRest)}</strong></a>` : ''}
+      ${locked ? `<a class="locked-media-link js-app-link" href="${appHref}"${storeData}><span class="locked-count">4 / ${displayTotal}</span><strong>${escapeHtml(copy.seeRest)}</strong></a>` : ''}
     </figure>`;
   }).join('');
   const dots = media.map((_, index) => {
@@ -221,7 +221,7 @@ function mediaMarkup(preview, copy) {
   </section>`;
 }
 
-function commentsMarkup(preview, copy, locale) {
+function commentsMarkup(preview, copy, locale, appHref, storeData) {
   const comments = Array.isArray(preview.comments_preview)
     ? preview.comments_preview
       .filter((comment) => comment && comment.moderation_status === 'approved')
@@ -240,7 +240,7 @@ function commentsMarkup(preview, copy, locale) {
         <p>${escapedMultiline(comment.body)}</p>
         <div class="comment-meta">
           ${helpfulCount ? `<span>${escapeHtml(copy.helpful)} · ${formattedNumber(helpfulCount, locale)}</span>` : ''}
-          ${replyCount ? `<a class="js-app-link reply-link" href="__APP_LINK__"__STORE_DATA__>${escapeHtml(formatCopy(copy.showReplies, { count: formattedNumber(replyCount, locale) }))}</a>` : ''}
+          ${replyCount ? `<a class="js-app-link reply-link" href="${appHref}"${storeData}>${escapeHtml(formatCopy(copy.showReplies, { count: formattedNumber(replyCount, locale) }))}</a>` : ''}
         </div>
       </div>
     </article>`;
@@ -249,7 +249,7 @@ function commentsMarkup(preview, copy, locale) {
   return `<section class="comments-section" aria-labelledby="comments-title">
     <h2 id="comments-title">${escapeHtml(copy.comments)}${total ? ` <span>${formattedNumber(total, locale)}</span>` : ''}</h2>
     ${rows}
-    ${hiddenComments ? `<a class="view-comments js-app-link" href="__APP_LINK__"__STORE_DATA__>${escapeHtml(formatCopy(copy.viewAllComments, { count: formattedNumber(total, locale) }))}</a>` : ''}
+    ${hiddenComments ? `<a class="view-comments js-app-link" href="${appHref}"${storeData}>${escapeHtml(formatCopy(copy.viewAllComments, { count: formattedNumber(total, locale) }))}</a>` : ''}
   </section>`;
 }
 
@@ -330,12 +330,9 @@ export function postPageHtml({ preview, pageUrl, postId, token, locale, storeUrl
   const title = `${escapeHtml(preview.title)} · Postervia`;
   const metaLine = [preview.city, formattedDate(preview.created_at, locale)].filter(Boolean).map(escapeHtml).join(' · ');
   const shouldCollapseBody = String(preview.body || '').length > 280;
-  const media = mediaMarkup(preview, copy)
-    .replaceAll('__APP_LINK__', escapeHtml(deepLink))
-    .replaceAll('__STORE_DATA__', fallbackData);
-  const comments = commentsMarkup(preview, copy, locale)
-    .replaceAll('__APP_LINK__', escapeHtml(deepLink))
-    .replaceAll('__STORE_DATA__', fallbackData);
+  const appHref = escapeHtml(deepLink);
+  const media = mediaMarkup(preview, copy, appHref, fallbackData);
+  const comments = commentsMarkup(preview, copy, locale, appHref, fallbackData);
   return `<!doctype html>
 <html lang="${escapeHtml(locale)}" dir="${direction}"><head>
 <meta charset="utf-8">

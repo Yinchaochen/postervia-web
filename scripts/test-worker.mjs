@@ -229,6 +229,35 @@ test('UGC is HTML-escaped (no stored XSS via post title)', async () => {
   assert.ok(!html.includes('og:image'));
 });
 
+test('template placeholders in UGC cannot break out of link attributes', async () => {
+  stubFetch(() =>
+    previewResponse({
+      title: 'Poster',
+      description: 'body',
+      author_name: '__STORE_DATA__ onerror=alert(document.domain) x',
+      media_items: [{ url: 'https://media.postervia.app/a.jpg', mime_type: 'image/jpeg' }],
+      total_media_count: 9,
+      body: 'A useful route with enough detail to read before installing the app.',
+      comment_count: 2,
+      comments_preview: [{
+        body: 'nice __APP_LINK__ __STORE_DATA__',
+        author_name: '__APP_LINK__',
+        reply_count: 4,
+        helpful_count: 0,
+        moderation_status: 'approved',
+      }],
+    }),
+  );
+  const res = await get(`/p/${POST_ID}?s=${TOKEN}`, 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0)');
+  const html = await res.text();
+  // A closing quote immediately followed by an event handler is the attribute-breakout signature.
+  assert.ok(!/"\s+onerror=/.test(html));
+  // The placeholders must never manufacture a data-store-url attribute from author/comment text.
+  assert.ok(!/alt="[^"]*data-store-url=/.test(html));
+  // Legit app-gate links are still wired from real values, not user text.
+  assert.ok(html.includes('data-store-url="https://apps.apple.com'));
+});
+
 test('API 404 (bad token / hidden post) falls back to generic landing', async () => {
   stubFetch(() => new Response('{}', { status: 404 }));
   const res = await get(`/p/${POST_ID}?s=${TOKEN}`);
