@@ -15,8 +15,3 @@ directory = "./public"
 # it; while empty /get sends the plain store URL. The value is public (it is
 # part of every campaign URL), so it belongs here, not in a secret.
 APPLE_PT = ""
-
-# /get click counts: blobs = [platform, src, via], one double = 1 per click.
-[[analytics_engine_datasets]]
-binding = "CLICKS"
-dataset = "app_clicks"
