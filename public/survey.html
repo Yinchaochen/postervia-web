@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Postervia · Survey</title>
+<style>
+  :root {
+    --ink: #171717;
+    --soft-ink: #5f5a56;
+    --muted: #918a82;
+    --paper: #fffaf2;
+    --cream: #fff2df;
+    --coral: #f57175;
+    --coral-dark: #dd535a;
+    --line: #f2dfcc;
+    --white: #ffffff;
+    --tight-shadow: 0 10px 28px rgba(92, 63, 34, 0.12);
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.5;
+  }
+
+  a { color: inherit; }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .topbar {
+    background: rgba(255, 250, 242, 0.92);
+    border-bottom: 1px solid rgba(242, 223, 204, 0.72);
+  }
+
+  .nav {
+    max-width: 720px;
+    margin: 0 auto;
+    min-height: 66px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+  }
+
+  .brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-weight: 900;
+  }
+
+  .brand-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    background: var(--coral);
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .brand-word { font-size: 18px; }
+
+  .lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .lang-toggle button {
+    padding: 6px 4px;
+    border: 0;
+    background: none;
+    color: var(--muted);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .lang-toggle button[aria-pressed="true"] {
+    color: var(--coral-dark);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 18px 64px;
+  }
+
+  h1, h2, p { margin-top: 0; }
+
+  h1 {
+    margin-bottom: 12px;
+    font-size: 40px;
+    line-height: 1;
+    overflow-wrap: anywhere;
+  }
+
+  .lede {
+    margin-bottom: 28px;
+    color: var(--soft-ink);
+    font-size: 19px;
+    font-weight: 650;
+  }
+
+  .card {
+    padding: 22px 20px;
+    border: 2px solid var(--line);
+    border-radius: 24px;
+    background: var(--white);
+    box-shadow: inset 0 -4px 0 rgba(92, 63, 34, 0.05);
+  }
+
+  .notice h2 {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .notice p {
+    margin-bottom: 10px;
+    color: var(--soft-ink);
+    font-size: 15px;
+    font-weight: 620;
+  }
+
+  .notice p:last-child { margin-bottom: 0; }
+
+  .notice a { color: var(--coral-dark); }
+
+  .signature {
+    color: var(--muted);
+    font-weight: 750;
+  }
+
+  .form-area { margin-top: 28px; }
+
+  .form-area iframe {
+    display: block;
+    width: 100%;
+    border: 0;
+  }
+
+  .not-open {
+    margin: 0;
+    padding: 28px 20px;
+    border-radius: 24px;
+    background: var(--cream);
+    color: var(--soft-ink);
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .done {
+    margin-top: 28px;
+    text-align: center;
+    box-shadow: var(--tight-shadow);
+  }
+
+  .done h2 {
+    margin-bottom: 8px;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .done p {
+    margin-bottom: 22px;
+    color: var(--soft-ink);
+    font-size: 17px;
+    font-weight: 650;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 22px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--coral);
+    color: var(--white);
+    font-weight: 900;
+    text-decoration: none;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .button:hover { background: var(--coral-dark); }
+
+  .footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 18px 40px;
+    display: flex;
+    gap: 18px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .footer a { text-decoration: none; }
+
+  .footer a:hover { color: var(--coral-dark); }
+
+  @media (max-width: 620px) {
+    h1 { font-size: 32px; }
+
+    .lede { font-size: 17px; }
+
+    .button { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <nav class="nav">
+    <a class="brand-link" href="/">
+      <img class="brand-icon" src="/assets/postervia-icon.png" alt="" width="42" height="42">
+      <span class="brand-word">Postervia</span>
+    </a>
+    <div class="lang-toggle">
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+      <span aria-hidden="true">|</span>
+      <button type="button" data-lang="de" aria-pressed="false">Deutsch</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1 data-s="title">A short survey</h1>
+  <p class="lede" data-s="lede">Your answers help us decide what to build next.</p>
+
+  <aside class="card notice">
+    <h2 data-s="noticeTitle">About this survey</h2>
+    <p data-s="noticeBody">This survey is anonymous. We do not ask for your name, email address or anything else that identifies you, so please leave such details out of the free-text answers too. The form is run for us by Tally BV (Ghent, Belgium) on servers in the EU. To load it, your browser sends its IP address to Tally and to Cloudflare, which serves this page; that is technically necessary, we do not store it, and this page sets no cookies. We use the answers for product development (legitimate interest, Art. 6(1)(f) GDPR) and delete the raw answers twelve months after the survey closes; only summaries remain.</p>
+    <p><span data-s="noticeLinksLead">Who we are, your rights and how to complain: see our </span><a data-s="privacyLink" data-href="privacyHref" href="/privacy">privacy policy</a><span data-s="noticeLinksJoin"> and </span><a data-s="imprintLink" data-href="imprintHref" href="/impressum">imprint</a>.</p>
+    <p class="signature">Persterna Privacy Team</p>
+  </aside>
+
+  <div class="form-area" id="form-area">
+    <div id="form-slot"></div>
+    <p class="not-open" id="not-open" data-s="notOpen" hidden>This survey is not open yet. Please come back later.</p>
+  </div>
+
+  <section class="card done" id="done" hidden>
+    <h2 data-s="doneTitle">Thanks.</h2>
+    <p data-s="doneBody">This app exists already. If you want to try it, tap the button.</p>
+    <a class="button" id="get-app" href="/get?src=survey" data-s="doneCta">Get the app</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <a data-s="footerPrivacy" data-href="privacyHref" href="/privacy">Privacy</a>
+  <a data-s="footerImprint" data-href="imprintHref" href="/impressum">Imprint</a>
+</footer>
+
+<script>
+  // Empty id = form not created yet; the page then shows the not-open message.
+  const TALLY_FORMS = { en: '', de: '' };
+
+  // Same allowlist as the Worker's /get route. Nothing else from the URL is echoed.
+  const SRC_RE = /^[a-z0-9_-]{1,24}$/;
+
+  const STRINGS = {
+    en: {
+      title: 'A short survey',
+      lede: 'Your answers help us decide what to build next.',
+      noticeTitle: 'About this survey',
+      noticeBody: 'This survey is anonymous. We do not ask for your name, email address or anything else that identifies you, so please leave such details out of the free-text answers too. The form is run for us by Tally BV (Ghent, Belgium) on servers in the EU. To load it, your browser sends its IP address to Tally and to Cloudflare, which serves this page; that is technically necessary, we do not store it, and this page sets no cookies. We use the answers for product development (legitimate interest, Art. 6(1)(f) GDPR) and delete the raw answers twelve months after the survey closes; only summaries remain.',
+      noticeLinksLead: 'Who we are, your rights and how to complain: see our ',
+      privacyLink: 'privacy policy',
+      noticeLinksJoin: ' and ',
+      imprintLink: 'imprint',
+      privacyHref: '/privacy',
+      imprintHref: '/impressum',
+      notOpen: 'This survey is not open yet. Please come back later.',
+      formTitle: 'Survey',
+      doneTitle: 'Thanks.',
+      doneBody: 'This app exists already. If you want to try it, tap the button.',
+      doneCta: 'Get the app',
+      footerPrivacy: 'Privacy',
+      footerImprint: 'Imprint',
+    },
+    de: {
+      title: 'Eine kurze Umfrage',
+      lede: 'Deine Antworten helfen uns zu entscheiden, was wir als Nächstes bauen.',
+      noticeTitle: 'Zu dieser Umfrage',
+      noticeBody: 'Diese Umfrage ist anonym. Wir fragen weder Namen noch E-Mail-Adresse noch andere Angaben ab, die dich erkennbar machen. Bitte schreib solche Angaben auch nicht in die Freitextfelder. Das Formular betreibt für uns Tally BV (Gent, Belgien) auf Servern in der EU. Beim Laden übermittelt dein Browser seine IP-Adresse an Tally und an Cloudflare, das diese Seite ausliefert. Das ist technisch nötig, wir speichern sie nicht, und diese Seite setzt keine Cookies. Wir nutzen die Antworten für die Produktentwicklung (berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO) und löschen die Rohantworten zwölf Monate nach Ende der Umfrage. Danach bleiben nur Zusammenfassungen.',
+      noticeLinksLead: 'Wer wir sind, welche Rechte du hast und wo du dich beschweren kannst, steht in der ',
+      privacyLink: 'Datenschutzerklärung',
+      noticeLinksJoin: ' und im ',
+      imprintLink: 'Impressum',
+      privacyHref: '/privacy-de',
+      imprintHref: '/impressum-de',
+      notOpen: 'Die Umfrage ist noch nicht geöffnet. Schau bitte später noch einmal vorbei.',
+      formTitle: 'Umfrage',
+      doneTitle: 'Danke.',
+      doneBody: 'Die App gibt es schon. Wenn du sie ausprobieren willst, tipp auf den Button.',
+      doneCta: 'Hol dir die App',
+      footerPrivacy: 'Datenschutz',
+      footerImprint: 'Impressum',
+    },
+  };
+
+  const params = new URLSearchParams(location.search);
+  const rawSrc = (params.get('src') || '').toLowerCase();
+  const src = SRC_RE.test(rawSrc) ? rawSrc : 'survey';
+  const qLang = (params.get('lang') || '').toLowerCase();
+  document.getElementById('get-app').href = `/get?src=${src}`;
+
+  // embed.js forwards the page's whole query string into the form, so only the
+  // allowlisted slug may be left in the URL before any form loads.
+  try {
+    history.replaceState(null, '', `${location.pathname}?src=${src}`);
+  } catch {
+    // no history API: the form then sees the raw query, nothing else breaks
+  }
+
+  const slot = document.getElementById('form-slot');
+  const notOpen = document.getElementById('not-open');
+  const done = document.getElementById('done');
+
+  // Tally's script is only fetched once a real form id exists, so the not-open
+  // page contacts no third party.
+  let embedScript = null;
+  function loadEmbeds() {
+    if (typeof Tally !== 'undefined') {
+      Tally.loadEmbeds();
+      return;
+    }
+    if (embedScript) return;
+    embedScript = document.createElement('script');
+    embedScript.src = 'https://tally.so/widgets/embed.js';
+    embedScript.onload = () => { if (typeof Tally !== 'undefined') Tally.loadEmbeds(); };
+    embedScript.onerror = () => {
+      document.querySelectorAll('iframe[data-tally-src]').forEach((frame) => {
+        frame.src = `${frame.dataset.tallySrc}&src=${src}`;
+      });
+    };
+    document.body.appendChild(embedScript);
+  }
+
+  function renderForm(lang) {
+    if (!done.hidden) return;
+    slot.textContent = '';
+    const formId = TALLY_FORMS[lang];
+    notOpen.hidden = Boolean(formId);
+    if (!formId) return;
+    const iframe = document.createElement('iframe');
+    iframe.dataset.tallySrc = `https://tally.so/embed/${formId}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1`;
+    iframe.loading = 'lazy';
+    iframe.height = '400';
+    iframe.title = STRINGS[lang].formTitle;
+    slot.appendChild(iframe);
+    loadEmbeds();
+  }
+
+  function apply(lang) {
+    const t = STRINGS[lang];
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-s]').forEach((el) => { el.textContent = t[el.dataset.s]; });
+    document.querySelectorAll('[data-href]').forEach((el) => { el.href = t[el.dataset.href]; });
+    document.querySelectorAll('[data-lang]').forEach((el) => {
+      el.setAttribute('aria-pressed', String(el.dataset.lang === lang));
+    });
+    renderForm(lang);
+  }
+
+  document.querySelectorAll('[data-lang]').forEach((el) => {
+    el.addEventListener('click', () => apply(el.dataset.lang));
+  });
+
+  // Only the event name is read. The submission payload is never touched.
+  window.addEventListener('message', (e) => {
+    if (e.origin !== 'https://tally.so' || typeof e.data !== 'string' || !e.data.startsWith('{')) return;
+    let event;
+    try {
+      event = JSON.parse(e.data).event;
+    } catch {
+      return;
+    }
+    if (event !== 'Tally.FormSubmitted') return;
+    document.getElementById('form-area').hidden = true;
+    done.hidden = false;
+  });
+
+  const browserDe = (navigator.language || '').toLowerCase().startsWith('de');
+  apply(qLang === 'de' || qLang === 'en' ? qLang : browserDe ? 'de' : 'en');
+</script>
+</body>
+</html>

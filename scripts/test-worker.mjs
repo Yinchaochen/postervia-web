@@ -3,6 +3,7 @@
 // stubbing globalThis.fetch to fake the share-preview API.
 import assert from 'node:assert/strict';
 
+import { classifyUserAgent } from '../get-link.js';
 import { SHARE_COPY } from '../share-copy.generated.js';
 import worker from '../worker.js';
 
@@ -286,6 +287,221 @@ test('non-UUID id or malformed token never reaches the API', async () => {
   const junkToken = await get(`/p/${POST_ID}?s=${encodeURIComponent('"><img>')}`);
   assert.equal(junkToken.status, 200);
   assert.equal(fetchCalls.length, 0);
+});
+
+// ---- /get campaign store link ----------------------------------------------
+const UA = {
+  iphoneSafari: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1',
+  crios: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/126.0.6478.54 Mobile/15E148 Safari/604.1',
+  macSafari: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15',
+  androidChrome: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36',
+  androidReduced: 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36',
+  windowsChrome: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+  windowsPhone: 'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 930) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537',
+  openHarmony: 'Mozilla/5.0 (Phone; OpenHarmony 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 ArkWeb/4.1.6.1 Mobile',
+  kaios: 'Mozilla/5.0 (Mobile; Nokia 8110 4G; rv:48.0) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+  whatsapp: 'WhatsApp/2.23.20.0 A',
+  facebook: 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)',
+  googlebotPhone: 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  instagram: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 334.0.0.0.0 (iPhone15,2; iOS 17_5; en_US; en; scale=3.00; 1179x2556; 123456789)',
+  fban: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBAV/470.0.0.0.0;FBBV/1;FBDV/iPhone15,2;FBMD/iPhone;FBSN/iOS;FBSV/17.5;FBSS/3;FBID/phone;FBLC/en_US;FBOP/5]',
+  wechat: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36 XWEB/1160065 MMWEBSDK/20231202 MMWEBID/1 MicroMessenger/8.0.47',
+  snapchat: 'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 Snapchat/12.90.0.44',
+  cubot: 'Mozilla/5.0 (Linux; Android 11; CUBOT KINGKONG 5 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36',
+};
+
+function fakeClicks(impl) {
+  const points = [];
+  const writeDataPoint = impl || ((point) => points.push(point));
+  return { points, env: { CLICKS: { writeDataPoint } } };
+}
+
+// Captures the console.log click channel so the harness output stays clean
+// and the log line shape can be asserted.
+async function getLink(path, { ua = '', env, method = 'GET', headers = {} } = {}) {
+  const logs = [];
+  const realLog = console.log;
+  console.log = (line) => logs.push(line);
+  try {
+    const res = await worker.fetch(
+      new Request(`https://postervia.app${path}`, {
+        method,
+        headers: ua ? { 'user-agent': ua, ...headers } : headers,
+      }),
+      env,
+    );
+    return { res, logs };
+  } finally {
+    console.log = realLog;
+  }
+}
+
+function assertRedirect(res) {
+  assert.equal(res.status, 302);
+  assert.equal(res.headers.get('cache-control'), 'no-store');
+  assert.equal(res.headers.get('referrer-policy'), 'no-referrer');
+  assert.equal(res.headers.get('x-robots-tag'), 'noindex');
+  assert.equal(res.headers.get('vary'), 'User-Agent');
+  return res.headers.get('location');
+}
+
+const PLAY_REFERRER = 'referrer=utm_source%3Dpostervia_web%26utm_medium%3Dsurvey%26utm_campaign%3Dsprachcafe';
+
+test('/get: iPhone Safari and Chrome iOS go to the App Store', async () => {
+  for (const ua of [UA.iphoneSafari, UA.crios]) {
+    const { res } = await getLink('/get?src=sprachcafe', { ua });
+    const location = assertRedirect(res);
+    assert.equal(location, 'https://apps.apple.com/de/app/postervia/id6768678629?l=en-GB');
+  }
+});
+
+test('/get: Android Chrome (full and reduced UA) goes to Play with the utm referrer', async () => {
+  for (const ua of [UA.androidChrome, UA.androidReduced]) {
+    const { res } = await getLink('/get?src=sprachcafe', { ua });
+    const location = assertRedirect(res);
+    assert.ok(location.startsWith('https://play.google.com/store/apps/details?id=app.novaku.mobile&'));
+    assert.ok(location.endsWith(PLAY_REFERRER), location);
+  }
+});
+
+test('/get: desktop-class UAs land on get-app.html (Mac, Windows, Windows Phone, OpenHarmony, KaiOS)', async () => {
+  for (const ua of [UA.macSafari, UA.windowsChrome, UA.windowsPhone, UA.openHarmony, UA.kaios]) {
+    const { res } = await getLink('/get?src=sprachcafe', { ua });
+    const location = assertRedirect(res);
+    assert.equal(location, 'https://postervia.app/get-app?src=sprachcafe', ua);
+  }
+});
+
+test('/get: to=ios|android overrides the UA, junk to= is ignored', async () => {
+  const { points, env } = fakeClicks();
+  const ios = await getLink('/get?src=sprachcafe&to=ios', { ua: UA.windowsChrome, env });
+  assert.ok(assertRedirect(ios.res).startsWith('https://apps.apple.com/'));
+  const android = await getLink('/get?src=sprachcafe&to=android', { ua: UA.macSafari, env });
+  assert.ok(assertRedirect(android.res).startsWith('https://play.google.com/'));
+  const junk = await getLink('/get?src=sprachcafe&to=junk', { ua: UA.windowsChrome, env });
+  assert.equal(assertRedirect(junk.res), 'https://postervia.app/get-app?src=sprachcafe');
+  const junkIos = await getLink('/get?src=sprachcafe&to=junk', { ua: UA.iphoneSafari, env });
+  assert.ok(assertRedirect(junkIos.res).startsWith('https://apps.apple.com/'));
+  assert.deepEqual(points.map((point) => point.blobs), [
+    ['ios', 'sprachcafe', 'to'],
+    ['android', 'sprachcafe', 'to'],
+    ['desktop', 'sprachcafe', 'ua'],
+    ['ios', 'sprachcafe', 'ua'],
+  ]);
+});
+
+test('/get: src missing → direct, invalid or too long → invalid, raw value never echoed', async () => {
+  const { points, env } = fakeClicks();
+  const missing = await getLink('/get', { ua: UA.windowsChrome, env });
+  assert.equal(assertRedirect(missing.res), 'https://postervia.app/get-app?src=direct');
+
+  const raw = 'Sprach Café';
+  const spaced = await getLink(`/get?src=${encodeURIComponent(raw)}`, { ua: UA.androidChrome, env });
+  const spacedLocation = assertRedirect(spaced.res);
+  assert.ok(!spacedLocation.includes(raw));
+  assert.ok(!spacedLocation.includes(encodeURIComponent(raw)));
+  assert.ok(!spacedLocation.toLowerCase().includes('sprach'));
+  assert.ok(spacedLocation.endsWith('utm_campaign%3Dinvalid'));
+
+  const long = await getLink(`/get?src=${'a'.repeat(25)}`, { ua: UA.iphoneSafari, env: { ...env, APPLE_PT: '12345' } });
+  assert.ok(assertRedirect(long.res).includes('&ct=web-invalid&'));
+
+  const upper = await getLink('/get?src=Reddit', { ua: UA.windowsChrome, env });
+  assert.equal(assertRedirect(upper.res), 'https://postervia.app/get-app?src=reddit');
+
+  assert.deepEqual(points.map((point) => point.blobs[1]), ['direct', 'invalid', 'invalid', 'reddit']);
+  assert.deepEqual(points.map((point) => point.indexes[0]), ['direct', 'invalid', 'invalid', 'reddit']);
+});
+
+test('/get: preview crawlers get a 200 OG page and are not counted', async () => {
+  for (const ua of [UA.whatsapp, UA.facebook, UA.googlebotPhone, 'curl/8.6.0', 'python-requests/2.31']) {
+    const { points, env } = fakeClicks();
+    const { res, logs } = await getLink('/get?src=sprachcafe', { ua, env });
+    const html = await res.text();
+    assert.equal(res.status, 200, ua);
+    assert.ok(res.headers.get('content-type').startsWith('text/html'));
+    assert.equal(res.headers.get('x-robots-tag'), 'noindex');
+    assert.ok(html.includes('og:title" content="Postervia"'));
+    assert.ok(html.includes('og:description" content="Find your path. Leave a light."'));
+    assert.ok(html.includes('og:image" content="https://postervia.app/assets/postervia-icon.png"'));
+    assert.ok(html.includes('og:site_name" content="Postervia"'));
+    assert.equal(points.length, 0, ua);
+    assert.equal(logs.length, 0, ua);
+  }
+});
+
+test('/get: in-app browsers are real users, not bots', async () => {
+  for (const ua of [UA.instagram, UA.fban, UA.wechat, UA.snapchat, UA.cubot]) {
+    assert.equal(classifyUserAgent(ua).bot, false, ua);
+  }
+  assert.equal(classifyUserAgent(UA.cubot).platform, 'android');
+  for (const ua of ['Mozilla/5.0 (compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)', 'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)', 'Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)', 'TelegramBot (like TwitterBot)']) {
+    assert.equal(classifyUserAgent(ua).bot, true, ua);
+  }
+  const { points, env } = fakeClicks();
+  const { res } = await getLink('/get?src=survey', { ua: UA.instagram, env });
+  assert.ok(assertRedirect(res).startsWith('https://apps.apple.com/'));
+  assert.deepEqual(points, [{ blobs: ['ios', 'survey', 'ua'], doubles: [1], indexes: ['survey'] }]);
+});
+
+test('/get: APPLE_PT adds pt/ct/mt to the App Store URL only when set', async () => {
+  const withPt = await getLink('/get?src=sprachcafe', { ua: UA.iphoneSafari, env: { APPLE_PT: '123456' } });
+  const location = assertRedirect(withPt.res);
+  assert.ok(location.startsWith('https://apps.apple.com/de/app/postervia/id6768678629?l=en-GB&'));
+  assert.ok(location.includes('&pt=123456'));
+  assert.ok(location.includes('&ct=web-sprachcafe'));
+  assert.ok(location.includes('&mt=8'));
+
+  for (const env of [{ APPLE_PT: '' }, {}, undefined]) {
+    const { res } = await getLink('/get?src=sprachcafe', { ua: UA.iphoneSafari, env });
+    const plain = assertRedirect(res);
+    assert.equal(plain, 'https://apps.apple.com/de/app/postervia/id6768678629?l=en-GB');
+    assert.ok(!plain.includes('pt=') && !plain.includes('ct='));
+  }
+});
+
+test('/get: one data point per counted click and a log line with nothing but platform/src/via', async () => {
+  const { points, env } = fakeClicks();
+  const { res, logs } = await getLink('/get?src=uni', { ua: UA.androidChrome, env });
+  assertRedirect(res);
+  assert.deepEqual(points, [{ blobs: ['android', 'uni', 'ua'], doubles: [1], indexes: ['uni'] }]);
+  assert.equal(logs.length, 1);
+  const line = JSON.parse(logs[0]);
+  assert.deepEqual(line, { evt: 'get_click', platform: 'android', src: 'uni', via: 'ua' });
+  assert.ok(!logs[0].includes('Pixel'));
+});
+
+test('/get: env missing or a throwing sink still redirects', async () => {
+  const noEnv = await getLink('/get?src=eltern', { ua: UA.iphoneSafari });
+  assert.ok(assertRedirect(noEnv.res).startsWith('https://apps.apple.com/'));
+  const noBinding = await getLink('/get?src=eltern', { ua: UA.androidChrome, env: {} });
+  assert.ok(assertRedirect(noBinding.res).startsWith('https://play.google.com/'));
+  const { env } = fakeClicks(() => {
+    throw new Error('analytics down');
+  });
+  const throwing = await getLink('/get?src=eltern', { ua: UA.androidChrome, env });
+  assert.ok(assertRedirect(throwing.res).startsWith('https://play.google.com/'));
+});
+
+test('/get: HEAD and prefetch requests redirect but are not counted', async () => {
+  const { points, env } = fakeClicks();
+  const head = await getLink('/get?src=reddit', { ua: UA.iphoneSafari, env, method: 'HEAD' });
+  assert.ok(assertRedirect(head.res).startsWith('https://apps.apple.com/'));
+  const secPurpose = await getLink('/get?src=reddit', {
+    ua: UA.androidChrome,
+    env,
+    headers: { 'sec-purpose': 'prefetch;prerender' },
+  });
+  assert.ok(assertRedirect(secPurpose.res).startsWith('https://play.google.com/'));
+  const purpose = await getLink('/get?src=reddit', { ua: UA.androidChrome, env, headers: { purpose: 'prefetch' } });
+  assert.ok(assertRedirect(purpose.res).startsWith('https://play.google.com/'));
+  assert.equal(points.length, 0);
+  assert.equal(head.logs.length + secPurpose.logs.length + purpose.logs.length, 0);
+});
+
+test('/get: exact path only, trailing variants still 404', async () => {
+  assert.equal((await get('/get/')).status, 404);
+  assert.equal((await get('/getx')).status, 404);
 });
 
 let failed = 0;

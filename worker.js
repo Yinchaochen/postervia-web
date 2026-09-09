@@ -1,3 +1,4 @@
+import { handleGet } from './get-link.js';
 import {
   APP_STORE_URL,
   PLAY_STORE_URL,
@@ -96,7 +97,7 @@ const HTML_HEADERS = {
 };
 
 export default {
-  async fetch(request) {
+  async fetch(request, env) {
     const url = new URL(request.url);
     if (PRETTY_TO_HTML.has(url.pathname)) {
       url.pathname = `${url.pathname}.html`;
@@ -125,6 +126,8 @@ export default {
         : genericPostLandingHtml({ locale });
       return new Response(html, { headers: HTML_HEADERS });
     }
+
+    if (url.pathname === '/get') return handleGet(request, env);
 
     return new Response('Not found', { status: 404 });
   },

@@ -9,3 +9,22 @@ main = "worker.js"
 # known undefined-binding issue with Cloudflare's auto-build flow.
 [assets]
 directory = "./public"
+
+[vars]
+# App Store Connect campaign provider token (pt=). Empty until lisum obtains
+# it; while empty /get sends the plain store URL. The value is public (it is
+# part of every campaign URL), so it belongs here, not in a secret.
+APPLE_PT = ""
+
+# /get click counts: blobs = [platform, src, via], one double = 1 per click.
+[[analytics_engine_datasets]]
+binding = "CLICKS"
+dataset = "app_clicks"
+
+# Keeps console.log lines (get_click) visible in the dashboard for 3 days.
+# Invocation logs stay off: they carry request metadata we do not want to keep.
+[observability]
+enabled = true
+
+[observability.logs]
+invocation_logs = false

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Postervia">
+<meta property="og:description" content="Find your path. Leave a light.">
+<meta property="og:image" content="https://postervia.app/assets/postervia-icon.png">
+<title>Postervia · Get the app</title>
+<style>
+  :root {
+    --ink: #171717;
+    --soft-ink: #5f5a56;
+    --muted: #918a82;
+    --paper: #fffaf2;
+    --cream: #fff2df;
+    --coral: #f57175;
+    --coral-dark: #dd535a;
+    --line: #f2dfcc;
+    --white: #ffffff;
+    --tight-shadow: 0 10px 28px rgba(92, 63, 34, 0.12);
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.5;
+  }
+
+  a { color: inherit; }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .topbar {
+    background: rgba(255, 250, 242, 0.92);
+    border-bottom: 1px solid rgba(242, 223, 204, 0.72);
+  }
+
+  .nav {
+    max-width: 720px;
+    margin: 0 auto;
+    min-height: 66px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+  }
+
+  .brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-weight: 900;
+  }
+
+  .brand-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    background: var(--coral);
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .brand-word { font-size: 18px; }
+
+  .lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .lang-toggle button {
+    padding: 6px 4px;
+    border: 0;
+    background: none;
+    color: var(--muted);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .lang-toggle button[aria-pressed="true"] {
+    color: var(--coral-dark);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 18px 64px;
+    text-align: center;
+  }
+
+  h1, p { margin-top: 0; }
+
+  h1 {
+    margin-bottom: 12px;
+    font-size: 40px;
+    line-height: 1;
+    overflow-wrap: anywhere;
+  }
+
+  .lede {
+    margin-bottom: 30px;
+    color: var(--soft-ink);
+    font-size: 19px;
+    font-weight: 650;
+  }
+
+  .hint {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    margin: 0 0 22px;
+    padding: 0 14px;
+    border-radius: 999px;
+    background: var(--cream);
+    color: var(--coral-dark);
+    font-size: 14px;
+    font-weight: 850;
+  }
+
+  /* inline-flex above would beat the UA [hidden] rule */
+  .hint[hidden] { display: none; }
+
+  .cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .store-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .store-badge img {
+    height: 54px;
+    width: auto;
+  }
+
+  .store-badge:hover img { opacity: 0.86; }
+
+  .store-badge.google-play img {
+    height: 80px;
+    margin: -13px;
+  }
+
+  .ipad .store-badge.app-store {
+    padding: 8px;
+    border-radius: 16px;
+    box-shadow: 0 0 0 3px var(--coral), var(--tight-shadow);
+  }
+
+  .ipad .store-badge.google-play img { opacity: 0.55; }
+
+  .tagline {
+    margin: 34px 0 0;
+    color: var(--muted);
+    font-weight: 750;
+  }
+
+  .footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 18px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .footer a { text-decoration: none; }
+
+  .footer a:hover { color: var(--coral-dark); }
+
+  @media (max-width: 620px) {
+    h1 { font-size: 32px; }
+
+    .lede { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <nav class="nav">
+    <a class="brand-link" href="/">
+      <img class="brand-icon" src="/assets/postervia-icon.png" alt="" width="42" height="42">
+      <span class="brand-word">Postervia</span>
+    </a>
+    <div class="lang-toggle">
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+      <span aria-hidden="true">|</span>
+      <button type="button" data-lang="de" aria-pressed="false">Deutsch</button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <h1 data-s="title">Postervia is on iPhone and Android.</h1>
+  <p class="lede" data-s="lede">Open this page on your phone, or pick your store.</p>
+  <p class="hint" id="ipad-hint" data-s="ipadHint" hidden>Looks like an iPad. Use the App Store.</p>
+  <div class="cta-actions">
+    <a class="store-badge app-store" id="ios" href="/get?to=ios">
+      <img src="/assets/app-store-badge.svg" alt="Download on the App Store" data-alt="appStore" width="162" height="54">
+    </a>
+    <a class="store-badge google-play" id="android" href="/get?to=android">
+      <img src="/assets/google-play-badge.png" alt="Get it on Google Play" data-alt="playStore" width="207" height="80">
+    </a>
+  </div>
+  <p class="tagline" data-s="tagline">Find your path. Leave a light.</p>
+</main>
+
+<footer class="footer">
+  <a data-s="footerPrivacy" data-href="privacyHref" href="/privacy">Privacy</a>
+  <a data-s="footerImprint" data-href="imprintHref" href="/impressum">Imprint</a>
+</footer>
+
+<script>
+  // Same allowlist as the Worker's /get route. Nothing else from the URL is echoed.
+  const SRC_RE = /^[a-z0-9_-]{1,24}$/;
+
+  const STRINGS = {
+    en: {
+      title: 'Postervia is on iPhone and Android.',
+      lede: 'Open this page on your phone, or pick your store.',
+      ipadHint: 'Looks like an iPad. Use the App Store.',
+      appStore: 'Download on the App Store',
+      playStore: 'Get it on Google Play',
+      tagline: 'Find your path. Leave a light.',
+      privacyHref: '/privacy',
+      imprintHref: '/impressum',
+      footerPrivacy: 'Privacy',
+      footerImprint: 'Imprint',
+    },
+    de: {
+      title: 'Postervia gibt es für iPhone und Android.',
+      lede: 'Öffne diese Seite auf deinem Handy oder wähle deinen Store.',
+      ipadHint: 'Das sieht nach einem iPad aus. Nimm den App Store.',
+      appStore: 'Laden im App Store',
+      playStore: 'Jetzt bei Google Play',
+      tagline: 'Finde deinen Weg. Hinterlasse ein Licht.',
+      privacyHref: '/privacy-de',
+      imprintHref: '/impressum-de',
+      footerPrivacy: 'Datenschutz',
+      footerImprint: 'Impressum',
+    },
+  };
+
+  const rawSrc = (new URLSearchParams(location.search).get('src') || '').toLowerCase();
+  const src = SRC_RE.test(rawSrc) ? rawSrc : 'direct';
+  document.getElementById('ios').href = `/get?src=${src}&to=ios`;
+  document.getElementById('android').href = `/get?src=${src}&to=android`;
+
+  // iPad in desktop mode sends a Macintosh UA; only the touch count tells it apart.
+  if (/Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 1) {
+    document.getElementById('ipad-hint').hidden = false;
+    document.getElementById('main').classList.add('ipad');
+  }
+
+  function apply(lang) {
+    const t = STRINGS[lang];
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-s]').forEach((el) => { el.textContent = t[el.dataset.s]; });
+    document.querySelectorAll('[data-alt]').forEach((el) => { el.alt = t[el.dataset.alt]; });
+    document.querySelectorAll('[data-href]').forEach((el) => { el.href = t[el.dataset.href]; });
+    document.querySelectorAll('[data-lang]').forEach((el) => {
+      el.setAttribute('aria-pressed', String(el.dataset.lang === lang));
+    });
+  }
+
+  document.querySelectorAll('[data-lang]').forEach((el) => {
+    el.addEventListener('click', () => apply(el.dataset.lang));
+  });
+
+  apply((navigator.language || '').toLowerCase().startsWith('de') ? 'de' : 'en');
+</script>
+</body>
+</html>
