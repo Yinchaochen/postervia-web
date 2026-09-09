@@ -16,6 +16,13 @@ directory = "./public"
 # part of every campaign URL), so it belongs here, not in a secret.
 APPLE_PT = ""
 
+# /get click counts: blobs = [platform, src, via], one double = 1 per click.
+# Needs Analytics Engine enabled on the account once (dashboard → Workers &
+# Pages → Analytics Engine), otherwise the deploy fails with code 10089.
+[[analytics_engine_datasets]]
+binding = "CLICKS"
+dataset = "app_clicks"
+
 # Keeps console.log lines (get_click) visible in the dashboard for 3 days.
 # Invocation logs stay off: they carry request metadata we do not want to keep.
 [observability]
