@@ -280,7 +280,11 @@
 
 <script>
   // Empty id = form not created yet; the page then shows the not-open message.
-  const TALLY_FORMS = { en: 'Me4lW0', de: 'J9PbQ7' };
+  // ?form=eltern picks the parents' survey; anything else is the public one.
+  const FORMS = {
+    public: { en: 'Me4lW0', de: 'J9PbQ7' },
+    eltern: { en: 'b5oWM2', de: '7RyNY9' },
+  };
 
   // Same allowlist as the Worker's /get route. Nothing else from the URL is echoed.
   const SRC_RE = /^[a-z0-9_-]{1,24}$/;
@@ -326,16 +330,36 @@
     },
   };
 
+  // Per-survey overrides. The parents' survey addresses people as Sie.
+  const FORM_STRINGS = {
+    eltern: {
+      en: {
+        title: 'A short survey for parents',
+      },
+      de: {
+        title: 'Eine kurze Umfrage für Eltern',
+        lede: 'Ihre Antworten helfen uns zu entscheiden, was wir als Nächstes bauen.',
+        noticeBody: 'Diese Umfrage ist anonym. Wir fragen weder Namen noch E-Mail-Adresse noch andere Angaben ab, die Sie erkennbar machen. Bitte schreiben Sie solche Angaben auch nicht in die Freitextfelder. Das Formular betreibt für uns Tally BV (Gent, Belgien) auf Servern in der EU. Beim Laden übermittelt Ihr Browser seine IP-Adresse an Tally und an Cloudflare, das diese Seite ausliefert. Das ist technisch nötig, wir speichern sie nicht, und diese Seite setzt keine Cookies. Wir nutzen die Antworten für die Produktentwicklung (berechtigtes Interesse, Art. 6 Abs. 1 lit. f DSGVO) und löschen die Rohantworten zwölf Monate nach Ende der Umfrage. Danach bleiben nur Zusammenfassungen.',
+        noticeLinksLead: 'Wer wir sind, welche Rechte Sie haben und wo Sie sich beschweren können, steht in der ',
+        notOpen: 'Die Umfrage ist noch nicht geöffnet. Schauen Sie bitte später noch einmal vorbei.',
+        doneBody: 'Die App gibt es schon. Wenn Sie sie ausprobieren möchten, tippen Sie auf den Button.',
+        doneCta: 'Holen Sie sich die App',
+      },
+    },
+  };
+
   const params = new URLSearchParams(location.search);
+  const formParam = (params.get('form') || '').toLowerCase();
+  const form = FORMS[formParam] ? formParam : 'public';
   const rawSrc = (params.get('src') || '').toLowerCase();
-  const src = SRC_RE.test(rawSrc) ? rawSrc : 'survey';
+  const src = SRC_RE.test(rawSrc) ? rawSrc : (form === 'public' ? 'survey' : form);
   const qLang = (params.get('lang') || '').toLowerCase();
   document.getElementById('get-app').href = `/get?src=${src}`;
 
   // embed.js forwards the page's whole query string into the form, so only the
-  // allowlisted slug may be left in the URL before any form loads.
+  // allowlisted slug (and the survey name) may be left in the URL before any form loads.
   try {
-    history.replaceState(null, '', `${location.pathname}?src=${src}`);
+    history.replaceState(null, '', `${location.pathname}?${form === 'public' ? '' : `form=${form}&`}src=${src}`);
   } catch {
     // no history API: the form then sees the raw query, nothing else breaks
   }
@@ -367,7 +391,7 @@
   function renderForm(lang) {
     if (!done.hidden) return;
     slot.textContent = '';
-    const formId = TALLY_FORMS[lang];
+    const formId = FORMS[form][lang];
     notOpen.hidden = Boolean(formId);
     if (!formId) return;
     const iframe = document.createElement('iframe');
@@ -380,7 +404,7 @@
   }
 
   function apply(lang) {
-    const t = STRINGS[lang];
+    const t = { ...STRINGS[lang], ...((FORM_STRINGS[form] || {})[lang] || {}) };
     document.documentElement.lang = lang;
     document.querySelectorAll('[data-s]').forEach((el) => { el.textContent = t[el.dataset.s]; });
     document.querySelectorAll('[data-href]').forEach((el) => { el.href = t[el.dataset.href]; });
