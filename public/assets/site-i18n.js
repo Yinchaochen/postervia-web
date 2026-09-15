@@ -636,10 +636,7 @@
       "products": "Produkte",
       "profile": "Profiel",
       "supportDe": "Ondersteuning Duits",
-      "surveyParentsDe": "Ouer-enquête (Duits)",
-      "surveyParentsEn": "Ouer-enquête (Engels)",
-      "surveyPublicDe": "Enquête (Duits)",
-      "surveyPublicEn": "Enquête (Engels)",
+      "survey": "Vul die vraelys in",
       "surveys": "Enquêtes",
       "tagline": "Vind jou pad. Laat ’n lig agter.",
       "terms": "Bepalings",
@@ -655,6 +652,7 @@
       "pillTasks": "Taaknavigasie",
       "primaryCta": "Sluit aan by die beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Vul die vraelys in",
       "title": "Vind jou pad. Laat ’n lig agter."
     },
     "meta": {
@@ -773,10 +771,7 @@
       "products": "Produktet",
       "profile": "Profili",
       "supportDe": "Mbështetje në gjermanisht",
-      "surveyParentsDe": "Anketë për prindërit (Gjermanisht)",
-      "surveyParentsEn": "Anketë për prindërit (Anglisht)",
-      "surveyPublicDe": "Anketë (Gjermanisht)",
-      "surveyPublicEn": "Anketë (Anglisht)",
+      "survey": "Marrni anketën",
       "surveys": "Anketat",
       "tagline": "Gjej rrugën tënde. Lë një dritë.",
       "terms": "Kushtet",
@@ -792,6 +787,7 @@
       "pillTasks": "Navigim i detyrave",
       "primaryCta": "Bashkohu në beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Marrni anketën",
       "title": "Gjej rrugën tënde. Lër një dritë."
     },
     "meta": {
@@ -910,10 +906,7 @@
       "products": "ምርቶች",
       "profile": "መገለጫ",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "የወላጆች ዳሰሳ (ጀርመንኛ)",
-      "surveyParentsEn": "የወላጆች ዳሰሳ (እንግሊዝኛ)",
-      "surveyPublicDe": "ዳሰሳ (ጀርመንኛ)",
-      "surveyPublicEn": "ዳሰሳ (እንግሊዝኛ)",
+      "survey": "ዳሰሳውን ይሙሉ",
       "surveys": "ዳሰሳዎች",
       "tagline": "መንገድህን ፈልግ። ብርሃን ተው።",
       "terms": "ውሎች",
@@ -929,6 +922,7 @@
       "pillTasks": "የተግባር መመሪያ",
       "primaryCta": "ወደ ቤታ ይቀላቀሉ",
       "secondaryCta": "Explore web app",
+      "surveyCta": "ዳሰሳውን ይሙሉ",
       "title": "መንገድዎን ያግኙ። ብርሃን ይተዉ።"
     },
     "meta": {
@@ -1047,10 +1041,7 @@
       "products": "المنتجات",
       "profile": "الملف الشخصي",
       "supportDe": "الدعم بالألمانية",
-      "surveyParentsDe": "استبيان للآباء (الألماني)",
-      "surveyParentsEn": "استبيان للآباء (الإنجليزي)",
-      "surveyPublicDe": "الاستبيان (الألماني)",
-      "surveyPublicEn": "الاستبيان (الإنجليزي)",
+      "survey": "شارك في الاستبيان",
       "surveys": "الاستبيانات",
       "tagline": "اعثر على طريقك. واترك نورًا.",
       "terms": "الشروط",
@@ -1066,6 +1057,7 @@
       "pillTasks": "تنقّل المهام",
       "primaryCta": "انضم إلى النسخة التجريبية",
       "secondaryCta": "افتح نسخة الويب",
+      "surveyCta": "شارك في الاستبيان",
       "title": "اعثر على طريقك. واترك أثرًا من النور."
     },
     "meta": {
@@ -1184,10 +1176,7 @@
       "products": "Ապրանքներ",
       "profile": "Պրոֆիլ",
       "supportDe": "Աջակցություն Deutsch",
-      "surveyParentsDe": "Ծնողների հարցում (գերմաներեն)",
-      "surveyParentsEn": "Ծնողների հարցում (անգլերեն)",
-      "surveyPublicDe": "Հարցում (գերմաներեն)",
-      "surveyPublicEn": "Հարցում (անգլերեն)",
+      "survey": "Սկսել հարցումը",
       "surveys": "Հարցումներ",
       "tagline": "Գտեք ձեր ուղին։ Թողեք մի լույս։",
       "terms": "Պայմաններ",
@@ -1203,6 +1192,7 @@
       "pillTasks": "Առաջադրանքների նավարկում",
       "primaryCta": "Միացեք բետային",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Սկսել հարցումը",
       "title": "Գտեք ձեր ճանապարհը։ Թողեք մի լույս։"
     },
     "meta": {
@@ -1321,10 +1311,7 @@
       "products": "Məhsullar",
       "profile": "Profil",
       "supportDe": "Almanca dəstək",
-      "surveyParentsDe": "Ata-ana anketi (Alman)",
-      "surveyParentsEn": "Ata-ana anketi (İngilis)",
-      "surveyPublicDe": "Anket (Alman)",
-      "surveyPublicEn": "Anket (İngilis)",
+      "survey": "Anketi doldurun",
       "surveys": "Anketlər",
       "tagline": "İzini tap. Bir işıq burax.",
       "terms": "Şərtlər",
@@ -1340,6 +1327,7 @@
       "pillTasks": "Tapşırıq naviqasiyası",
       "primaryCta": "Beta versiyaya qoşulun",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Anketi doldurun",
       "title": "Yolunuzu tapın. Bir işıq buraxın."
     },
     "meta": {
@@ -1458,10 +1446,7 @@
       "products": "Produktuak",
       "profile": "Profila",
       "supportDe": "Laguntza Deutsch",
-      "surveyParentsDe": "Gurasoen inkesta (alemana)",
-      "surveyParentsEn": "Gurasoen inkesta (ingelesa)",
-      "surveyPublicDe": "Inkesta (alemana)",
-      "surveyPublicEn": "Inkesta (ingelesa)",
+      "survey": "Inkesta egin",
       "surveys": "Inkestak",
       "tagline": "Aurkitu zure bidea. Utzi argi bat.",
       "terms": "Baldintzak",
@@ -1477,6 +1462,7 @@
       "pillTasks": "Zereginen nabigazioa",
       "primaryCta": "Betea probatzeko batu",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Inkesta egin",
       "title": "Aurkitu zure bidea. Utzi argi bat."
     },
     "meta": {
@@ -1595,10 +1581,7 @@
       "products": "Прадукты",
       "profile": "Профіль",
       "supportDe": "Падтрымка па-нямецку",
-      "surveyParentsDe": "Апытанне бацькоў (Нямецкая)",
-      "surveyParentsEn": "Апытанне бацькоў (Англійская)",
-      "surveyPublicDe": "Апытанне (Нямецкая)",
-      "surveyPublicEn": "Апытанне (Англійская)",
+      "survey": "Адказаць на апытанне",
       "surveys": "Апытанні",
       "tagline": "Знайдзі свой шлях. Пакінь святло.",
       "terms": "Умовы",
@@ -1614,6 +1597,7 @@
       "pillTasks": "Навігацыя па задачах",
       "primaryCta": "Далучыцца да бэта-версіі",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Адказаць на апытанне",
       "title": "Знайдзі свой шлях. Пакінь святло."
     },
     "meta": {
@@ -1732,10 +1716,7 @@
       "products": "পণ্যসমূহ",
       "profile": "প্রোফাইল",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "পিতামাতা সার্ভে (জার্মান)",
-      "surveyParentsEn": "পিতামাতা সার্ভে (ইংরেজি)",
-      "surveyPublicDe": "সার্ভে (জার্মান)",
-      "surveyPublicEn": "সার্ভে (ইংরেজি)",
+      "survey": "সার্ভে নিন",
       "surveys": "সার্ভে",
       "tagline": "আপনার পথ খুঁজে নিন। একটি আলো রেখে যান।",
       "terms": "শর্তাবলি",
@@ -1751,6 +1732,7 @@
       "pillTasks": "কাজের পথনির্দেশ",
       "primaryCta": "বেটায় যোগ দিন",
       "secondaryCta": "Explore web app",
+      "surveyCta": "সার্ভে নিন",
       "title": "আপনার পথ খুঁজে নিন। একটি আলো রেখে যান।"
     },
     "meta": {
@@ -1869,10 +1851,7 @@
       "products": "Proizvodi",
       "profile": "Profil",
       "supportDe": "Podrška na njemačkom",
-      "surveyParentsDe": "Anketa za roditelje (Njemački)",
-      "surveyParentsEn": "Anketa za roditelje (Engleski)",
-      "surveyPublicDe": "Anketa (Njemački)",
-      "surveyPublicEn": "Anketa (Engleski)",
+      "survey": "Popunite anketu",
       "surveys": "Ankete",
       "tagline": "Pronađi svoj put. Ostavi svjetlo.",
       "terms": "Uslovi",
@@ -1888,6 +1867,7 @@
       "pillTasks": "Navigacija zadacima",
       "primaryCta": "Pridružite se beta verziji",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Popunite anketu",
       "title": "Pronađite svoj put. Ostavite trag svjetla."
     },
     "meta": {
@@ -2006,10 +1986,7 @@
       "products": "Продукти",
       "profile": "Профил",
       "supportDe": "Поддръжка на немски",
-      "surveyParentsDe": "Анкета за родители (немски)",
-      "surveyParentsEn": "Анкета за родители (английски)",
-      "surveyPublicDe": "Анкета (немски)",
-      "surveyPublicEn": "Анкета (английски)",
+      "survey": "Попълнете анкетата",
       "surveys": "Анкети",
       "tagline": "Намери своя път. Остави светлина.",
       "terms": "Условия",
@@ -2025,6 +2002,7 @@
       "pillTasks": "Навигация по задачи",
       "primaryCta": "Присъединете се към бета версията",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Попълнете анкетата",
       "title": "Намери своя път. Остави светлина."
     },
     "meta": {
@@ -2143,10 +2121,7 @@
       "products": "Productes",
       "profile": "Perfil",
       "supportDe": "Suport en alemany",
-      "surveyParentsDe": "Enquesta de pares (alemany)",
-      "surveyParentsEn": "Enquesta de pares (anglès)",
-      "surveyPublicDe": "Enquesta (alemany)",
-      "surveyPublicEn": "Enquesta (anglès)",
+      "survey": "Fes el qüestionari",
       "surveys": "Enquestes",
       "tagline": "Troba el teu camí. Deixa una llum.",
       "terms": "Condicions",
@@ -2162,6 +2137,7 @@
       "pillTasks": "Navegació de tasques",
       "primaryCta": "Uneix-te a la beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Fes el qüestionari",
       "title": "Troba el teu camí. Deixa una llum."
     },
     "meta": {
@@ -2280,10 +2256,7 @@
       "products": "Mga produkto",
       "profile": "Profile",
       "supportDe": "Suporta Deutsch",
-      "surveyParentsDe": "Mga magulang survey (Aleman)",
-      "surveyParentsEn": "Mga magulang survey (Ingles)",
-      "surveyPublicDe": "Survey (Aleman)",
-      "surveyPublicEn": "Survey (Ingles)",
+      "survey": "Kuhaa ang survey",
       "surveys": "Mga survey",
       "tagline": "Pangitaa ang imong dalan. Bilin ug kahayag.",
       "terms": "Mga Termino",
@@ -2299,6 +2272,7 @@
       "pillTasks": "Paggiya sa mga buluhaton",
       "primaryCta": "Apil sa beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Kuhaa ang survey",
       "title": "Pangitaa ang imong dalan. Bilin og kahayag."
     },
     "meta": {
@@ -2417,10 +2391,7 @@
       "products": "产品",
       "profile": "个人资料",
       "supportDe": "德语支持",
-      "surveyParentsDe": "家长问卷（德文）",
-      "surveyParentsEn": "家长问卷（英文）",
-      "surveyPublicDe": "问卷（德文）",
-      "surveyPublicEn": "问卷（英文）",
+      "survey": "参与问卷",
       "surveys": "问卷",
       "tagline": "找到你的路，留下一盏灯。",
       "terms": "条款",
@@ -2436,6 +2407,7 @@
       "pillTasks": "任务导航",
       "primaryCta": "加入测试版",
       "secondaryCta": "探索网页版",
+      "surveyCta": "参与问卷",
       "title": "找到你的路。留下一束光。"
     },
     "meta": {
@@ -2554,10 +2526,7 @@
       "products": "產品",
       "profile": "個人檔案",
       "supportDe": "德文支援",
-      "surveyParentsDe": "家長問卷（德文）",
-      "surveyParentsEn": "家長問卷（英文）",
-      "surveyPublicDe": "問卷（德文）",
-      "surveyPublicEn": "問卷（英文）",
+      "survey": "參與問卷",
       "surveys": "問卷",
       "tagline": "找到你的路，留下一盞光。",
       "terms": "條款",
@@ -2573,6 +2542,7 @@
       "pillTasks": "任務導引",
       "primaryCta": "加入 Beta 版",
       "secondaryCta": "探索網頁版",
+      "surveyCta": "參與問卷",
       "title": "找到你的路，留下微光。"
     },
     "meta": {
@@ -2691,10 +2661,7 @@
       "products": "Prodotti",
       "profile": "Profilu",
       "supportDe": "Supportu Deutsch",
-      "surveyParentsDe": "Sondaggio parentale (tedesco)",
-      "surveyParentsEn": "Sondaggio parentale (inglese)",
-      "surveyPublicDe": "Sondaggio (tedesco)",
-      "surveyPublicEn": "Sondaggio (inglese)",
+      "survey": "Fai u sondaghju",
       "surveys": "Sondaggi",
       "tagline": "Truvate a vostra strada. Lasciate una luce.",
       "terms": "Cundizioni",
@@ -2710,6 +2677,7 @@
       "pillTasks": "Navigazione di i compiti",
       "primaryCta": "Unitevi à a beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Fai u sondaghju",
       "title": "Truvate a vostra strada. Lasciate una luce."
     },
     "meta": {
@@ -2828,10 +2796,7 @@
       "products": "Proizvodi",
       "profile": "Profil",
       "supportDe": "Podrška na njemačkom",
-      "surveyParentsDe": "Anketa za roditelje (Njemački)",
-      "surveyParentsEn": "Anketa za roditelje (Engleski)",
-      "surveyPublicDe": "Anketa (Njemački)",
-      "surveyPublicEn": "Anketa (Engleski)",
+      "survey": "Popunite anketu",
       "surveys": "Ankete",
       "tagline": "Pronađite svoj put. Ostavite trag svjetla.",
       "terms": "Uvjeti",
@@ -2847,6 +2812,7 @@
       "pillTasks": "Navigacija zadacima",
       "primaryCta": "Pridruži se beta verziji",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Popunite anketu",
       "title": "Pronađi svoj put. Ostavi trag svjetla."
     },
     "meta": {
@@ -2965,10 +2931,7 @@
       "products": "Produkty",
       "profile": "Profil",
       "supportDe": "Podpora Deutsch",
-      "surveyParentsDe": "Rodičovská anketa (německy)",
-      "surveyParentsEn": "Rodičovská anketa (anglicky)",
-      "surveyPublicDe": "Anketa (německy)",
-      "surveyPublicEn": "Anketa (anglicky)",
+      "survey": "Vyplnit dotazník",
       "surveys": "Ankety",
       "tagline": "Najděte svou cestu. Zanechte světlo.",
       "terms": "Podmínky",
@@ -2984,6 +2947,7 @@
       "pillTasks": "Navigace úkoly",
       "primaryCta": "Připojit se k beta verzi",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Vyplnit dotazník",
       "title": "Najděte svou cestu. Zanechte světlo."
     },
     "meta": {
@@ -3102,10 +3066,7 @@
       "products": "Produkter",
       "profile": "Profil",
       "supportDe": "Support på tysk",
-      "surveyParentsDe": "Spørgeskema for forældre (tysk)",
-      "surveyParentsEn": "Spørgeskema for forældre (engelsk)",
-      "surveyPublicDe": "Spørgeskema (tysk)",
-      "surveyPublicEn": "Spørgeskema (engelsk)",
+      "survey": "Udfyld undersøgelsen",
       "surveys": "Spørgeskemaer",
       "tagline": "Find din vej. Efterlad et lys.",
       "terms": "Vilkår",
@@ -3121,6 +3082,7 @@
       "pillTasks": "Opgavenavigation",
       "primaryCta": "Bliv med i betaen",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Udfyld undersøgelsen",
       "title": "Find din vej. Efterlad et lys."
     },
     "meta": {
@@ -3239,10 +3201,7 @@
       "products": "Producten",
       "profile": "Profiel",
       "supportDe": "Ondersteuning Duits",
-      "surveyParentsDe": "Enquête voor ouders (Duits)",
-      "surveyParentsEn": "Enquête voor ouders (Engels)",
-      "surveyPublicDe": "Enquête (Duits)",
-      "surveyPublicEn": "Enquête (Engels)",
+      "survey": "Enquête invullen",
       "surveys": "Enquêtes",
       "tagline": "Vind je weg. Laat een licht achter.",
       "terms": "Voorwaarden",
@@ -3258,6 +3217,7 @@
       "pillTasks": "Taaknavigatie",
       "primaryCta": "Doe mee aan de bèta",
       "secondaryCta": "Webversie openen",
+      "surveyCta": "Enquête invullen",
       "title": "Vind je weg. Laat een licht achter."
     },
     "meta": {
@@ -3370,10 +3330,7 @@
       "products": "Products",
       "profile": "Profile",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "Parents survey (German)",
-      "surveyParentsEn": "Parents survey (English)",
-      "surveyPublicDe": "Survey (German)",
-      "surveyPublicEn": "Survey (English)",
+      "survey": "Take the survey",
       "surveys": "Surveys",
       "tagline": "Find your path. Leave a light.",
       "terms": "Terms",
@@ -3389,6 +3346,7 @@
       "pillTasks": "Task navigation",
       "primaryCta": "Join the beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Take the survey",
       "title": "Find your path. Leave a light."
     },
     "language": {
@@ -3513,10 +3471,7 @@
       "products": "Produktoj",
       "profile": "Profilo",
       "supportDe": "Subteno Deutsch",
-      "surveyParentsDe": "Gepatra sondado (Germana)",
-      "surveyParentsEn": "Gepatra sondado (Angla)",
-      "surveyPublicDe": "Sondio (Germana)",
-      "surveyPublicEn": "Sondio (Angla)",
+      "survey": "Plenigu la enketon",
       "surveys": "Sondoj",
       "tagline": "Trovu vian vojon. Lasu lumon.",
       "terms": "Kondiĉoj",
@@ -3532,6 +3487,7 @@
       "pillTasks": "Taska navigado",
       "primaryCta": "Aliĝu al la beta-versio",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Plenigu la enketon",
       "title": "Trovu vian vojon. Lasu lumon."
     },
     "meta": {
@@ -3650,10 +3606,7 @@
       "products": "Tooted",
       "profile": "Profiil",
       "supportDe": "Tugi saksa keeles",
-      "surveyParentsDe": "Lapsevanemate küsitlus (Saksa)",
-      "surveyParentsEn": "Lapsevanemate küsitlus (Inglise)",
-      "surveyPublicDe": "Küsitlus (Saksa)",
-      "surveyPublicEn": "Küsitlus (Inglise)",
+      "survey": "Täida uuring",
       "surveys": "Küsitlused",
       "tagline": "Leia oma tee. Jäta valgus.",
       "terms": "Tingimused",
@@ -3669,6 +3622,7 @@
       "pillTasks": "Ülesannete navigeerimine",
       "primaryCta": "Liitu beetaga",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Täida uuring",
       "title": "Leia oma tee. Jäta valgus."
     },
     "meta": {
@@ -3787,10 +3741,7 @@
       "products": "Tuotteet",
       "profile": "Profiili",
       "supportDe": "Tuki saksa",
-      "surveyParentsDe": "Vanhempien kysely (saksa)",
-      "surveyParentsEn": "Vanhempien kysely (englanti)",
-      "surveyPublicDe": "Kysely (saksa)",
-      "surveyPublicEn": "Kysely (englanti)",
+      "survey": "Täytä kysely",
       "surveys": "Kyselyt",
       "tagline": "Löydä oma polkusi. Jätä valoa.",
       "terms": "Käyttöehdot",
@@ -3806,6 +3757,7 @@
       "pillTasks": "Tehtävien navigointi",
       "primaryCta": "Liity betaan",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Täytä kysely",
       "title": "Löydä oma polkusi. Jätä jälki."
     },
     "meta": {
@@ -3924,10 +3876,7 @@
       "products": "Produits",
       "profile": "Profil",
       "supportDe": "Assistance en allemand",
-      "surveyParentsDe": "Sondage parents (Allemand)",
-      "surveyParentsEn": "Sondage parents (Anglais)",
-      "surveyPublicDe": "Sondage (Allemand)",
-      "surveyPublicEn": "Sondage (Anglais)",
+      "survey": "Participer au sondage",
       "surveys": "Sondages",
       "tagline": "Trouvez votre chemin. Laissez une lumière.",
       "terms": "Conditions",
@@ -3943,6 +3892,7 @@
       "pillTasks": "Navigation des tâches",
       "primaryCta": "Rejoindre la bêta",
       "secondaryCta": "Explorer la version web",
+      "surveyCta": "Participer au sondage",
       "title": "Trouvez votre chemin. Laissez une lumière."
     },
     "meta": {
@@ -4061,10 +4011,7 @@
       "products": "Produkten",
       "profile": "Profyl",
       "supportDe": "Stipe Dútsk",
-      "surveyParentsDe": "Ouders enquête (Dútsk)",
-      "surveyParentsEn": "Ouders enquête (Ingelsk)",
-      "surveyPublicDe": "Enquête (Dútsk)",
-      "surveyPublicEn": "Enquête (Ingelsk)",
+      "survey": "Kier de ûndersyk",
       "surveys": "Enquêteen",
       "tagline": "Fyn dyn paad. Lit in ljocht efter.",
       "terms": "Betingsten",
@@ -4080,6 +4027,7 @@
       "pillTasks": "Taken navigearje",
       "primaryCta": "Doch mei oan de beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Kier de ûndersyk",
       "title": "Fyn dyn paad. Lit in ljocht efter."
     },
     "meta": {
@@ -4198,10 +4146,7 @@
       "products": "Produtos",
       "profile": "Perfil",
       "supportDe": "Soporte en alemán",
-      "surveyParentsDe": "Enquisa de pais (Alemán)",
-      "surveyParentsEn": "Enquisa de pais (Inglés)",
-      "surveyPublicDe": "Enquisa (Alemán)",
-      "surveyPublicEn": "Enquisa (Inglés)",
+      "survey": "Realizar enquisa",
       "surveys": "Enquisas",
       "tagline": "Atopa o teu camiño. Deixa unha luz.",
       "terms": "Condicións",
@@ -4217,6 +4162,7 @@
       "pillTasks": "Navegación de tarefas",
       "primaryCta": "Únete á beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Realizar enquisa",
       "title": "Atopa o teu camiño. Deixa unha luz."
     },
     "meta": {
@@ -4335,10 +4281,7 @@
       "products": "პროდუქტები",
       "profile": "პროფილი",
       "supportDe": "მხარდაჭერა გერმანულად",
-      "surveyParentsDe": "მშობელთა გამოკითხვა (გერმანული)",
-      "surveyParentsEn": "მშობელთა გამოკითხვა (ინგლისური)",
-      "surveyPublicDe": "გამოკითხვა (გერმანული)",
-      "surveyPublicEn": "გამოკითხვა (ინგლისური)",
+      "survey": "შეავსე გამოკითხვა",
       "surveys": "გამოკითხვები",
       "tagline": "იპოვე შენი გზა. დატოვე სინათლე.",
       "terms": "პირობები",
@@ -4354,6 +4297,7 @@
       "pillTasks": "დავალებების ნავიგაცია",
       "primaryCta": "ბეტაში გაწევრიანება",
       "secondaryCta": "Explore web app",
+      "surveyCta": "შეავსე გამოკითხვა",
       "title": "იპოვე შენი გზა. დატოვე შუქი."
     },
     "meta": {
@@ -4472,10 +4416,7 @@
       "products": "Produkte",
       "profile": "Profil",
       "supportDe": "Support auf Deutsch",
-      "surveyParentsDe": "Elternumfrage (Deutsch)",
-      "surveyParentsEn": "Elternumfrage (Englisch)",
-      "surveyPublicDe": "Umfrage (Deutsch)",
-      "surveyPublicEn": "Umfrage (Englisch)",
+      "survey": "Zur Umfrage",
       "surveys": "Umfragen",
       "tagline": "Finde deinen Weg. Hinterlasse ein Licht.",
       "terms": "Nutzungsbedingungen",
@@ -4491,6 +4432,7 @@
       "pillTasks": "Aufgaben-Navigation",
       "primaryCta": "Beta beitreten",
       "secondaryCta": "Webversion öffnen",
+      "surveyCta": "Zur Umfrage",
       "title": "Finde deinen Weg. Hinterlasse ein Licht."
     },
     "meta": {
@@ -4609,10 +4551,7 @@
       "products": "Προϊόντα",
       "profile": "Προφίλ",
       "supportDe": "Υποστήριξη στα Γερμανικά",
-      "surveyParentsDe": "Έρευνα γονέων (Γερμανικά)",
-      "surveyParentsEn": "Έρευνα γονέων (Αγγλικά)",
-      "surveyPublicDe": "Έρευνα (Γερμανικά)",
-      "surveyPublicEn": "Έρευνα (Αγγλικά)",
+      "survey": "Συμπλήρωσε την έρευνα",
       "surveys": "Έρευνες",
       "tagline": "Βρες τον δρόμο σου. Άφησε ένα φως.",
       "terms": "Όροι",
@@ -4628,6 +4567,7 @@
       "pillTasks": "Πλοήγηση σε εργασίες",
       "primaryCta": "Γίνε μέλος της beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Συμπλήρωσε την έρευνα",
       "title": "Βρες τον δρόμο σου. Άφησε ένα φως."
     },
     "meta": {
@@ -4746,10 +4686,7 @@
       "products": "ઉત્પાદનો",
       "profile": "પ્રોફાઇલ",
       "supportDe": "સપોર્ટ Deutsch",
-      "surveyParentsDe": "માતાપિતા સર્વે (જર્મન)",
-      "surveyParentsEn": "માતાપિતા સર્વે (અંગ્રેજી)",
-      "surveyPublicDe": "સર્વે (જર્મન)",
-      "surveyPublicEn": "સર્વે (અંગ્રેજી)",
+      "survey": "સર્વે લો",
       "surveys": "સર્વેક્ષણો",
       "tagline": "તમારો માર્ગ શોધો. એક પ્રકાશ છોડો.",
       "terms": "શરતો",
@@ -4765,6 +4702,7 @@
       "pillTasks": "કાર્ય માર્ગદર્શન",
       "primaryCta": "બીટામાં જોડાઓ",
       "secondaryCta": "Explore web app",
+      "surveyCta": "સર્વે લો",
       "title": "તમારો માર્ગ શોધો. એક પ્રકાશ છોડી જાઓ."
     },
     "meta": {
@@ -4883,10 +4821,7 @@
       "products": "Pwodwi yo",
       "profile": "Pwofil",
       "supportDe": "Sipò an Alman",
-      "surveyParentsDe": "Sondaj paran (Alman)",
-      "surveyParentsEn": "Sondaj paran (Angle)",
-      "surveyPublicDe": "Sondaj (Alman)",
-      "surveyPublicEn": "Sondaj (Angle)",
+      "survey": "Reponn sondaj",
       "surveys": "Sondaj",
       "tagline": "Jwenn chemen ou. Kite yon limyè.",
       "terms": "Kondisyon yo",
@@ -4902,6 +4837,7 @@
       "pillTasks": "Navigasyon pou travay",
       "primaryCta": "Antre nan beta a",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Reponn sondaj",
       "title": "Jwenn chemen ou. Kite yon limyè."
     },
     "meta": {
@@ -5020,10 +4956,7 @@
       "products": "Kayayyaki",
       "profile": "Bayanan martaba",
       "supportDe": "Taimako Deutsch",
-      "surveyParentsDe": "Binciken iyaye (Jamusanci)",
-      "surveyParentsEn": "Binciken iyaye (Ingilishi)",
-      "surveyPublicDe": "Bincike (Jamusanci)",
-      "surveyPublicEn": "Bincike (Ingilishi)",
+      "survey": "Yi bincike",
       "surveys": "Bincike",
       "tagline": "Nemo hanyarka. Bar haske.",
       "terms": "Sharuɗɗa",
@@ -5039,6 +4972,7 @@
       "pillTasks": "Jagorar ayyuka",
       "primaryCta": "Shiga beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Yi bincike",
       "title": "Nemo hanyarka. Ka bar haske."
     },
     "meta": {
@@ -5157,10 +5091,7 @@
       "products": "Nā Huahana",
       "profile": "ʻAoʻao Pilikino",
       "supportDe": "Kākoʻo Deutsch",
-      "surveyParentsDe": "Pānui mākua (ʻŌlelo German)",
-      "surveyParentsEn": "Pānui mākua (ʻŌlelo Anglikana)",
-      "surveyPublicDe": "Pānui (ʻŌlelo German)",
-      "surveyPublicEn": "Pānui (ʻŌlelo Anglikana)",
+      "survey": "E pane i ka nīnau",
       "surveys": "Pānui",
       "tagline": "E ʻimi i kou ala. E waiho i kukui.",
       "terms": "Nā Kūlana",
@@ -5176,6 +5107,7 @@
       "pillTasks": "Hoʻokele hana",
       "primaryCta": "E hui i ka beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "E pane i ka nīnau",
       "title": "E ʻimi i kou ala. E waiho i kukui."
     },
     "meta": {
@@ -5294,10 +5226,7 @@
       "products": "מוצרים",
       "profile": "פרופיל",
       "supportDe": "תמיכה בגרמנית",
-      "surveyParentsDe": "סקר הורים (גרמנית)",
-      "surveyParentsEn": "סקר הורים (אנגלית)",
-      "surveyPublicDe": "סקר (גרמנית)",
-      "surveyPublicEn": "סקר (אנגלית)",
+      "survey": "מלא את השאלון",
       "surveys": "סקרים",
       "tagline": "מצאו את הדרך שלכם. השאירו אור.",
       "terms": "תנאים",
@@ -5313,6 +5242,7 @@
       "pillTasks": "ניווט במשימות",
       "primaryCta": "הצטרפו לגרסת הבטא",
       "secondaryCta": "Explore web app",
+      "surveyCta": "מלא את השאלון",
       "title": "מצאו את הדרך שלכם. השאירו אור."
     },
     "meta": {
@@ -5431,10 +5361,7 @@
       "products": "उत्पाद",
       "profile": "प्रोफ़ाइल",
       "supportDe": "सपोर्ट Deutsch",
-      "surveyParentsDe": "माता-पिता सर्वेक्षण (जर्मन)",
-      "surveyParentsEn": "माता-पिता सर्वेक्षण (अंग्रेज़ी)",
-      "surveyPublicDe": "सर्वेक्षण (जर्मन)",
-      "surveyPublicEn": "सर्वेक्षण (अंग्रेज़ी)",
+      "survey": "सर्वे लें",
       "surveys": "सर्वेक्षण",
       "tagline": "अपना रास्ता खोजें। एक रोशनी छोड़ें।",
       "terms": "शर्तें",
@@ -5450,6 +5377,7 @@
       "pillTasks": "कार्य-नेविगेशन",
       "primaryCta": "बीटा में शामिल हों",
       "secondaryCta": "Explore web app",
+      "surveyCta": "सर्वे लें",
       "title": "अपना रास्ता खोजें। एक रोशनी छोड़ें।"
     },
     "meta": {
@@ -5568,10 +5496,7 @@
       "products": "Cov khoom",
       "profile": "Profile",
       "supportDe": "Kev txhawb nqa Deutsch",
-      "surveyParentsDe": "Sawv ntawv niam txiv (Txiv)",
-      "surveyParentsEn": "Sawv ntawv niam txiv (Kiev)",
-      "surveyPublicDe": "Sawv ntawv (Txiv)",
-      "surveyPublicEn": "Sawv ntawv (Kiev)",
+      "survey": "Tso survey",
       "surveys": "Sawv ntawv",
       "tagline": "Nrhiav koj txoj kev. Tso ib lub teeb tseg.",
       "terms": "Cov cai",
@@ -5587,6 +5512,7 @@
       "pillTasks": "Kev taw qhia haujlwm",
       "primaryCta": "Koom nrog beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Tso survey",
       "title": "Nrhiav koj txoj kev. Tso ib lub teeb tseg."
     },
     "meta": {
@@ -5705,10 +5631,7 @@
       "products": "Termékek",
       "profile": "Profil",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "Szülői kérdőív (német)",
-      "surveyParentsEn": "Szülői kérdőív (angol)",
-      "surveyPublicDe": "Kérdőív (német)",
-      "surveyPublicEn": "Kérdőív (angol)",
+      "survey": "Kérdőív kitöltése",
       "surveys": "Kérdőívek",
       "tagline": "Találd meg az utad. Hagyj egy fényt.",
       "terms": "Feltételek",
@@ -5724,6 +5647,7 @@
       "pillTasks": "Feladatnavigáció",
       "primaryCta": "Csatlakozás a bétához",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Kérdőív kitöltése",
       "title": "Találd meg az utad. Hagyj egy fényt."
     },
     "meta": {
@@ -5842,10 +5766,7 @@
       "products": "Vörur",
       "profile": "Prófíll",
       "supportDe": "Stuðningur á þýsku",
-      "surveyParentsDe": "Könnun foreldra (þýska)",
-      "surveyParentsEn": "Könnun foreldra (enska)",
-      "surveyPublicDe": "Könnun (þýska)",
-      "surveyPublicEn": "Könnun (enska)",
+      "survey": "Taktu þátt í könnun",
       "surveys": "Kannanir",
       "tagline": "Finndu þína leið. Skildu eftir ljós.",
       "terms": "Skilmálar",
@@ -5861,6 +5782,7 @@
       "pillTasks": "Verkefnaleiðsögn",
       "primaryCta": "Gakktu í beta-útgáfuna",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Taktu þátt í könnun",
       "title": "Finndu leiðina þína. Skildu eftir ljós."
     },
     "meta": {
@@ -5979,10 +5901,7 @@
       "products": "Ngwaahịa",
       "profile": "Profaịlụ",
       "supportDe": "Nkwado Deutsch",
-      "surveyParentsDe": "Parents survey (Ede Jamani)",
-      "surveyParentsEn": "Parents survey (Ede Bekee)",
-      "surveyPublicDe": "Survey (Ede Jamani)",
-      "surveyPublicEn": "Survey (Ede Bekee)",
+      "survey": "Were Nnyocha",
       "surveys": "Nnyocha",
       "tagline": "Chọta ụzọ gị. Hapụ ìhè.",
       "terms": "Usoro",
@@ -5998,6 +5917,7 @@
       "pillTasks": "Ịnyagharị ọrụ",
       "primaryCta": "Sonye na beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Were Nnyocha",
       "title": "Chọta ụzọ gị. Hapụ ìhè."
     },
     "meta": {
@@ -6116,10 +6036,7 @@
       "products": "Produk",
       "profile": "Profil",
       "supportDe": "Dukungan Deutsch",
-      "surveyParentsDe": "Survei orang tua (Jerman)",
-      "surveyParentsEn": "Survei orang tua (Inggris)",
-      "surveyPublicDe": "Survei (Jerman)",
-      "surveyPublicEn": "Survei (Inggris)",
+      "survey": "Isi survei",
       "surveys": "Survei",
       "tagline": "Temukan jalanmu. Tinggalkan cahaya.",
       "terms": "Ketentuan",
@@ -6135,6 +6052,7 @@
       "pillTasks": "Navigasi tugas",
       "primaryCta": "Gabung beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Isi survei",
       "title": "Temukan jalanmu. Tinggalkan cahaya."
     },
     "meta": {
@@ -6253,10 +6171,7 @@
       "products": "Táirgí",
       "profile": "Próifíl",
       "supportDe": "Tacaíocht Deutsch",
-      "surveyParentsDe": "Ceistiú na nTuismitheoirí (Gearmáinis)",
-      "surveyParentsEn": "Ceistiú na nTuismitheoirí (Béarla)",
-      "surveyPublicDe": "Ceistiú (Gearmáinis)",
-      "surveyPublicEn": "Ceistiú (Béarla)",
+      "survey": "Déan an suirbhé",
       "surveys": "Ceisteanna",
       "tagline": "Aimsigh do chosán. Fág solas i do dhiaidh.",
       "terms": "Téarmaí",
@@ -6272,6 +6187,7 @@
       "pillTasks": "Nascleanúint tascanna",
       "primaryCta": "Bí páirteach sa béite",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Déan an suirbhé",
       "title": "Aimsigh do chosán. Fág solas i do dhiaidh."
     },
     "meta": {
@@ -6390,10 +6306,7 @@
       "products": "Prodotti",
       "profile": "Profilo",
       "supportDe": "Supporto in tedesco",
-      "surveyParentsDe": "Sondaggio genitori (Tedesco)",
-      "surveyParentsEn": "Sondaggio genitori (Inglese)",
-      "surveyPublicDe": "Sondaggio (Tedesco)",
-      "surveyPublicEn": "Sondaggio (Inglese)",
+      "survey": "Compila sondaggio",
       "surveys": "Sondaggi",
       "tagline": "Trova la tua strada. Lascia una luce.",
       "terms": "Condizioni",
@@ -6409,6 +6322,7 @@
       "pillTasks": "Navigazione dei compiti",
       "primaryCta": "Unisciti alla beta",
       "secondaryCta": "Apri la versione web",
+      "surveyCta": "Compila sondaggio",
       "title": "Trova la tua strada. Lascia una luce."
     },
     "meta": {
@@ -6527,10 +6441,7 @@
       "products": "製品",
       "profile": "プロフィール",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "保護者アンケート (ドイツ語)",
-      "surveyParentsEn": "保護者アンケート (英語)",
-      "surveyPublicDe": "アンケート (ドイツ語)",
-      "surveyPublicEn": "アンケート (英語)",
+      "survey": "アンケートへ",
       "surveys": "アンケート",
       "tagline": "自分の道を見つけよう。小さな灯りを残そう。",
       "terms": "利用規約",
@@ -6546,6 +6457,7 @@
       "pillTasks": "タスクの案内",
       "primaryCta": "ベータに参加",
       "secondaryCta": "Web版を開く",
+      "surveyCta": "アンケートへ",
       "title": "自分の道を見つけよう。光を残そう。"
     },
     "meta": {
@@ -6664,10 +6576,7 @@
       "products": "Produk",
       "profile": "Profil",
       "supportDe": "Dhukungan Deutsch",
-      "surveyParentsDe": "Survei wong tua (Jerman)",
-      "surveyParentsEn": "Survei wong tua (Inggris)",
-      "surveyPublicDe": "Survei (Jerman)",
-      "surveyPublicEn": "Survei (Inggris)",
+      "survey": "Isi Survey",
       "surveys": "Survei",
       "tagline": "Temokake dalanmu. Ninggalna cahya.",
       "terms": "Syarat",
@@ -6683,6 +6592,7 @@
       "pillTasks": "Navigasi tugas",
       "primaryCta": "Gabung beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Isi Survey",
       "title": "Temokake dalanmu. Ninggalna cahya."
     },
     "meta": {
@@ -6801,10 +6711,7 @@
       "products": "ಉತ್ಪನ್ನಗಳು",
       "profile": "ಪ್ರೊಫೈಲ್",
       "supportDe": "ಜರ್ಮನ್‌ನಲ್ಲಿ ಬೆಂಬಲ",
-      "surveyParentsDe": "ಪೋಷಕರ ಸಮೀಕ್ಷೆ (ಜರ್ಮನ್)",
-      "surveyParentsEn": "ಪೋಷಕರ ಸಮೀಕ್ಷೆ (ಇಂಗ್ಲೀಷ್)",
-      "surveyPublicDe": "ಸಮೀಕ್ಷೆ (ಜರ್ಮನ್)",
-      "surveyPublicEn": "ಸಮೀಕ್ಷೆ (ಇಂಗ್ಲೀಷ್)",
+      "survey": "ಸರ್ವೇ ತೆಗೆದುಕೊಳ್ಳಿ",
       "surveys": "ಸಮೀಕ್ಷೆಗಳು",
       "tagline": "ನಿಮ್ಮ ದಾರಿಯನ್ನು ಕಂಡುಕೊಳ್ಳಿ. ಒಂದು ಬೆಳಕು ಬಿಡಿ.",
       "terms": "ನಿಯಮಗಳು",
@@ -6820,6 +6727,7 @@
       "pillTasks": "ಕಾರ್ಯ ನಾವಿಗೇಶನ್",
       "primaryCta": "ಬೀಟಾಗೆ ಸೇರಿ",
       "secondaryCta": "Explore web app",
+      "surveyCta": "ಸರ್ವೇ ತೆಗೆದುಕೊಳ್ಳಿ",
       "title": "ನಿಮ್ಮ ದಾರಿಯನ್ನು ಕಂಡುಕೊಳ್ಳಿ. ಒಂದು ಬೆಳಕು ಬಿಡಿ."
     },
     "meta": {
@@ -6938,10 +6846,7 @@
       "products": "Өнімдер",
       "profile": "Профиль",
       "supportDe": "Deutsch қолдауы",
-      "surveyParentsDe": "Ата-ана сауалнамасы (Неміс)",
-      "surveyParentsEn": "Ата-ана сауалнамасы (Ағылшын)",
-      "surveyPublicDe": "Сауалнама (Неміс)",
-      "surveyPublicEn": "Сауалнама (Ағылшын)",
+      "survey": "Сауалнамаға қатысыңыз",
       "surveys": "Сауалнамалар",
       "tagline": "Өз жолыңды тап. Жарық қалдыр.",
       "terms": "Шарттар",
@@ -6957,6 +6862,7 @@
       "pillTasks": "Тапсырмаларға бағыттау",
       "primaryCta": "Бета-нұсқаға қосылу",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Сауалнамаға қатысыңыз",
       "title": "Өз жолыңды тап. Із қалдыр."
     },
     "meta": {
@@ -7075,10 +6981,7 @@
       "products": "ផលិតផល",
       "profile": "ប្រវត្តិរូប",
       "supportDe": "ជំនួយ Deutsch",
-      "surveyParentsDe": "ស្ទង់មតិឪពុកម្តាយ (អាល្លឺម៉ង់)",
-      "surveyParentsEn": "ស្ទង់មតិឪពុកម្តាយ (អង់គ្លេស)",
-      "surveyPublicDe": "ស្ទង់មតិ (អាល្លឺម៉ង់)",
-      "surveyPublicEn": "ស្ទង់មតិ (អង់គ្លេស)",
+      "survey": "ស្ទង់មតិ",
       "surveys": "ស្ទង់មតិ",
       "tagline": "ស្វែងរកផ្លូវរបស់អ្នក។ ទុកពន្លឺមួយ។",
       "terms": "លក្ខខណ្ឌ",
@@ -7094,6 +6997,7 @@
       "pillTasks": "ការណែនាំភារកិច្ច",
       "primaryCta": "ចូលរួមបេតា",
       "secondaryCta": "Explore web app",
+      "surveyCta": "ស្ទង់មតិ",
       "title": "ស្វែងរកផ្លូវរបស់អ្នក។ ទុកពន្លឺមួយចោល។"
     },
     "meta": {
@@ -7212,10 +7116,7 @@
       "products": "Ibicuruzwa",
       "profile": "Umwirondoro",
       "supportDe": "Inkunga mu Kidage",
-      "surveyParentsDe": "Isuzuma ry’ababyeyi (Igiholandi)",
-      "surveyParentsEn": "Isuzuma ry’ababyeyi (Icyongereza)",
-      "surveyPublicDe": "Isuzuma (Igiholandi)",
-      "surveyPublicEn": "Isuzuma (Icyongereza)",
+      "survey": "Kora inyigo",
       "surveys": "Ibisuzuma",
       "tagline": "Shaka inzira yawe. Siga urumuri.",
       "terms": "Amabwiriza",
@@ -7231,6 +7132,7 @@
       "pillTasks": "Kuyobora imirimo",
       "primaryCta": "Injira muri beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Kora inyigo",
       "title": "Shaka inzira yawe. Siga urumuri."
     },
     "meta": {
@@ -7349,10 +7251,7 @@
       "products": "제품",
       "profile": "프로필",
       "supportDe": "독일어 지원",
-      "surveyParentsDe": "부모 설문 (독일어)",
-      "surveyParentsEn": "부모 설문 (영어)",
-      "surveyPublicDe": "설문 (독일어)",
-      "surveyPublicEn": "설문 (영어)",
+      "survey": "설문 참여",
       "surveys": "설문",
       "tagline": "나만의 길을 찾고, 작은 빛을 남기세요.",
       "terms": "이용약관",
@@ -7368,6 +7267,7 @@
       "pillTasks": "할 일 안내",
       "primaryCta": "베타에 참여하기",
       "secondaryCta": "웹 버전 열기",
+      "surveyCta": "설문 참여",
       "title": "나만의 길을 찾고, 작은 빛을 남기세요."
     },
     "meta": {
@@ -7486,10 +7386,7 @@
       "products": "بەرهەمەکان",
       "profile": "پرۆفایل",
       "supportDe": "پشتگیری Deutsch",
-      "surveyParentsDe": "Çavkaniya dayik û bav (Almanî)",
-      "surveyParentsEn": "Çavkaniya dayik û bav (Îngilîzî)",
-      "surveyPublicDe": "Çavkaniyê (Almanî)",
-      "surveyPublicEn": "Çavkaniyê (Îngilîzî)",
+      "survey": "Serlêdanê bikirin",
       "surveys": "Çavkaniyên",
       "tagline": "ڕێگاکەت بدۆزەوە. ڕووناکییەک بەجێبهێڵە.",
       "terms": "مەرجەکان",
@@ -7505,6 +7402,7 @@
       "pillTasks": "ڕێنمایی ئەرکەکان",
       "primaryCta": "بەتا بپەیوەندە",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Serlêdanê bikirin",
       "title": "ڕێگەت بدۆزەوە. ڕووناکییەک بەجێبهێڵە."
     },
     "meta": {
@@ -7623,10 +7521,7 @@
       "products": "Өнүмдөр",
       "profile": "Профиль",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "Ата-энелерге суроо (Неминче)",
-      "surveyParentsEn": "Ата-энелерге суроо (Англисче)",
-      "surveyPublicDe": "Суроо (Неминче)",
-      "surveyPublicEn": "Суроо (Англисче)",
+      "survey": "Сурамжылоого катышыңыз",
       "surveys": "Суроолор",
       "tagline": "Өз жолуңду тап. Жарык калтыр.",
       "terms": "Колдонуу шарттары",
@@ -7642,6 +7537,7 @@
       "pillTasks": "Тапшырмалар боюнча багыттоо",
       "primaryCta": "Бетага кошулуу",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Сурамжылоого катышыңыз",
       "title": "Өз жолуңду тап. Жарык калтыр."
     },
     "meta": {
@@ -7760,10 +7656,7 @@
       "products": "ຜະລິດຕະພັນ",
       "profile": "ໂປຣໄຟລ໌",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "ເສັງຜູ້ເອົາ (ເຢຍລະວັນ)",
-      "surveyParentsEn": "ເສັງຜູ້ເອົາ (ອັງກິດ)",
-      "surveyPublicDe": "ສອບເສັງ (ເຢຍລະວັນ)",
-      "surveyPublicEn": "ສອບເສັງ (ອັງກິດ)",
+      "survey": "ຕອບແບບສຳຫຼວດ",
       "surveys": "ສອບເສັງ",
       "tagline": "ຊອກຫາເສັ້ນທາງຂອງເຈົ້າ. ປ່ອຍແສງໄວ້.",
       "terms": "ເງື່ອນໄຂ",
@@ -7779,6 +7672,7 @@
       "pillTasks": "ການນຳທາງວຽກງານ",
       "primaryCta": "ເຂົ້າຮ່ວມເບຕ້າ",
       "secondaryCta": "Explore web app",
+      "surveyCta": "ຕອບແບບສຳຫຼວດ",
       "title": "ຫາເສັ້ນທາງຂອງທ່ານ. ຝາກແສງໄວ້."
     },
     "meta": {
@@ -7897,10 +7791,7 @@
       "products": "Produkti",
       "profile": "Profils",
       "supportDe": "Atbalsts vācu valodā",
-      "surveyParentsDe": "Vecāku aptauja (Vācu)",
-      "surveyParentsEn": "Vecāku aptauja (Angļu)",
-      "surveyPublicDe": "Aptauja (Vācu)",
-      "surveyPublicEn": "Aptauja (Angļu)",
+      "survey": "Aizpildīt aptauju",
       "surveys": "Aptaujas",
       "tagline": "Atrodi savu ceļu. Atstāj gaismu.",
       "terms": "Noteikumi",
@@ -7916,6 +7807,7 @@
       "pillTasks": "Uzdevumu navigācija",
       "primaryCta": "Pievienoties beta versijai",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Aizpildīt aptauju",
       "title": "Atrodi savu ceļu. Atstāj gaismu."
     },
     "meta": {
@@ -8034,10 +7926,7 @@
       "products": "Produktai",
       "profile": "Profilis",
       "supportDe": "Palaikymas vokiečių kalba",
-      "surveyParentsDe": "Tėvų apklausa (Vokiečių)",
-      "surveyParentsEn": "Tėvų apklausa (Anglų)",
-      "surveyPublicDe": "Apklausa (Vokiečių)",
-      "surveyPublicEn": "Apklausa (Anglų)",
+      "survey": "Užpildyk apklausą",
       "surveys": "Apklaidos",
       "tagline": "Rask savo kelią. Palik šviesą.",
       "terms": "Sąlygos",
@@ -8053,6 +7942,7 @@
       "pillTasks": "Užduočių navigacija",
       "primaryCta": "Prisijunkite prie beta versijos",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Užpildyk apklausą",
       "title": "Raskite savo kelią. Palikite šviesą."
     },
     "meta": {
@@ -8171,10 +8061,7 @@
       "products": "Produkter",
       "profile": "Profil",
       "supportDe": "Support op Däitsch",
-      "surveyParentsDe": "Parents survey (Däisch)",
-      "surveyParentsEn": "Parents survey (Englesch)",
-      "surveyPublicDe": "Survey (Däisch)",
-      "surveyPublicEn": "Survey (Englesch)",
+      "survey": "Ufro maachen",
       "surveys": "Surveys",
       "tagline": "Fannt Äre Wee. Loosst e Liicht hanner Iech.",
       "terms": "Konditiounen",
@@ -8190,6 +8077,7 @@
       "pillTasks": "Aufgaben-Navigatioun",
       "primaryCta": "An d'Beta bäitrieden",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Ufro maachen",
       "title": "Fënn däi Wee. Hannerloos e Liicht."
     },
     "meta": {
@@ -8308,10 +8196,7 @@
       "products": "Производи",
       "profile": "Профил",
       "supportDe": "Поддршка на германски",
-      "surveyParentsDe": "Анкета за родители (германски)",
-      "surveyParentsEn": "Анкета за родители (англиски)",
-      "surveyPublicDe": "Анкета (германски)",
-      "surveyPublicEn": "Анкета (англиски)",
+      "survey": "Пополни анкета",
       "surveys": "Анкети",
       "tagline": "Најдете го својот пат. Оставете светлина.",
       "terms": "Услови",
@@ -8327,6 +8212,7 @@
       "pillTasks": "Навигација низ задачи",
       "primaryCta": "Приклучи се на бета-верзијата",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Пополни анкета",
       "title": "Најди го својот пат. Остави светлина."
     },
     "meta": {
@@ -8445,10 +8331,7 @@
       "products": "Vokatra",
       "profile": "Mombamomba",
       "supportDe": "Fanohanana Deutsch",
-      "surveyParentsDe": "Fanadihadiana ray aman-dreny (Alemana)",
-      "surveyParentsEn": "Fanadihadiana ray aman-dreny (Anglisy)",
-      "surveyPublicDe": "Fanadihadiana (Alemana)",
-      "surveyPublicEn": "Fanadihadiana (Anglisy)",
+      "survey": "Manaova fanadihadiana",
       "surveys": "Fanadihadiana",
       "tagline": "Tadiavo ny lalanao. Avelao hirehitra ny hazavana.",
       "terms": "Fepetra",
@@ -8464,6 +8347,7 @@
       "pillTasks": "Fitarihana asa",
       "primaryCta": "Midira amin’ny beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Manaova fanadihadiana",
       "title": "Tadiavo ny lalanao. Avelao hisy hazavana."
     },
     "meta": {
@@ -8582,10 +8466,7 @@
       "products": "Produk",
       "profile": "Profil",
       "supportDe": "Sokongan Deutsch",
-      "surveyParentsDe": "Kajian ibu bapa (Jerman)",
-      "surveyParentsEn": "Kajian ibu bapa (Inggeris)",
-      "surveyPublicDe": "Survei (Jerman)",
-      "surveyPublicEn": "Survei (Inggeris)",
+      "survey": "Isi tinjauan",
       "surveys": "Survei",
       "tagline": "Cari laluan anda. Tinggalkan cahaya.",
       "terms": "Syarat",
@@ -8601,6 +8482,7 @@
       "pillTasks": "Navigasi tugasan",
       "primaryCta": "Sertai beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Isi tinjauan",
       "title": "Cari jalan anda. Tinggalkan cahaya."
     },
     "meta": {
@@ -8719,10 +8601,7 @@
       "products": "ഉൽപ്പന്നങ്ങൾ",
       "profile": "പ്രൊഫൈൽ",
       "supportDe": "സഹായം Deutsch",
-      "surveyParentsDe": "പിതാക്കളുടെ സർവേ (ജർമ്മൻ)",
-      "surveyParentsEn": "പിതാക്കളുടെ സർവേ (ഇംഗ്ലീഷ്)",
-      "surveyPublicDe": "സർവേ (ജർമ്മൻ)",
-      "surveyPublicEn": "സർവേ (ഇംഗ്ലീഷ്)",
+      "survey": "സർവേ പൂരിപ്പിക്കുക",
       "surveys": "സർവേകൾ",
       "tagline": "നിങ്ങളുടെ വഴി കണ്ടെത്തൂ. ഒരു പ്രകാശം വിടൂ.",
       "terms": "നിബന്ധനകൾ",
@@ -8738,6 +8617,7 @@
       "pillTasks": "ടാസ്‌ക് നാവിഗേഷൻ",
       "primaryCta": "ബീറ്റയിൽ ചേരുക",
       "secondaryCta": "Explore web app",
+      "surveyCta": "സർവേ പൂരിപ്പിക്കുക",
       "title": "നിങ്ങളുടെ വഴി കണ്ടെത്തൂ. ഒരു പ്രകാശം വിടൂ."
     },
     "meta": {
@@ -8856,10 +8736,7 @@
       "products": "Prodotti",
       "profile": "Profil",
       "supportDe": "Appoġġ bil-Ġermaniż",
-      "surveyParentsDe": "Surrivu parenti (Alman)",
-      "surveyParentsEn": "Surrivu parenti (Ingliż)",
-      "surveyPublicDe": "Surrivu (Alman)",
-      "surveyPublicEn": "Surrivu (Ingliż)",
+      "survey": "Imla l-istħarriġ",
       "surveys": "Surrivi",
       "tagline": "Sib it-triq tiegħek. Ħalli dawl warajk.",
       "terms": "Termini",
@@ -8875,6 +8752,7 @@
       "pillTasks": "Navigazzjoni tal-kompiti",
       "primaryCta": "Ingħaqad mal-beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Imla l-istħarriġ",
       "title": "Sib it-triq tiegħek. Ħalli dawl warajk."
     },
     "meta": {
@@ -8993,10 +8871,7 @@
       "products": "Ngā hua",
       "profile": "Kōtaha",
       "supportDe": "Tautoko Deutsch",
-      "surveyParentsDe": "Mātua tātaiata (Hākeni)",
-      "surveyParentsEn": "Mātua tātaiata (Ingilī)",
-      "surveyPublicDe": "Tātaiata (Hākeni)",
-      "surveyPublicEn": "Tātaiata (Ingilī)",
+      "survey": "Tirohia te rangahau",
       "surveys": "Tātaiata",
       "tagline": "Kimihia tō ara. Waiho he māramatanga.",
       "terms": "Ngā tikanga",
@@ -9012,6 +8887,7 @@
       "pillTasks": "Whakatere mahi",
       "primaryCta": "Hono atu ki te beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Tirohia te rangahau",
       "title": "Kimihia tō ara. Waiho he rama."
     },
     "meta": {
@@ -9130,10 +9006,7 @@
       "products": "उत्पादने",
       "profile": "प्रोफाइल",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "पालक सर्वेक्षण (जर्मन)",
-      "surveyParentsEn": "पालक सर्वेक्षण (इंग्रजी)",
-      "surveyPublicDe": "सर्वेक्षण (जर्मन)",
-      "surveyPublicEn": "सर्वेक्षण (इंग्रजी)",
+      "survey": "सर्वेक्षण भरा",
       "surveys": "सर्वेक्षणे",
       "tagline": "तुमचा मार्ग शोधा. एक प्रकाश मागे ठेवा.",
       "terms": "अटी",
@@ -9149,6 +9022,7 @@
       "pillTasks": "कामांची दिशा",
       "primaryCta": "बीटा मध्ये सहभागी व्हा",
       "secondaryCta": "Explore web app",
+      "surveyCta": "सर्वेक्षण भरा",
       "title": "तुमचा मार्ग शोधा. एक प्रकाश मागे ठेवा."
     },
     "meta": {
@@ -9267,10 +9141,7 @@
       "products": "Бүтээгдэхүүнүүд",
       "profile": "Профайл",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "Эцэг эхийн тайлан (герман)",
-      "surveyParentsEn": "Эцэг эхийн тайлан (англи)",
-      "surveyPublicDe": "Тайлан (герман)",
-      "surveyPublicEn": "Тайлан (англи)",
+      "survey": "Асуулга хийнэ",
       "surveys": "Тайланууд",
       "tagline": "Өөрийн замаа ол. Гэрэл асаа.",
       "terms": "Нөхцөлүүд",
@@ -9286,6 +9157,7 @@
       "pillTasks": "Даалгаврын чиглүүлэг",
       "primaryCta": "Бета хувилбарт нэгдэх",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Асуулга хийнэ",
       "title": "Өөрийн замаа ол. Гэрэл үлдээ."
     },
     "meta": {
@@ -9404,10 +9276,7 @@
       "products": "ထုတ်ကုန်များ",
       "profile": "ပရိုဖိုင်",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "မိဘစစ်တမ်း (ဂျာမန်)",
-      "surveyParentsEn": "မိဘစစ်တမ်း (အင်္ဂလိပ်)",
-      "surveyPublicDe": "စစ်တမ်း (ဂျာမန်)",
-      "surveyPublicEn": "စစ်တမ်း (အင်္ဂလိပ်)",
+      "survey": "စစ်တမ်း ဖြည့်ပါ",
       "surveys": "စစ်တမ်းများ",
       "tagline": "သင့်လမ်းကြောင်းကို ရှာပါ။ အလင်းတစ်စင်း ချန်ထားပါ။",
       "terms": "စည်းကမ်းချက်များ",
@@ -9423,6 +9292,7 @@
       "pillTasks": "လုပ်ငန်းတာဝန်လမ်းညွှန်",
       "primaryCta": "ဘီတာတွင် ပါဝင်ရန်",
       "secondaryCta": "Explore web app",
+      "surveyCta": "စစ်တမ်း ဖြည့်ပါ",
       "title": "သင့်လမ်းကို ရှာပါ။ အလင်းတစ်စင်း ချန်ထားပါ။"
     },
     "meta": {
@@ -9541,10 +9411,7 @@
       "products": "उत्पादनहरू",
       "profile": "प्रोफाइल",
       "supportDe": "जर्मनमा समर्थन",
-      "surveyParentsDe": "माता पिता सर्वेक्षण (जर्मन)",
-      "surveyParentsEn": "माता पिता सर्वेक्षण (अङ्ग्रेजी)",
-      "surveyPublicDe": "सर्वेक्षण (जर्मन)",
-      "surveyPublicEn": "सर्वेक्षण (अङ्ग्रेजी)",
+      "survey": "सर्वेक्षण भर्नुहोस्",
       "surveys": "सर्वेक्षणहरू",
       "tagline": "आफ्नो बाटो खोज्नुहोस्। एउटा उज्यालो छोड्नुहोस्।",
       "terms": "सर्तहरू",
@@ -9560,6 +9427,7 @@
       "pillTasks": "कार्य नेभिगेसन",
       "primaryCta": "बेटामा सामेल हुनुहोस्",
       "secondaryCta": "Explore web app",
+      "surveyCta": "सर्वेक्षण भर्नुहोस्",
       "title": "आफ्नो बाटो खोज्नुहोस्। एउटा उज्यालो छोड्नुहोस्।"
     },
     "meta": {
@@ -9678,10 +9546,7 @@
       "products": "Produkter",
       "profile": "Profil",
       "supportDe": "Support på tysk",
-      "surveyParentsDe": "Undersøkelse for foreldre (tysk)",
-      "surveyParentsEn": "Undersøkelse for foreldre (engelsk)",
-      "surveyPublicDe": "Undersøkelse (tysk)",
-      "surveyPublicEn": "Undersøkelse (engelsk)",
+      "survey": "Ta undersøkelsen",
       "surveys": "Undersøkelser",
       "tagline": "Finn din vei. Sett igjen et lys.",
       "terms": "Vilkår",
@@ -9697,6 +9562,7 @@
       "pillTasks": "Oppgaveveiledning",
       "primaryCta": "Bli med i betaen",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Ta undersøkelsen",
       "title": "Finn veien din. Sett igjen et lys."
     },
     "meta": {
@@ -9815,10 +9681,7 @@
       "products": "Zogulitsa",
       "profile": "Mbiri",
       "supportDe": "Thandizo Deutsch",
-      "surveyParentsDe": "Chisankhwila cha abwenzi (Jamani)",
-      "surveyParentsEn": "Chisankhwila cha abwenzi (Chingereza)",
-      "surveyPublicDe": "Chisankhwila (Jamani)",
-      "surveyPublicEn": "Chisankhwila (Chingereza)",
+      "survey": "Chita survey",
       "surveys": "Zonankhwilira",
       "tagline": "Pezani njira yanu. Siyani kuwala.",
       "terms": "Malamulo",
@@ -9834,6 +9697,7 @@
       "pillTasks": "Kuyenda pa ntchito",
       "primaryCta": "Lowani mu beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Chita survey",
       "title": "Pezani njira yanu. Siyani kuwala."
     },
     "meta": {
@@ -9952,10 +9816,7 @@
       "products": "ପ୍ରଡକ୍ଟଗୁଡ଼ିକ",
       "profile": "ପ୍ରୋଫାଇଲ୍",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "ଅଭିଭାବକ ସର୍ବେ (ଜର୍ମାନୀ)",
-      "surveyParentsEn": "ଅଭିଭାବକ ସର୍ବେ (ଇଂରାଜୀ)",
-      "surveyPublicDe": "ସର୍ବେ (ଜର୍ମାନୀ)",
-      "surveyPublicEn": "ସର୍ବେ (ଇଂରାଜୀ)",
+      "survey": "ସର୍ଭେ ନିଅ",
       "surveys": "ସର୍ବେ",
       "tagline": "ଆପଣଙ୍କ ପଥ ଖୋଜନ୍ତୁ। ଏକ ଆଲୋକ ଛାଡ଼ନ୍ତୁ।",
       "terms": "ନିୟମାବଳୀ",
@@ -9971,6 +9832,7 @@
       "pillTasks": "କାର୍ଯ୍ୟ ନାଭିଗେସନ୍",
       "primaryCta": "ବେଟାରେ ଯୋଗଦିଅନ୍ତୁ",
       "secondaryCta": "Explore web app",
+      "surveyCta": "ସର୍ଭେ ନିଅ",
       "title": "ନିଜ ପଥ ଖୋଜନ୍ତୁ। ଏକ ଆଲୋକ ଛାଡ଼ନ୍ତୁ।"
     },
     "meta": {
@@ -10089,10 +9951,7 @@
       "products": "محصولات",
       "profile": "پروفایل",
       "supportDe": "د جرمني ملاتړ",
-      "surveyParentsDe": "والدین سروې (آلماني)",
-      "surveyParentsEn": "والدین سروې (انګلیسي)",
-      "surveyPublicDe": "سروی (آلماني)",
-      "surveyPublicEn": "سروی (انګلیسي)",
+      "survey": "سروې وکړئ",
       "surveys": "سرویې",
       "tagline": "خپل لوری ومومئ. یو څرک پرېږدئ.",
       "terms": "شرایط",
@@ -10108,6 +9967,7 @@
       "pillTasks": "د دندو لارښوونه",
       "primaryCta": "بیټا ته ورشئ",
       "secondaryCta": "Explore web app",
+      "surveyCta": "سروې وکړئ",
       "title": "خپله لاره ومومئ. یو څرک پرېږدئ."
     },
     "meta": {
@@ -10226,10 +10086,7 @@
       "products": "محصولات",
       "profile": "پروفایل",
       "supportDe": "پشتیبانی آلمانی",
-      "surveyParentsDe": "نظرسنجی والدین (آلمانی)",
-      "surveyParentsEn": "نظرسنجی والدین (انگلیسی)",
-      "surveyPublicDe": "نظرسنجی (آلمانی)",
-      "surveyPublicEn": "نظرسنجی (انگلیسی)",
+      "survey": "نظرسنجی را پر کنید",
       "surveys": "نظرسنجی‌ها",
       "tagline": "مسیر خود را پیدا کنید. نوری به جا بگذارید.",
       "terms": "شرایط و ضوابط",
@@ -10245,6 +10102,7 @@
       "pillTasks": "راهنمایی کارها",
       "primaryCta": "پیوستن به نسخه آزمایشی",
       "secondaryCta": "Explore web app",
+      "surveyCta": "نظرسنجی را پر کنید",
       "title": "راه خود را پیدا کنید. ردّی از نور بگذارید."
     },
     "meta": {
@@ -10363,10 +10221,7 @@
       "products": "Produkty",
       "profile": "Profil",
       "supportDe": "Wsparcie po niemiecku",
-      "surveyParentsDe": "Ankieta rodziców (niemiecka)",
-      "surveyParentsEn": "Ankieta rodziców (angielska)",
-      "surveyPublicDe": "Ankieta (niemiecka)",
-      "surveyPublicEn": "Ankieta (angielska)",
+      "survey": "Wypełnij ankietę",
       "surveys": "Ankiety",
       "tagline": "Znajdź swoją drogę. Zostaw po sobie światło.",
       "terms": "Warunki",
@@ -10382,6 +10237,7 @@
       "pillTasks": "Nawigacja po zadaniach",
       "primaryCta": "Dołącz do wersji beta",
       "secondaryCta": "Otwórz wersję web",
+      "surveyCta": "Wypełnij ankietę",
       "title": "Znajdź swoją drogę. Zostaw po sobie ślad."
     },
     "meta": {
@@ -10500,10 +10356,7 @@
       "products": "Produtos",
       "profile": "Perfil",
       "supportDe": "Suporte em alemão",
-      "surveyParentsDe": "Enquete para pais (Alemão)",
-      "surveyParentsEn": "Enquete para pais (Inglês)",
-      "surveyPublicDe": "Enquete (Alemão)",
-      "surveyPublicEn": "Enquete (Inglês)",
+      "survey": "Responder pesquisa",
       "surveys": "Pesquisas",
       "tagline": "Encontre o seu caminho. Deixe uma luz.",
       "terms": "Termos",
@@ -10519,6 +10372,7 @@
       "pillTasks": "Navegação de tarefas",
       "primaryCta": "Entrar na beta",
       "secondaryCta": "Abrir versão web",
+      "surveyCta": "Responder pesquisa",
       "title": "Encontre o seu caminho. Deixe uma luz."
     },
     "meta": {
@@ -10637,10 +10491,7 @@
       "products": "ਉਤਪਾਦ",
       "profile": "ਪ੍ਰੋਫ਼ਾਈਲ",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "ਮਾਤਾ-ਪਿਤਾ ਸਰਵੇ (ਜਰਮਨ)",
-      "surveyParentsEn": "ਮਾਤਾ-ਪਿਤਾ ਸਰਵੇ (ਅੰਗਰੇਜ਼ੀ)",
-      "surveyPublicDe": "ਸਰਵੇ (ਜਰਮਨ)",
-      "surveyPublicEn": "ਸਰਵੇ (ਅੰਗਰੇਜ਼ੀ)",
+      "survey": "ਸਰਵੇ ਭਰੋ",
       "surveys": "ਸਰਵੇ",
       "tagline": "ਆਪਣਾ ਰਸਤਾ ਲੱਭੋ। ਇੱਕ ਰੌਸ਼ਨੀ ਛੱਡੋ।",
       "terms": "ਸ਼ਰਤਾਂ",
@@ -10656,6 +10507,7 @@
       "pillTasks": "ਕੰਮਾਂ ਦੀ ਰਹਿਨੁਮਾਈ",
       "primaryCta": "ਬੀਟਾ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
       "secondaryCta": "Explore web app",
+      "surveyCta": "ਸਰਵੇ ਭਰੋ",
       "title": "ਆਪਣਾ ਰਸਤਾ ਲੱਭੋ। ਇੱਕ ਰੌਸ਼ਨੀ ਛੱਡੋ।"
     },
     "meta": {
@@ -10774,10 +10626,7 @@
       "products": "Produse",
       "profile": "Profil",
       "supportDe": "Asistență Deutsch",
-      "surveyParentsDe": "Sondaj părinți (germană)",
-      "surveyParentsEn": "Sondaj părinți (engleză)",
-      "surveyPublicDe": "Sondaj (germană)",
-      "surveyPublicEn": "Sondaj (engleză)",
+      "survey": "Participă la sondaj",
       "surveys": "Sondaje",
       "tagline": "Găsește-ți drumul. Lasă o lumină.",
       "terms": "Termeni",
@@ -10793,6 +10642,7 @@
       "pillTasks": "Navigarea sarcinilor",
       "primaryCta": "Alătură-te versiunii beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Participă la sondaj",
       "title": "Găsește-ți drumul. Lasă o lumină."
     },
     "meta": {
@@ -10911,10 +10761,7 @@
       "products": "Продукты",
       "profile": "Профиль",
       "supportDe": "Поддержка на немецком",
-      "surveyParentsDe": "Опрос родителей (нем.)",
-      "surveyParentsEn": "Опрос родителей (англ.)",
-      "surveyPublicDe": "Опрос (нем.)",
-      "surveyPublicEn": "Опрос (англ.)",
+      "survey": "Пройти опрос",
       "surveys": "Опросы",
       "tagline": "Найди свой путь. Оставь свет.",
       "terms": "Условия",
@@ -10930,6 +10777,7 @@
       "pillTasks": "Навигация по задачам",
       "primaryCta": "Присоединиться к бета-версии",
       "secondaryCta": "Открыть веб-версию",
+      "surveyCta": "Пройти опрос",
       "title": "Найдите свой путь. Оставьте свет."
     },
     "meta": {
@@ -11048,10 +10896,7 @@
       "products": "Oloa",
       "profile": "Faamatalaga o le talaaga",
       "supportDe": "Lagolago Deutsch",
-      "surveyParentsDe": "Talosaga a le aoga (Germanese)",
-      "surveyParentsEn": "Talosaga a le aoga (Engelese)",
-      "surveyPublicDe": "Talosaga (Germanese)",
-      "surveyPublicEn": "Talosaga (Engelese)",
+      "survey": "Tali le suʻesuʻega",
       "surveys": "Talosaga",
       "tagline": "Saili lou ala. Tuua se malamalama.",
       "terms": "Aiaiga",
@@ -11067,6 +10912,7 @@
       "pillTasks": "Fa'atautaiga o galuega",
       "primaryCta": "Auai i le beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Tali le suʻesuʻega",
       "title": "Su'e lou ala. Tu'u se malamalama."
     },
     "meta": {
@@ -11185,10 +11031,7 @@
       "products": "Toraidhean",
       "profile": "Pròifil",
       "supportDe": "Taic Deutsch",
-      "surveyParentsDe": "Ceist nam pàrantan (Gearmailt)",
-      "surveyParentsEn": "Ceist nam pàrantan (Beurla)",
-      "surveyPublicDe": "Ceist (Gearmailt)",
-      "surveyPublicEn": "Ceist (Beurla)",
+      "survey": "Gabh an sgrùdadh",
       "surveys": "Ceistidhean",
       "tagline": "Lorg do shlighe. Fàg solas.",
       "terms": "Cumhachan",
@@ -11204,6 +11047,7 @@
       "pillTasks": "Seòladh ghnìomhan",
       "primaryCta": "Thig dhan beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Gabh an sgrùdadh",
       "title": "Lorg do shlighe. Fàg solas."
     },
     "meta": {
@@ -11322,10 +11166,7 @@
       "products": "Proizvodi",
       "profile": "Profil",
       "supportDe": "Podrška na nemačkom",
-      "surveyParentsDe": "Anketa za roditelje (nemački)",
-      "surveyParentsEn": "Anketa za roditelje (engleski)",
-      "surveyPublicDe": "Anketa (nemački)",
-      "surveyPublicEn": "Anketa (engleski)",
+      "survey": "Popunite anketu",
       "surveys": "Ankete",
       "tagline": "Pronađi svoj put. Ostavi svetlo.",
       "terms": "Uslovi",
@@ -11341,6 +11182,7 @@
       "pillTasks": "Navigacija kroz zadatke",
       "primaryCta": "Pridružite se beta verziji",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Popunite anketu",
       "title": "Pronađite svoj put. Ostavite trag svetlosti."
     },
     "meta": {
@@ -11459,10 +11301,7 @@
       "products": "Lihlahisoa",
       "profile": "Boemo",
       "supportDe": "Tšehetso Deutsch",
-      "surveyParentsDe": "Litšusumo tsa Bafatše (Se-Jermane)",
-      "surveyParentsEn": "Litšusumo tsa Bafatše (Se-Englise)",
-      "surveyPublicDe": "Litšusumo (Se-Jermane)",
-      "surveyPublicEn": "Litšusumo (Se-Englise)",
+      "survey": "Leka Lipapiso",
       "surveys": "Litšusumo",
       "tagline": "Fumana tsela ea hao. Tlohela leseli.",
       "terms": "Lipehelo",
@@ -11478,6 +11317,7 @@
       "pillTasks": "Tsamaiso ea mesebetsi",
       "primaryCta": "Kenya letsoho ho beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Leka Lipapiso",
       "title": "Fumana tsela ea hao. Tlohela leseli."
     },
     "meta": {
@@ -11596,10 +11436,7 @@
       "products": "Zvigadzirwa",
       "profile": "Mbiri",
       "supportDe": "Rutsigiro Deutsch",
-      "surveyParentsDe": "Mibvunzo vabereki (Chegeriya)",
-      "surveyParentsEn": "Mibvunzo vabereki (Chirungu)",
-      "surveyPublicDe": "Mibvunzo (Chegeriya)",
-      "surveyPublicEn": "Mibvunzo (Chirungu)",
+      "survey": "Tora ongororo",
       "surveys": "Mibvunzo",
       "tagline": "Tsvaga nzira yako. Siya chiedza.",
       "terms": "Mitemo",
@@ -11615,6 +11452,7 @@
       "pillTasks": "Kufamba kwemabasa",
       "primaryCta": "Joina beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Tora ongororo",
       "title": "Tsvaga nzira yako. Siya chiedza."
     },
     "meta": {
@@ -11733,10 +11571,7 @@
       "products": "پراڊڪٽس",
       "profile": "پروفائل",
       "supportDe": "سپورٽ Deutsch",
-      "surveyParentsDe": "والدين جي سروي (جرمن)",
-      "surveyParentsEn": "والدين جي سروي (انگريزي)",
-      "surveyPublicDe": "سروي (جرمن)",
-      "surveyPublicEn": "سروي (انگريزي)",
+      "survey": "سروي وٺو",
       "surveys": "سرويز",
       "tagline": "پنهنجو رستو ڳوليو. هڪ روشني ڇڏي وڃو.",
       "terms": "شرطون",
@@ -11752,6 +11587,7 @@
       "pillTasks": "ڪمن جي رهنمائي",
       "primaryCta": "بيٽا ۾ شامل ٿيو",
       "secondaryCta": "Explore web app",
+      "surveyCta": "سروي وٺو",
       "title": "پنهنجو رستو ڳوليو. هڪ روشني ڇڏي وڃو."
     },
     "meta": {
@@ -11870,10 +11706,7 @@
       "products": "නිෂ්පාදන",
       "profile": "පැතිකඩ",
       "supportDe": "Deutsch සහාය",
-      "surveyParentsDe": "මාපියන් සර්වෙයි (ජර්මානු)",
-      "surveyParentsEn": "මාපියන් සර්වෙයි (ඉංග්‍රීසි)",
-      "surveyPublicDe": "සමීක්ෂණ (ජර්මානු)",
-      "surveyPublicEn": "සමීක්ෂණ (ඉංග්‍රීසි)",
+      "survey": "සමීක්ෂණය පුරවන්න",
       "surveys": "සමීක්ෂණ",
       "tagline": "ඔබේ මාර්ගය සොයාගන්න. ආලෝකයක් තබන්න.",
       "terms": "නියමයන්",
@@ -11889,6 +11722,7 @@
       "pillTasks": "කාර්ය මාර්ගෝපදේශනය",
       "primaryCta": "බීටාට එක්වන්න",
       "secondaryCta": "Explore web app",
+      "surveyCta": "සමීක්ෂණය පුරවන්න",
       "title": "ඔබේ මාර්ගය සොයන්න. ආලෝකයක් තබන්න."
     },
     "meta": {
@@ -12007,10 +11841,7 @@
       "products": "Produkty",
       "profile": "Profil",
       "supportDe": "Podpora Deutsch",
-      "surveyParentsDe": "Rodičovský dotazník (nemčina)",
-      "surveyParentsEn": "Rodičovský dotazník (angličtina)",
-      "surveyPublicDe": "Dotazník (nemčina)",
-      "surveyPublicEn": "Dotazník (angličtina)",
+      "survey": "Vyplň anketu",
       "surveys": "Dotazníky",
       "tagline": "Nájdite si svoju cestu. Zanechajte svetlo.",
       "terms": "Podmienky",
@@ -12026,6 +11857,7 @@
       "pillTasks": "Navigácia úlohami",
       "primaryCta": "Pridať sa do beta verzie",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Vyplň anketu",
       "title": "Nájdite si svoju cestu. Zanechajte svetlo."
     },
     "meta": {
@@ -12144,10 +11976,7 @@
       "products": "Izdelki",
       "profile": "Profil",
       "supportDe": "Podpora v nemščini",
-      "surveyParentsDe": "Anketa staršev (nemščina)",
-      "surveyParentsEn": "Anketa staršev (angleščina)",
-      "surveyPublicDe": "Anketa (nemščina)",
-      "surveyPublicEn": "Anketa (angleščina)",
+      "survey": "Izpolni anketo",
       "surveys": "Ankete",
       "tagline": "Najdi svojo pot. Pusti luč.",
       "terms": "Pogoji",
@@ -12163,6 +11992,7 @@
       "pillTasks": "Krmarjenje po opravilih",
       "primaryCta": "Pridruži se beta različici",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Izpolni anketo",
       "title": "Najdi svojo pot. Pusti sled."
     },
     "meta": {
@@ -12281,10 +12111,7 @@
       "products": "Alaabooyinka",
       "profile": "Astaan",
       "supportDe": "Taageero Deutsch",
-      "surveyParentsDe": "Kormeer waalidiinta (Jarmal)",
-      "surveyParentsEn": "Kormeer waalidiinta (Ingiriis)",
-      "surveyPublicDe": "Kormeer (Jarmal)",
-      "surveyPublicEn": "Kormeer (Ingiriis)",
+      "survey": "Buuxi sahanka",
       "surveys": "Kormeer",
       "tagline": "Raadi jidkaaga. Iftiin ka tag.",
       "terms": "Shuruudaha",
@@ -12300,6 +12127,7 @@
       "pillTasks": "Hagidda hawlaha",
       "primaryCta": "Ku biir beta-ga",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Buuxi sahanka",
       "title": "Raadi jidkaaga. Ka tag iftiin."
     },
     "meta": {
@@ -12418,10 +12246,7 @@
       "products": "Productos",
       "profile": "Perfil",
       "supportDe": "Soporte en alemán",
-      "surveyParentsDe": "Encuesta para padres (Alemán)",
-      "surveyParentsEn": "Encuesta para padres (Inglés)",
-      "surveyPublicDe": "Encuesta (Alemán)",
-      "surveyPublicEn": "Encuesta (Inglés)",
+      "survey": "Haz la encuesta",
       "surveys": "Encuestas",
       "tagline": "Encuentra tu camino. Deja una luz.",
       "terms": "Términos",
@@ -12437,6 +12262,7 @@
       "pillTasks": "Navegación de tareas",
       "primaryCta": "Únete a la beta",
       "secondaryCta": "Abrir la versión web",
+      "surveyCta": "Haz la encuesta",
       "title": "Encuentra tu camino. Deja una luz."
     },
     "meta": {
@@ -12555,10 +12381,7 @@
       "products": "Produk",
       "profile": "Profil",
       "supportDe": "Rojongan Deutsch",
-      "surveyParentsDe": "Survei orang tua (Jerman)",
-      "surveyParentsEn": "Survei orang tua (Inggris)",
-      "surveyPublicDe": "Survei (Jerman)",
-      "surveyPublicEn": "Survei (Inggris)",
+      "survey": "Isi survei",
       "surveys": "Survei",
       "tagline": "Panggihan jalur anjeun. Tinggalkeun cahaya.",
       "terms": "Sarat",
@@ -12574,6 +12397,7 @@
       "pillTasks": "Napigasi tugas",
       "primaryCta": "Gabung kana béta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Isi survei",
       "title": "Teangan jalur anjeun. Ninggalkeun cahaya."
     },
     "meta": {
@@ -12692,10 +12516,7 @@
       "products": "Bidhaa",
       "profile": "Wasifu",
       "supportDe": "Msaada kwa Kijerumani",
-      "surveyParentsDe": "Utafiti wa waz (Kijerumani)",
-      "surveyParentsEn": "Utafiti wa waz (Kiingereza)",
-      "surveyPublicDe": "Utafiti (Kijerumani)",
-      "surveyPublicEn": "Utafiti (Kiingereza)",
+      "survey": "Jaza utafiti",
       "surveys": "Utafiti",
       "tagline": "Pata njia yako. Acha mwanga.",
       "terms": "Masharti",
@@ -12711,6 +12532,7 @@
       "pillTasks": "Uelekezaji wa kazi",
       "primaryCta": "Jiunge na beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Jaza utafiti",
       "title": "Pata njia yako. Acha mwanga."
     },
     "meta": {
@@ -12829,10 +12651,7 @@
       "products": "Produkter",
       "profile": "Profil",
       "supportDe": "Support på tyska",
-      "surveyParentsDe": "Föräldraenkät (tyska)",
-      "surveyParentsEn": "Föräldraenkät (engelska)",
-      "surveyPublicDe": "Enkät (tyska)",
-      "surveyPublicEn": "Enkät (engelska)",
+      "survey": "Ta undersökningen",
       "surveys": "Enkäter",
       "tagline": "Hitta din väg. Lämna ett ljus.",
       "terms": "Villkor",
@@ -12848,6 +12667,7 @@
       "pillTasks": "Uppgiftsnavigering",
       "primaryCta": "Gå med i betan",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Ta undersökningen",
       "title": "Hitta din väg. Lämna ett ljus."
     },
     "meta": {
@@ -12966,10 +12786,7 @@
       "products": "Mga Produkto",
       "profile": "Profile",
       "supportDe": "Suporta sa Deutsch",
-      "surveyParentsDe": "Magulang survey (Aleman)",
-      "surveyParentsEn": "Magulang survey (Ingles)",
-      "surveyPublicDe": "Survey (Aleman)",
-      "surveyPublicEn": "Survey (Ingles)",
+      "survey": "Sagutin ang survey",
       "surveys": "Survey",
       "tagline": "Hanapin ang iyong landas. Mag-iwan ng liwanag.",
       "terms": "Mga Tuntunin",
@@ -12985,6 +12802,7 @@
       "pillTasks": "Pag-navigate ng mga gawain",
       "primaryCta": "Sumali sa beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Sagutin ang survey",
       "title": "Hanapin ang iyong landas. Mag-iwan ng liwanag."
     },
     "meta": {
@@ -13103,10 +12921,7 @@
       "products": "Маҳсулот",
       "profile": "Профил",
       "supportDe": "Дастгирӣ ба забони олмонӣ",
-      "surveyParentsDe": "Саволномаи навалони (Немисӣ)",
-      "surveyParentsEn": "Саволномаи навалони (Англисӣ)",
-      "surveyPublicDe": "Саволнома (Немисӣ)",
-      "surveyPublicEn": "Саволнома (Англисӣ)",
+      "survey": "Анкетаро пур кунед",
       "surveys": "Саволномаҳо",
       "tagline": "Роҳи худро пайдо кунед. Нуре гузоред.",
       "terms": "Шартҳо",
@@ -13122,6 +12937,7 @@
       "pillTasks": "Навигатсияи вазифаҳо",
       "primaryCta": "Ба бета ҳамроҳ шавед",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Анкетаро пур кунед",
       "title": "Роҳи худро пайдо кунед. Нуре боқӣ гузоред."
     },
     "meta": {
@@ -13240,10 +13056,7 @@
       "products": "தயாரிப்புகள்",
       "profile": "சுயவிவரம்",
       "supportDe": "Deutsch ஆதரவு",
-      "surveyParentsDe": "பெற்றோர் சர்வே (ஜெர்மன்)",
-      "surveyParentsEn": "பெற்றோர் சர்வே (ஆங்கிலம்)",
-      "surveyPublicDe": "சர்வே (ஜெர்மன்)",
-      "surveyPublicEn": "சர்வே (ஆங்கிலம்)",
+      "survey": "சர்வே எடுக்கவும்",
       "surveys": "சர்வேகள்",
       "tagline": "உங்கள் பாதையை கண்டுபிடியுங்கள். ஒரு ஒளியை விடுங்கள்.",
       "terms": "விதிமுறைகள்",
@@ -13259,6 +13072,7 @@
       "pillTasks": "பணிகள் வழிசெலுத்தல்",
       "primaryCta": "பீட்டாவில் சேரவும்",
       "secondaryCta": "Explore web app",
+      "surveyCta": "சர்வே எடுக்கவும்",
       "title": "உங்கள் பாதையை கண்டுபிடியுங்கள். ஒரு ஒளியை விடுங்கள்."
     },
     "meta": {
@@ -13377,10 +13191,7 @@
       "products": "Продуктлар",
       "profile": "Профиль",
       "supportDe": "Deutsch ярдәме",
-      "surveyParentsDe": "Ата-әниләр сорауы (Немецча)",
-      "surveyParentsEn": "Ата-әниләр сорауы (Англизча)",
-      "surveyPublicDe": "Сорау (Немецча)",
-      "surveyPublicEn": "Сорау (Англизча)",
+      "survey": "Анкетаны тутырыгыз",
       "surveys": "Сораулар",
       "tagline": "Юлыңны тап. Яктылык калдыр.",
       "terms": "Шартлар",
@@ -13396,6 +13207,7 @@
       "pillTasks": "Биремнәр буенча юнәлеш",
       "primaryCta": "Бетага кушылу",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Анкетаны тутырыгыз",
       "title": "Юлыңны тап. Яктылык калдыр."
     },
     "meta": {
@@ -13514,10 +13326,7 @@
       "products": "ఉత్పత్తులు",
       "profile": "ప్రొఫైల్",
       "supportDe": "మద్దతు Deutsch",
-      "surveyParentsDe": "తల్లిదండ్రుల సర్వే (జర్మన్)",
-      "surveyParentsEn": "తల్లిదండ్రుల సర్వే (ఆంగ్లం)",
-      "surveyPublicDe": "సర్వే (జర్మన్)",
-      "surveyPublicEn": "సర్వే (ఆంగ్లం)",
+      "survey": "సర్వే చేయండి",
       "surveys": "సర్వేలు",
       "tagline": "మీ దారిని కనుగొనండి. ఒక వెలుగు వదిలేయండి.",
       "terms": "నిబంధనలు",
@@ -13533,6 +13342,7 @@
       "pillTasks": "పనుల మార్గనిర్దేశం",
       "primaryCta": "బీటాలో చేరండి",
       "secondaryCta": "Explore web app",
+      "surveyCta": "సర్వే చేయండి",
       "title": "మీ దారిని కనుగొనండి. ఒక వెలుగు వదిలి వెళ్లండి."
     },
     "meta": {
@@ -13651,10 +13461,7 @@
       "products": "ผลิตภัณฑ์",
       "profile": "โปรไฟล์",
       "supportDe": "การสนับสนุนภาษาเยอรมัน",
-      "surveyParentsDe": "แบบสำรวจพ่อแม่ (เยอรมัน)",
-      "surveyParentsEn": "แบบสำรวจพ่อแม่ (อังกฤษ)",
-      "surveyPublicDe": "แบบสำรวจ (เยอรมัน)",
-      "surveyPublicEn": "แบบสำรวจ (อังกฤษ)",
+      "survey": "ทำแบบสอบถาม",
       "surveys": "แบบสำรวจ",
       "tagline": "ค้นหาเส้นทางของคุณ แล้วปล่อยแสงนำทางไว้",
       "terms": "ข้อกำหนด",
@@ -13670,6 +13477,7 @@
       "pillTasks": "การนำทางงาน",
       "primaryCta": "เข้าร่วมเบต้า",
       "secondaryCta": "Explore web app",
+      "surveyCta": "ทำแบบสอบถาม",
       "title": "หาทางของคุณ แล้วทิ้งแสงไว้"
     },
     "meta": {
@@ -13788,10 +13596,7 @@
       "products": "Ürünler",
       "profile": "Profil",
       "supportDe": "Deutsch desteği",
-      "surveyParentsDe": "Ebeveyn anket (Almanca)",
-      "surveyParentsEn": "Ebeveyn anket (İngilizce)",
-      "surveyPublicDe": "Anket (Almanca)",
-      "surveyPublicEn": "Anket (İngilizce)",
+      "survey": "Anketi doldur",
       "surveys": "Anketler",
       "tagline": "Kendi yolunu bul. Bir ışık bırak.",
       "terms": "Şartlar",
@@ -13807,6 +13612,7 @@
       "pillTasks": "Görev yönlendirmesi",
       "primaryCta": "Beta sürümüne katıl",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Anketi doldur",
       "title": "Kendi yolunu bul. Bir ışık bırak."
     },
     "meta": {
@@ -13925,10 +13731,7 @@
       "products": "Önümler",
       "profile": "Profil",
       "supportDe": "Deutsch goldawy",
-      "surveyParentsDe": "Ebeveyn sorag (Alman)",
-      "surveyParentsEn": "Ebeveyn sorag (Ingliz)",
-      "surveyPublicDe": "Soraw (Alman)",
-      "surveyPublicEn": "Soraw (Ingliz)",
+      "survey": "Soragnama doldur",
       "surveys": "Soraglar",
       "tagline": "Öz ýoluňy tap. Yzyňda ýagtylyk goý.",
       "terms": "Şertler",
@@ -13944,6 +13747,7 @@
       "pillTasks": "Tabşyryk boýunça ýol görkezme",
       "primaryCta": "Beta wersiýasyna goşul",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Soragnama doldur",
       "title": "Öz ýoluňy tap. Yzyňda ýagtylyk goý."
     },
     "meta": {
@@ -14062,10 +13866,7 @@
       "products": "Продукти",
       "profile": "Профіль",
       "supportDe": "Підтримка німецькою",
-      "surveyParentsDe": "Опитування батьків (німецькою)",
-      "surveyParentsEn": "Опитування батьків (англійською)",
-      "surveyPublicDe": "Опитування (німецькою)",
-      "surveyPublicEn": "Опитування (англійською)",
+      "survey": "Пройти опитування",
       "surveys": "Опитування",
       "tagline": "Знайдіть свій шлях. Залиште світло.",
       "terms": "Умови",
@@ -14081,6 +13882,7 @@
       "pillTasks": "Навігація завданнями",
       "primaryCta": "Приєднатися до бета-версії",
       "secondaryCta": "Відкрити вебверсію",
+      "surveyCta": "Пройти опитування",
       "title": "Знайдіть свій шлях. Залиште світло."
     },
     "meta": {
@@ -14199,10 +14001,7 @@
       "products": "مصنوعات",
       "profile": "پروفائل",
       "supportDe": "جرمن میں سپورٹ",
-      "surveyParentsDe": "والدین سروے (جرمن)",
-      "surveyParentsEn": "والدین سروے (انگریزی)",
-      "surveyPublicDe": "سروے (جرمن)",
-      "surveyPublicEn": "سروے (انگریزی)",
+      "survey": "سروے لیں",
       "surveys": "سروے",
       "tagline": "اپنا راستہ تلاش کریں۔ ایک روشنی چھوڑیں۔",
       "terms": "شرائط",
@@ -14218,6 +14017,7 @@
       "pillTasks": "کاموں کی رہنمائی",
       "primaryCta": "بیٹا میں شامل ہوں",
       "secondaryCta": "Explore web app",
+      "surveyCta": "سروے لیں",
       "title": "اپنا راستہ تلاش کریں۔ ایک روشنی چھوڑیں۔"
     },
     "meta": {
@@ -14336,10 +14136,7 @@
       "products": "مەھسۇلاتلار",
       "profile": "پروفىل",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "ئانا-ئابا سۈرەتى (ئەلمىچە)",
-      "surveyParentsEn": "ئانا-ئابا سۈرەتى (ئېنگلىزچە)",
-      "surveyPublicDe": "سۈرەتى (ئەلمىچە)",
-      "surveyPublicEn": "سۈرەتى (ئېنگلىزچە)",
+      "survey": "سۇرەۋى ئال",
       "surveys": "سۇرەتىلەر",
       "tagline": "يولىڭىزنى تېپىڭ. بىر نۇر قالدۇرۇڭ.",
       "terms": "شەرتلەر",
@@ -14355,6 +14152,7 @@
       "pillTasks": "ۋەزىپە يول باشلاش",
       "primaryCta": "Beta سىناققا قوشۇلۇڭ",
       "secondaryCta": "Explore web app",
+      "surveyCta": "سۇرەۋى ئال",
       "title": "يولىڭىزنى تېپىڭ. بىر نۇر قالدۇرۇڭ."
     },
     "meta": {
@@ -14473,10 +14271,7 @@
       "products": "Mahsulotlar",
       "profile": "Profil",
       "supportDe": "Deutsch tilidagi qo‘llab-quvvatlash",
-      "surveyParentsDe": "Ota-onalar so'rovi (Nemis)",
-      "surveyParentsEn": "Ota-onalar so'rovi (Ingliz)",
-      "surveyPublicDe": "So'rovnoma (Nemis)",
-      "surveyPublicEn": "So'rovnoma (Ingliz)",
+      "survey": "So'rovnomani to'ldiring",
       "surveys": "So'rovnomalar",
       "tagline": "O‘zingizga yo‘l toping. Bir nur qoldiring.",
       "terms": "Shartlar",
@@ -14492,6 +14287,7 @@
       "pillTasks": "Vazifalar bo‘yicha yo‘naltirish",
       "primaryCta": "Beta-versiyaga qo‘shiling",
       "secondaryCta": "Explore web app",
+      "surveyCta": "So'rovnomani to'ldiring",
       "title": "Yo‘lingizni toping. Iz qoldiring."
     },
     "meta": {
@@ -14610,10 +14406,7 @@
       "products": "Sản phẩm",
       "profile": "Hồ sơ",
       "supportDe": "Hỗ trợ tiếng Đức",
-      "surveyParentsDe": "Khảo sát phụ huynh (Đức)",
-      "surveyParentsEn": "Khảo sát phụ huynh (Anh)",
-      "surveyPublicDe": "Khảo sát (Đức)",
-      "surveyPublicEn": "Khảo sát (Anh)",
+      "survey": "Điền khảo sát",
       "surveys": "Khảo sát",
       "tagline": "Tìm con đường của bạn. Để lại một ánh sáng.",
       "terms": "Điều khoản",
@@ -14629,6 +14422,7 @@
       "pillTasks": "Điều hướng nhiệm vụ",
       "primaryCta": "Tham gia bản beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Điền khảo sát",
       "title": "Tìm lối đi của bạn. Để lại một dấu sáng."
     },
     "meta": {
@@ -14747,10 +14541,7 @@
       "products": "Cynhyrchion",
       "profile": "Proffil",
       "supportDe": "Cymorth Deutsch",
-      "surveyParentsDe": "Arolwg teuluoedd (Almaenig)",
-      "surveyParentsEn": "Arolwg teuluoedd (Saesneg)",
-      "surveyPublicDe": "Arolwg (Almaenig)",
-      "surveyPublicEn": "Arolwg (Saesneg)",
+      "survey": "Llenwch yr arolwg",
       "surveys": "Arolwgion",
       "tagline": "Dewch o hyd i’ch llwybr. Gadewch olau.",
       "terms": "Telerau",
@@ -14766,6 +14557,7 @@
       "pillTasks": "Llywio tasgau",
       "primaryCta": "Ymuno â’r beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Llenwch yr arolwg",
       "title": "Dewch o hyd i’ch llwybr. Gadewch olau."
     },
     "meta": {
@@ -14884,10 +14676,7 @@
       "products": "Iimveliso",
       "profile": "Iprofayile",
       "supportDe": "Inkxaso Deutsch",
-      "surveyParentsDe": "Uhlolo babazali (isiJamani)",
-      "surveyParentsEn": "Uhlolo babazali (isiNgisi)",
-      "surveyPublicDe": "Uhlolo (isiJamani)",
-      "surveyPublicEn": "Uhlolo (isiNgisi)",
+      "survey": "Yenza i-survey",
       "surveys": "Uhlolo",
       "tagline": "Fumana indlela yakho. Shiya ukukhanya.",
       "terms": "Imigaqo",
@@ -14903,6 +14692,7 @@
       "pillTasks": "Ukuhamba kwemisebenzi",
       "primaryCta": "Joyina i-beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Yenza i-survey",
       "title": "Fumana indlela yakho. Shiya ukukhanya."
     },
     "meta": {
@@ -15021,10 +14811,7 @@
       "products": "פּראָדוקטן",
       "profile": "פּראָפיל",
       "supportDe": "Support Deutsch",
-      "surveyParentsDe": "באַטראן סורוי (דייטש)",
-      "surveyParentsEn": "באַטראן סורוי (אינגליש)",
-      "surveyPublicDe": "סורוי (דייטש)",
-      "surveyPublicEn": "סורוי (אינגליש)",
+      "survey": "פֿילט אויס דעם פֿרעגבויגן",
       "surveys": "סורוים",
       "tagline": "געפֿין דיין וועג. לאָז אַ ליכט.",
       "terms": "תּנאים",
@@ -15040,6 +14827,7 @@
       "pillTasks": "טאַסק־נאַוויגאַציע",
       "primaryCta": "באַהעפֿט זיך צום ביתא",
       "secondaryCta": "Explore web app",
+      "surveyCta": "פֿילט אויס דעם פֿרעגבויגן",
       "title": "געפֿין דײַן וועג. לאָז אַ ליכט."
     },
     "meta": {
@@ -15158,10 +14946,7 @@
       "products": "Àwọn Ọja",
       "profile": "Àkọsílẹ̀",
       "supportDe": "Atilẹ́yin Deutsch",
-      "surveyParentsDe": "Iwadi obi (Jẹ́mánì)",
-      "surveyParentsEn": "Iwadi obi (Gẹ̀ẹ́sì)",
-      "surveyPublicDe": "Iwadi (Jẹ́mánì)",
-      "surveyPublicEn": "Iwadi (Gẹ̀ẹ́sì)",
+      "survey": "Ṣe Ìwádìí",
       "surveys": "Iwádìí",
       "tagline": "Wa ọ̀nà rẹ. Fi ìmọ́lẹ̀ sílẹ̀.",
       "terms": "Àwọn ìlànà",
@@ -15177,6 +14962,7 @@
       "pillTasks": "Ìtọ́sọ́nà iṣẹ́-ṣiṣe",
       "primaryCta": "Darapọ̀ mọ́ beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Ṣe Ìwádìí",
       "title": "Wa ọ̀nà rẹ. Fi ìmọ́lẹ̀ sílẹ̀."
     },
     "meta": {
@@ -15295,10 +15081,7 @@
       "products": "Imikhiqizo",
       "profile": "Iphrofayela",
       "supportDe": "Ukusekela ngesiJalimane",
-      "surveyParentsDe": "Imibuzo yabazali (isiJalimane)",
-      "surveyParentsEn": "Imibuzo yabazali (IsiNgisi)",
-      "surveyPublicDe": "Imibuzo (isiJalimane)",
-      "surveyPublicEn": "Imibuzo (IsiNgisi)",
+      "survey": "Thatha i-survey",
       "surveys": "Imibuzo",
       "tagline": "Thola indlela yakho. Shiya ukukhanya.",
       "terms": "Imigomo",
@@ -15314,6 +15097,7 @@
       "pillTasks": "Ukuzulazula kwemisebenzi",
       "primaryCta": "Joyina i-beta",
       "secondaryCta": "Explore web app",
+      "surveyCta": "Thatha i-survey",
       "title": "Thola indlela yakho. Shiya ukukhanya."
     },
     "meta": {
