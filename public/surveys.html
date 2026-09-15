@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Postervia · Surveys</title>
+<style>
+  :root {
+    --ink: #171717;
+    --soft-ink: #5f5a56;
+    --muted: #918a82;
+    --paper: #fffaf2;
+    --cream: #fff2df;
+    --coral: #f57175;
+    --coral-dark: #dd535a;
+    --line: #f2dfcc;
+    --white: #ffffff;
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.5;
+  }
+
+  a { color: inherit; }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .topbar {
+    background: rgba(255, 250, 242, 0.92);
+    border-bottom: 1px solid rgba(242, 223, 204, 0.72);
+  }
+
+  .nav {
+    max-width: 720px;
+    margin: 0 auto;
+    min-height: 66px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+  }
+
+  .brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-weight: 900;
+  }
+
+  .brand-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    background: var(--coral);
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .brand-word { font-size: 18px; }
+
+  .lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .lang-toggle button {
+    padding: 6px 4px;
+    border: 0;
+    background: none;
+    color: var(--muted);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .lang-toggle button[aria-pressed="true"] {
+    color: var(--coral-dark);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 18px 64px;
+  }
+
+  h1, h2, p { margin-top: 0; }
+
+  h1 {
+    margin-bottom: 12px;
+    font-size: 40px;
+    line-height: 1;
+    overflow-wrap: anywhere;
+  }
+
+  .lede {
+    margin-bottom: 28px;
+    color: var(--soft-ink);
+    font-size: 19px;
+    font-weight: 650;
+  }
+
+  .card {
+    margin-bottom: 18px;
+    padding: 22px 20px;
+    border: 2px solid var(--line);
+    border-radius: 24px;
+    background: var(--white);
+    box-shadow: inset 0 -4px 0 rgba(92, 63, 34, 0.05);
+  }
+
+  .card h2 {
+    margin-bottom: 6px;
+    font-size: 24px;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  .card .who {
+    margin-bottom: 4px;
+    color: var(--coral-dark);
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .card .meta {
+    margin-bottom: 18px;
+    color: var(--soft-ink);
+    font-size: 16px;
+    font-weight: 620;
+  }
+
+  .choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 22px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--coral);
+    color: var(--white);
+    font-weight: 900;
+    text-decoration: none;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .button:hover { background: var(--coral-dark); }
+
+  .button.secondary {
+    background: var(--white);
+    color: var(--coral-dark);
+    border: 2px solid var(--line);
+    box-shadow: none;
+  }
+
+  .button.secondary:hover {
+    background: var(--cream);
+  }
+
+  .notice {
+    margin-top: 28px;
+    color: var(--soft-ink);
+    font-size: 15px;
+    font-weight: 620;
+  }
+
+  .notice a { color: var(--coral-dark); }
+
+  .footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 18px 40px;
+    display: flex;
+    gap: 18px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .footer a { text-decoration: none; }
+
+  .footer a:hover { color: var(--coral-dark); }
+
+  @media (max-width: 620px) {
+    h1 { font-size: 32px; }
+
+    .lede { font-size: 17px; }
+
+    .choices { flex-direction: column; }
+
+    .button { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <nav class="nav">
+    <a class="brand-link" href="/">
+      <img class="brand-icon" src="/assets/postervia-icon.png" alt="" width="42" height="42">
+      <span class="brand-word">Postervia</span>
+    </a>
+    <div class="lang-toggle">
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+      <span aria-hidden="true">|</span>
+      <button type="button" data-lang="de" aria-pressed="false">Deutsch</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1 data-s="title">Two surveys</h1>
+  <p class="lede" data-s="lede">Each one exists in English and in German. Pick the one that fits you.</p>
+
+  <section class="card">
+    <p class="who" data-s="publicWho">For everyone</p>
+    <h2 data-s="publicTitle">How people see social media today</h2>
+    <p class="meta" data-s="publicMeta">21 questions, about seven minutes. Anonymous.</p>
+    <div class="choices">
+      <a class="button" id="public-en" href="/survey?src=site&amp;lang=en">English</a>
+      <a class="button secondary" id="public-de" href="/survey?src=site&amp;lang=de">Deutsch</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <p class="who" data-s="parentsWho">For parents</p>
+    <h2 data-s="parentsTitle">Parents and social media</h2>
+    <p class="meta" data-s="parentsMeta">22 questions, about six minutes. Anonymous.</p>
+    <div class="choices">
+      <a class="button" id="parents-en" href="/survey?form=eltern&amp;src=site&amp;lang=en">English</a>
+      <a class="button secondary" id="parents-de" href="/survey?form=eltern&amp;src=site&amp;lang=de">Deutsch</a>
+    </div>
+  </section>
+
+  <p class="notice"><span data-s="noticeBody">Neither survey asks for your name, your email address or anything else that identifies you. What happens to your answers is explained on the survey itself and in our </span><a data-s="privacyLink" data-href="privacyHref" href="/privacy">privacy policy</a><span data-s="noticeJoin">.</span></p>
+</main>
+
+<footer class="footer">
+  <a data-s="footerPrivacy" data-href="privacyHref" href="/privacy">Privacy</a>
+  <a data-s="footerImprint" data-href="imprintHref" href="/impressum">Imprint</a>
+</footer>
+
+<script>
+  // Same allowlist as the Worker's /get route and the survey page. Nothing else
+  // from the URL is carried into the survey links.
+  const SRC_RE = /^[a-z0-9_-]{1,24}$/;
+
+  const STRINGS = {
+    en: {
+      title: 'Two surveys',
+      lede: 'Each one exists in English and in German. Pick the one that fits you.',
+      publicWho: 'For everyone',
+      publicTitle: 'How people see social media today',
+      publicMeta: '21 questions, about seven minutes. Anonymous.',
+      parentsWho: 'For parents',
+      parentsTitle: 'Parents and social media',
+      parentsMeta: '22 questions, about six minutes. Anonymous.',
+      noticeBody: 'Neither survey asks for your name, your email address or anything else that identifies you. What happens to your answers is explained on the survey itself and in our ',
+      privacyLink: 'privacy policy',
+      noticeJoin: '.',
+      privacyHref: '/privacy',
+      imprintHref: '/impressum',
+      footerPrivacy: 'Privacy',
+      footerImprint: 'Imprint',
+    },
+    de: {
+      title: 'Zwei Umfragen',
+      lede: 'Beide gibt es auf Englisch und auf Deutsch. Nimm die, die zu dir passt.',
+      publicWho: 'Für alle',
+      publicTitle: 'Wie Menschen heute auf Social Media schauen',
+      publicMeta: '21 Fragen, etwa sieben Minuten. Anonym.',
+      parentsWho: 'Für Eltern',
+      parentsTitle: 'Eltern und Social Media',
+      parentsMeta: '22 Fragen, etwa sechs Minuten. Anonym.',
+      noticeBody: 'Keine der beiden Umfragen fragt nach Namen, E-Mail-Adresse oder anderen Angaben, die dich erkennbar machen. Was mit den Antworten passiert, steht auf der Umfrage selbst und in unserer ',
+      privacyLink: 'Datenschutzerklärung',
+      noticeJoin: '.',
+      privacyHref: '/privacy-de',
+      imprintHref: '/impressum-de',
+      footerPrivacy: 'Datenschutz',
+      footerImprint: 'Impressum',
+    },
+  };
+
+  const params = new URLSearchParams(location.search);
+  const rawSrc = (params.get('src') || '').toLowerCase();
+  const src = SRC_RE.test(rawSrc) ? rawSrc : 'site';
+  const qLang = (params.get('lang') || '').toLowerCase();
+
+  const LINKS = {
+    'public-en': `/survey?src=${src}&lang=en`,
+    'public-de': `/survey?src=${src}&lang=de`,
+    'parents-en': `/survey?form=eltern&src=${src}&lang=en`,
+    'parents-de': `/survey?form=eltern&src=${src}&lang=de`,
+  };
+
+  Object.entries(LINKS).forEach(([id, href]) => { document.getElementById(id).href = href; });
+
+  try {
+    history.replaceState(null, '', `${location.pathname}?src=${src}`);
+  } catch {
+    // no history API: the links above are already built from the validated slug
+  }
+
+  function apply(lang) {
+    const t = STRINGS[lang];
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-s]').forEach((el) => { el.textContent = t[el.dataset.s]; });
+    document.querySelectorAll('[data-href]').forEach((el) => { el.href = t[el.dataset.href]; });
+    document.querySelectorAll('[data-lang]').forEach((el) => {
+      el.setAttribute('aria-pressed', String(el.dataset.lang === lang));
+    });
+  }
+
+  document.querySelectorAll('[data-lang]').forEach((el) => {
+    el.addEventListener('click', () => apply(el.dataset.lang));
+  });
+
+  const browserDe = (navigator.language || '').toLowerCase().startsWith('de');
+  apply(qLang === 'de' || qLang === 'en' ? qLang : browserDe ? 'de' : 'en');
+</script>
+</body>
+</html>
