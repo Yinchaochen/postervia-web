@@ -113,17 +113,10 @@
   h1, h2, p { margin-top: 0; }
 
   h1 {
-    margin-bottom: 12px;
+    margin-bottom: 28px;
     font-size: 40px;
     line-height: 1;
     overflow-wrap: anywhere;
-  }
-
-  .lede {
-    margin-bottom: 28px;
-    color: var(--soft-ink);
-    font-size: 19px;
-    font-weight: 650;
   }
 
   .card {
@@ -219,8 +212,6 @@
   @media (max-width: 620px) {
     h1 { font-size: 32px; }
 
-    .lede { font-size: 17px; }
-
     .choices { flex-direction: column; }
 
     .button { width: 100%; }
@@ -243,8 +234,7 @@
 </header>
 
 <main>
-  <h1 data-s="title">Two surveys</h1>
-  <p class="lede" data-s="lede">Each one exists in English and in German. Pick the one that fits you.</p>
+  <h1 data-s="title">Surveys</h1>
 
   <section class="card">
     <p class="who" data-s="publicWho">For everyone</p>
@@ -281,8 +271,7 @@
 
   const STRINGS = {
     en: {
-      title: 'Two surveys',
-      lede: 'Each one exists in English and in German. Pick the one that fits you.',
+      title: 'Surveys',
       publicWho: 'For everyone',
       publicTitle: 'How people see social media today',
       publicMeta: '21 questions, about seven minutes. Anonymous.',
@@ -298,8 +287,7 @@
       footerImprint: 'Imprint',
     },
     de: {
-      title: 'Zwei Umfragen',
-      lede: 'Beide gibt es auf Englisch und auf Deutsch. Nimm die, die zu dir passt.',
+      title: 'Umfragen',
       publicWho: 'Für alle',
       publicTitle: 'Wie Menschen heute auf Social Media schauen',
       publicMeta: '21 Fragen, etwa sieben Minuten. Anonym.',
