@@ -732,7 +732,7 @@
 
   .footer-grid {
     display: grid;
-    grid-template-columns: repeat(5, minmax(130px, 1fr));
+    grid-template-columns: repeat(6, minmax(120px, 1fr));
     gap: 34px 28px;
     padding-top: 38px;
   }
@@ -747,6 +747,7 @@
   .footer-col span {
     display: block;
     margin: 9px 0;
+    overflow-wrap: break-word;
     color: rgba(255, 255, 255, 0.62);
     font-size: 14px;
     font-weight: 700;
@@ -1240,6 +1241,14 @@
         <a href="/support-de" data-i18n="footer.supportDe">Support Deutsch</a>
         <a href="/child-safety" data-i18n="footer.childSafety">Child Safety Standards</a>
         <a href="/child-safety-de" data-i18n="footer.childSafetyDe">Kinderschutzstandards</a>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer.surveys">Surveys</h3>
+        <a href="/survey?src=site&amp;lang=en" data-i18n="footer.surveyPublicEn">Survey (English)</a>
+        <a href="/survey?src=site&amp;lang=de" data-i18n="footer.surveyPublicDe">Survey (German)</a>
+        <a href="/survey?form=eltern&amp;src=site&amp;lang=en" data-i18n="footer.surveyParentsEn">Parents survey (English)</a>
+        <a href="/survey?form=eltern&amp;src=site&amp;lang=de" data-i18n="footer.surveyParentsDe">Parents survey (German)</a>
       </div>
 
       <div class="footer-col">
