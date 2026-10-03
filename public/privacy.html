@@ -87,7 +87,7 @@
     <header>
       <div class="brand">Postervia</div>
       <h1>Privacy Policy</h1>
-      <div class="updated">Last updated: September 30, 2026</div>
+      <div class="updated">Last updated: October 3, 2026</div>
     </header>
     <main>
 <h2>Introduction</h2>
@@ -133,7 +133,8 @@
 <li>Approximate location: if you grant the location permission during onboarding or later, we store the latitude and longitude you confirm. You can also enter your city manually without sharing precise location.</li>
 <li>Interaction events on Plaza: which cards you saw (impressions), how long you viewed a post (dwell time), and whether you marked it helpful, saved it, added it to your tasks, hid it, or reported it. We use these signals to rank what we show you. We keep these events for 180 days and then delete them.</li>
 <li>Crash reports and basic diagnostic logs so we can fix bugs</li>
-<li>IP address, which we use briefly for security checks and to localize content; we do not build a long-term log of your IP history. When you publish a Plaza post without tagging a place, we also look up which city the address is in. The lookup runs on our own server against a database stored there (<a href="https://db-ip.com">IP Geolocation by DB-IP</a>), so the address is not passed to anyone and is not kept. If that city is in a different country from your profile city, the post is filed under it. Otherwise the post keeps your profile city.</li>
+<li>IP address, which we use briefly for security checks and to localize content; we do not build a long-term log of your IP history</li>
+<li>Where your device is when you publish a Plaza post, if you have granted the location permission: the app rounds the position to about a kilometre and sends it once, so we can name the city the post was written in. We keep the city, not the position. Without the permission, or when the text and the tagged places leave the city unclear, we ask an AI model to read the post and name the city it is about.</li>
 </ul>
 <p><strong>Information from third parties</strong></p>
 <ul>
@@ -167,7 +168,7 @@
 <ul>
 <li>Your display name, display ID, profile photo, city, identity tag, bio, and the tabs you've made public are visible to anyone who finds your profile in the app.</li>
 <li>Posts and buddy posts you publish are visible to all users of the app, subject to your privacy preferences.</li>
-<li>A Plaza post shows the city it is filed under: the place you tagged in it, or the city worked out from your IP address as described above, or your profile city.</li>
+<li>A Plaza post shows the city it is filed under: the place you tagged in it, or else the city your device was in when you published, or else the city the text names.</li>
 <li>Comments and reactions you leave are attached to your profile.</li>
 <li>If you chat one-on-one or in a group, the other participants see your messages.</li>
 </ul>
