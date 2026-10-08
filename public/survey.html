@@ -285,10 +285,11 @@
 
 <script>
   // Empty id = form not created yet; the page then shows the not-open message.
-  // ?form=eltern picks the parents' survey; anything else is the public one.
+  // ?form=eltern / ?form=programs pick those surveys; anything else is the public one.
   const FORMS = {
     public: { en: 'Me4lW0', de: 'J9PbQ7' },
     eltern: { en: 'b5oWM2', de: '7RyNY9' },
+    programs: { en: 'D4ljvq', de: 'lbPxlB' },
   };
 
   // Same allowlist as the Worker's /get route. Nothing else from the URL is echoed.
@@ -337,6 +338,10 @@
 
   // Per-survey overrides. The parents' survey addresses people as Sie.
   const FORM_STRINGS = {
+    programs: {
+      en: { title: 'Finding programs in time' },
+      de: { title: 'Programme rechtzeitig finden' },
+    },
     eltern: {
       en: {
         title: 'A short survey for parents',

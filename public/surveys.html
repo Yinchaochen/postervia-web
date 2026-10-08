@@ -256,7 +256,17 @@
     </div>
   </section>
 
-  <p class="notice"><span data-s="noticeBody">Neither survey asks for your name, your email address or anything else that identifies you. What happens to your answers is explained on the survey itself and in our </span><a data-s="privacyLink" data-href="privacyHref" href="/privacy">privacy policy</a><span data-s="noticeJoin">.</span></p>
+  <section class="card">
+    <p class="who" data-s="programsWho">For students and founders</p>
+    <h2 data-s="programsTitle">Finding programs in time</h2>
+    <p class="meta" data-s="programsMeta">14 questions, about four minutes. Anonymous.</p>
+    <div class="choices">
+      <a class="button" id="programs-en" href="/survey?form=programs&amp;src=site&amp;lang=en">English</a>
+      <a class="button secondary" id="programs-de" href="/survey?form=programs&amp;src=site&amp;lang=de">Deutsch</a>
+    </div>
+  </section>
+
+  <p class="notice"><span data-s="noticeBody">None of the surveys asks for your name, your email address or anything else that identifies you. What happens to your answers is explained on the survey itself and in our </span><a data-s="privacyLink" data-href="privacyHref" href="/privacy">privacy policy</a><span data-s="noticeJoin">.</span></p>
 </main>
 
 <footer class="footer">
@@ -278,7 +288,10 @@
       parentsWho: 'For parents',
       parentsTitle: 'Parents and social media',
       parentsMeta: '22 questions, about six minutes. Anonymous.',
-      noticeBody: 'Neither survey asks for your name, your email address or anything else that identifies you. What happens to your answers is explained on the survey itself and in our ',
+      programsWho: 'For students and founders',
+      programsTitle: 'Finding programs in time',
+      programsMeta: '14 questions, about four minutes. Anonymous.',
+      noticeBody: 'None of the surveys asks for your name, your email address or anything else that identifies you. What happens to your answers is explained on the survey itself and in our ',
       privacyLink: 'privacy policy',
       noticeJoin: '.',
       privacyHref: '/privacy',
@@ -294,7 +307,10 @@
       parentsWho: 'Für Eltern',
       parentsTitle: 'Eltern und Social Media',
       parentsMeta: '22 Fragen, etwa sechs Minuten. Anonym.',
-      noticeBody: 'Keine der beiden Umfragen fragt nach Namen, E-Mail-Adresse oder anderen Angaben, die dich erkennbar machen. Was mit den Antworten passiert, steht auf der Umfrage selbst und in unserer ',
+      programsWho: 'Für Studierende und Gründer:innen',
+      programsTitle: 'Programme rechtzeitig finden',
+      programsMeta: '14 Fragen, etwa vier Minuten. Anonym.',
+      noticeBody: 'Keine der Umfragen fragt nach Namen, E-Mail-Adresse oder anderen Angaben, die dich erkennbar machen. Was mit den Antworten passiert, steht auf der Umfrage selbst und in unserer ',
       privacyLink: 'Datenschutzerklärung',
       noticeJoin: '.',
       privacyHref: '/privacy-de',
@@ -314,6 +330,8 @@
     'public-de': `/survey?src=${src}&lang=de`,
     'parents-en': `/survey?form=eltern&src=${src}&lang=en`,
     'parents-de': `/survey?form=eltern&src=${src}&lang=de`,
+    'programs-en': `/survey?form=programs&src=${src}&lang=en`,
+    'programs-de': `/survey?form=programs&src=${src}&lang=de`,
   };
 
   Object.entries(LINKS).forEach(([id, href]) => { document.getElementById(id).href = href; });
