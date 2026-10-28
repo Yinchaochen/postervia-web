@@ -1,4 +1,5 @@
 import { handleGet } from './get-link.js';
+import { handleClick } from './click-link.js';
 import {
   APP_STORE_URL,
   PLAY_STORE_URL,
@@ -23,6 +24,8 @@ const PRETTY_TO_HTML = new Set([
   '/child-safety',
   '/child-safety-de',
   '/ui-preview',
+  '/ask',
+  '/new-here',
 ]);
 
 const SHARE_PREVIEW_API = 'https://api.postervia.app/v1/community/posts';
@@ -128,6 +131,8 @@ export default {
     }
 
     if (url.pathname === '/get') return handleGet(request, env);
+
+    if (url.pathname === '/c') return handleClick(request, env);
 
     return new Response('Not found', { status: 404 });
   },

@@ -4,6 +4,7 @@
   "scripts": {
     "test": "node scripts/test-worker.mjs",
     "preview:share": "node scripts/preview-share-page.mjs",
-    "clicks": "node scripts/app-clicks.mjs"
+    "clicks": "node scripts/app-clicks.mjs",
+    "interest": "node scripts/interest.mjs"
   }
 }

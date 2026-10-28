@@ -504,6 +504,75 @@ test('/get: exact path only, trailing variants still 404', async () => {
   assert.equal((await get('/getx')).status, 404);
 });
 
+test('/c: a page open answers 204 and is counted once', async () => {
+  const { points, env } = fakeClicks();
+  const { res, logs } = await getLink('/c?e=open-newhere&src=whatsapp', { ua: UA.iphoneSafari, env });
+  assert.equal(res.status, 204);
+  assert.equal(res.headers.get('cache-control'), 'no-store');
+  assert.equal(res.headers.get('referrer-policy'), 'no-referrer');
+  assert.deepEqual(points, [{ blobs: ['view', 'open-newhere', 'whatsapp'], doubles: [1], indexes: ['whatsapp'] }]);
+  assert.deepEqual(JSON.parse(logs[0]), { evt: 'page_event', kind: 'view', event: 'open-newhere', src: 'whatsapp' });
+});
+
+test('/c: a CTA click is counted and carries src and lang to the target', async () => {
+  const { points, env } = fakeClicks();
+  const de = await getLink('/c?e=ask&src=whatsapp&lang=de', { ua: UA.androidChrome, env });
+  assert.equal(assertRedirect(de.res), 'https://postervia.app/ask.html?lang=de&src=whatsapp');
+  assert.deepEqual(points[0].blobs, ['click', 'ask', 'whatsapp']);
+  const plain = await getLink('/c?e=site', { ua: UA.androidChrome, env });
+  assert.equal(assertRedirect(plain.res), 'https://postervia.app/');
+  const junkLang = await getLink('/c?e=ask&src=reddit&lang=zz', { ua: UA.androidChrome, env });
+  assert.equal(assertRedirect(junkLang.res), 'https://postervia.app/ask.html?src=reddit');
+});
+
+test('/c: only allowlisted events resolve, so e= cannot become an open redirect', async () => {
+  const { points, env } = fakeClicks();
+  for (const path of ['/c', '/c?e=', '/c?e=https://evil.example', '/c?e=//evil.example', '/c?e=privacy']) {
+    const { res } = await getLink(path, { ua: UA.iphoneSafari, env });
+    assert.equal(res.status, 404, path);
+  }
+  assert.equal(points.length, 0);
+});
+
+test('/c: src is sanitized and the raw value is never echoed', async () => {
+  const { points, env } = fakeClicks();
+  const long = await getLink(`/c?e=ask&src=${'x'.repeat(40)}`, { ua: UA.iphoneSafari, env });
+  const location = assertRedirect(long.res);
+  assert.equal(location, 'https://postervia.app/ask.html');
+  assert.ok(!location.includes('xxxx'));
+  assert.deepEqual(points[0].blobs, ['click', 'ask', 'invalid']);
+  const missing = await getLink('/c?e=ask', { ua: UA.iphoneSafari, env });
+  assert.equal(assertRedirect(missing.res), 'https://postervia.app/ask.html');
+  assert.deepEqual(points[1].blobs, ['click', 'ask', 'direct']);
+});
+
+test('/c: bots, HEAD and prefetch still resolve but are not counted', async () => {
+  const { points, env } = fakeClicks();
+  const bot = await getLink('/c?e=open-newhere&src=reddit', { ua: 'WhatsApp/2.23', env });
+  assert.equal(bot.res.status, 204);
+  const head = await getLink('/c?e=ask&src=reddit', { ua: UA.iphoneSafari, env, method: 'HEAD' });
+  assert.ok(assertRedirect(head.res).startsWith('https://postervia.app/ask.html'));
+  const prefetch = await getLink('/c?e=ask&src=reddit', {
+    ua: UA.iphoneSafari,
+    env,
+    headers: { 'sec-purpose': 'prefetch;prerender' },
+  });
+  assert.ok(assertRedirect(prefetch.res).startsWith('https://postervia.app/ask.html'));
+  assert.equal(points.length, 0);
+});
+
+test('/c: env missing or a throwing sink still resolves', async () => {
+  const noEnv = await getLink('/c?e=ask&src=eltern', { ua: UA.iphoneSafari });
+  assert.ok(assertRedirect(noEnv.res).startsWith('https://postervia.app/ask.html'));
+  const noBinding = await getLink('/c?e=open-newhere&src=eltern', { ua: UA.iphoneSafari, env: {} });
+  assert.equal(noBinding.res.status, 204);
+  const { env } = fakeClicks(() => {
+    throw new Error('analytics down');
+  });
+  const throwing = await getLink('/c?e=ask&src=eltern', { ua: UA.iphoneSafari, env });
+  assert.ok(assertRedirect(throwing.res).startsWith('https://postervia.app/ask.html'));
+});
+
 let failed = 0;
 for (const [name, fn] of tests) {
   try {

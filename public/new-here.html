@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Postervia · New here</title>
+<style>
+  :root {
+    --ink: #171717;
+    --soft-ink: #5f5a56;
+    --muted: #918a82;
+    --paper: #fffaf2;
+    --cream: #fff2df;
+    --coral: #f57175;
+    --coral-dark: #dd535a;
+    --line: #f2dfcc;
+    --white: #ffffff;
+    --tight-shadow: 0 10px 28px rgba(92, 63, 34, 0.12);
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.5;
+  }
+
+  a { color: inherit; }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .topbar {
+    background: rgba(255, 250, 242, 0.92);
+    border-bottom: 1px solid rgba(242, 223, 204, 0.72);
+  }
+
+  .nav {
+    max-width: 720px;
+    margin: 0 auto;
+    min-height: 66px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+  }
+
+  .brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-weight: 900;
+  }
+
+  .brand-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    background: var(--coral);
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .brand-word { font-size: 18px; }
+
+  .lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .lang-toggle button {
+    padding: 6px 4px;
+    border: 0;
+    background: none;
+    color: var(--muted);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .lang-toggle button[aria-pressed="true"] {
+    color: var(--coral-dark);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 18px 64px;
+  }
+
+  h1, h2, h3, p, ul { margin-top: 0; }
+
+  h1 {
+    margin-bottom: 14px;
+    font-size: 40px;
+    line-height: 1.02;
+    overflow-wrap: anywhere;
+  }
+
+  .lede {
+    margin-bottom: 10px;
+    color: var(--soft-ink);
+    font-size: 19px;
+    font-weight: 650;
+  }
+
+  .lede:last-of-type { margin-bottom: 32px; }
+
+  .card {
+    padding: 22px 20px;
+    border: 2px solid var(--line);
+    border-radius: 24px;
+    background: var(--white);
+    box-shadow: inset 0 -4px 0 rgba(92, 63, 34, 0.05);
+  }
+
+  .try h2 {
+    margin-bottom: 14px;
+    font-size: 22px;
+    line-height: 1.15;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .chip {
+    padding: 8px 14px;
+    border: 2px solid var(--line);
+    border-radius: 999px;
+    background: var(--cream);
+    color: var(--soft-ink);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 750;
+    cursor: pointer;
+  }
+
+  .chip:hover { border-color: var(--coral); }
+
+  .ask-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .ask-row input {
+    flex: 1 1 220px;
+    min-width: 0;
+    min-height: 46px;
+    padding: 0 16px;
+    border: 2px solid var(--line);
+    border-radius: 999px;
+    background: var(--white);
+    color: var(--ink);
+    font: inherit;
+    font-weight: 650;
+  }
+
+  .ask-row input:focus {
+    outline: 2px solid var(--coral);
+    outline-offset: 1px;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 22px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--coral);
+    color: var(--white);
+    font: inherit;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .button:hover { background: var(--coral-dark); }
+
+  .button.ghost {
+    background: var(--white);
+    border: 2px solid var(--line);
+    color: var(--ink);
+    box-shadow: none;
+  }
+
+  .button.ghost:hover { border-color: var(--coral); background: var(--white); }
+
+  .answer {
+    margin-top: 18px;
+    padding: 18px 18px 20px;
+    border-radius: 20px;
+    background: var(--cream);
+  }
+
+  .answer .echo {
+    margin-bottom: 14px;
+    font-size: 17px;
+    font-weight: 850;
+    overflow-wrap: anywhere;
+  }
+
+  .answer ul {
+    margin: 0 0 14px;
+    padding-left: 20px;
+    color: var(--soft-ink);
+    font-size: 15px;
+    font-weight: 620;
+  }
+
+  .answer li { margin-bottom: 7px; }
+
+  .answer li:last-child { margin-bottom: 0; }
+
+  .sample {
+    margin: 0 0 16px;
+    padding: 12px 14px;
+    border-left: 4px solid var(--coral);
+    border-radius: 0 12px 12px 0;
+    background: var(--white);
+    color: var(--soft-ink);
+    font-size: 14px;
+    font-weight: 620;
+  }
+
+  .sample strong { color: var(--ink); }
+
+  .local {
+    margin: 12px 0 0;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .value {
+    margin-top: 36px;
+    display: grid;
+    gap: 14px;
+  }
+
+  .value h3 {
+    margin-bottom: 6px;
+    font-size: 18px;
+  }
+
+  .value p {
+    margin-bottom: 0;
+    color: var(--soft-ink);
+    font-size: 16px;
+    font-weight: 620;
+  }
+
+  .cta {
+    margin-top: 36px;
+    text-align: center;
+    box-shadow: var(--tight-shadow);
+  }
+
+  .cta h2 {
+    margin-bottom: 8px;
+    font-size: 26px;
+    line-height: 1.1;
+  }
+
+  .cta p {
+    margin-bottom: 20px;
+    color: var(--soft-ink);
+    font-size: 16px;
+    font-weight: 650;
+  }
+
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .count-note {
+    max-width: 720px;
+    margin: 0 auto 14px;
+    padding: 0 18px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 650;
+  }
+
+  .footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 18px 40px;
+    display: flex;
+    gap: 18px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .footer a { text-decoration: none; }
+
+  .footer a:hover { color: var(--coral-dark); }
+
+  @media (max-width: 620px) {
+    h1 { font-size: 31px; }
+
+    .lede { font-size: 17px; }
+
+    .brand-word { font-size: 16px; }
+
+    .lang-toggle { font-size: 13px; }
+
+    .nav { padding: 0 14px; gap: 8px; }
+
+    .cta-row .button { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <nav class="nav">
+    <a class="brand-link" href="/">
+      <img class="brand-icon" src="/assets/postervia-icon.png" alt="" width="42" height="42">
+      <span class="brand-word">Postervia</span>
+    </a>
+    <div class="lang-toggle">
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+      <span aria-hidden="true">|</span>
+      <button type="button" data-lang="de" aria-pressed="false">Deutsch</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1 data-s="title">New here, and nobody to ask?</h1>
+  <p class="lede" data-s="lede1">Everyone who lives here knows things that are written down nowhere. Where to go, what to bring, what the office actually does rather than what the website says.</p>
+  <p class="lede" data-s="lede2">Postervia is where you get those things from people. The ones who have lived here for years, and the ones who arrived last month and are stuck on the same thing as you.</p>
+
+  <section class="card try">
+    <h2 data-s="tryTitle">Try it. What do you need to get done?</h2>
+    <div class="chips" id="chips"></div>
+    <div class="ask-row">
+      <input id="q" type="text" maxlength="160" autocomplete="off" data-ph="inputPlaceholder" placeholder="Write it in your own words">
+      <button class="button" type="button" id="go" data-s="tryCta">Show me</button>
+    </div>
+    <p class="local" data-s="localNote">This stays in your browser. Nothing is sent anywhere until you decide to send it.</p>
+
+    <div class="answer" id="answer" hidden>
+      <p class="echo" id="echo"></p>
+      <ul>
+        <li data-s="ansPart1">The official source, and the date we last checked that it still says this.</li>
+        <li data-s="ansPart2">What people who have already done it say really happens.</li>
+        <li data-s="ansPart3">Nothing invented. If we cannot find a solid answer, we tell you that instead.</li>
+      </ul>
+      <p class="sample"><strong data-s="sampleLabel">One we checked ourselves:</strong> <span data-s="sampleBody">guides still say six to eight weeks to extend a Berlin residence permit. The office is taking four to eight months.</span></p>
+      <a class="button" data-go="ask" href="/ask.html" data-s="ansCta">Send this question for real</a>
+    </div>
+  </section>
+
+  <section class="value">
+    <div class="card">
+      <h3 data-s="v1Title">Catch what you missed</h3>
+      <p data-s="v1Body">Deadlines, steps and chances that matter here, and that nobody thought to tell you about.</p>
+    </div>
+    <div class="card">
+      <h3 data-s="v2Title">See the good side too</h3>
+      <p data-s="v2Body">Events, places and people near you. This country is more than paperwork, and most of it happens outside your flat.</p>
+    </div>
+    <div class="card">
+      <h3 data-s="v3Title">Say what was hard</h3>
+      <p data-s="v3Body">Write down the thing that cost you three weeks. The next person reads it and loses an afternoon instead.</p>
+    </div>
+  </section>
+
+  <section class="card cta">
+    <h2 data-s="ctaTitle">Have a look.</h2>
+    <p data-s="ctaBody">Ask us something and see what comes back, or open the app and look around first.</p>
+    <div class="cta-row">
+      <a class="button" data-go="ask" href="/ask.html" data-s="ctaAsk">Ask a question</a>
+      <a class="button ghost" data-go="app" href="/get" data-s="ctaApp">Get the app</a>
+    </div>
+  </section>
+</main>
+
+<p class="count-note" data-s="countNote">We count page opens and button clicks, without cookies and without anything that identifies you.</p>
+
+<footer class="footer">
+  <a data-s="footerPrivacy" data-href="privacyHref" href="/privacy">Privacy</a>
+  <a data-s="footerImprint" data-href="imprintHref" href="/impressum">Imprint</a>
+</footer>
+
+<script>
+  const STRINGS = {
+    en: {
+      title: 'New here, and nobody to ask?',
+      lede1: 'Everyone who lives here knows things that are written down nowhere. Where to go, what to bring, what the office actually does rather than what the website says.',
+      lede2: 'Postervia is where you get those things from people. The ones who have lived here for years, and the ones who arrived last month and are stuck on the same thing as you.',
+      tryTitle: 'Try it. What do you need to get done?',
+      chips: ['Register my address', 'Extend my residence permit', 'Find a flat', 'Open a bank account', 'Get health insurance'],
+      inputPlaceholder: 'Write it in your own words',
+      tryCta: 'Show me',
+      localNote: 'This stays in your browser. Nothing is sent anywhere until you decide to send it.',
+      echoLead: 'Here is what comes back on',
+      ansPart1: 'The official source, and the date we last checked that it still says this.',
+      ansPart2: 'What people who have already done it say really happens.',
+      ansPart3: 'Nothing invented. If we cannot find a solid answer, we tell you that instead.',
+      sampleLabel: 'One we checked ourselves:',
+      sampleBody: 'guides still say six to eight weeks to extend a Berlin residence permit. The office is taking four to eight months.',
+      ansCta: 'Send this question for real',
+      v1Title: 'Catch what you missed',
+      v1Body: 'Deadlines, steps and chances that matter here, and that nobody thought to tell you about.',
+      v2Title: 'See the good side too',
+      v2Body: 'Events, places and people near you. This country is more than paperwork, and most of it happens outside your flat.',
+      v3Title: 'Say what was hard',
+      v3Body: 'Write down the thing that cost you three weeks. The next person reads it and loses an afternoon instead.',
+      ctaTitle: 'Have a look.',
+      ctaBody: 'Ask us something and see what comes back, or open the app and look around first.',
+      ctaAsk: 'Ask a question',
+      ctaApp: 'Get the app',
+      footerPrivacy: 'Privacy',
+      footerImprint: 'Imprint',
+      privacyHref: '/privacy',
+      imprintHref: '/impressum',
+      countNote: 'We count page opens and button clicks, without cookies and without anything that identifies you.',
+    },
+    de: {
+      title: 'Neu hier, und niemanden zum Fragen?',
+      lede1: 'Wer hier lebt, weiß Dinge, die nirgendwo stehen. Wo du hinmusst, was du mitbringst, was das Amt wirklich macht und nicht das, was auf der Website steht.',
+      lede2: 'Bei Postervia bekommst du diese Dinge von Menschen. Von denen, die seit Jahren hier wohnen, und von denen, die letzten Monat angekommen sind und gerade an derselben Sache hängen wie du.',
+      tryTitle: 'Probier es aus. Was musst du erledigen?',
+      chips: ['Mich anmelden', 'Aufenthaltstitel verlängern', 'Eine Wohnung finden', 'Ein Konto eröffnen', 'Krankenversicherung'],
+      inputPlaceholder: 'Schreib es in deinen eigenen Worten',
+      tryCta: 'Zeig mir',
+      localNote: 'Das bleibt in deinem Browser. Es geht nirgendwohin, bis du dich entscheidest, es zu schicken.',
+      echoLead: 'Das kommt zurück auf',
+      ansPart1: 'Die offizielle Quelle, und das Datum, an dem wir zuletzt geprüft haben, dass dort noch dasselbe steht.',
+      ansPart2: 'Was Leute erzählen, die es schon hinter sich haben.',
+      ansPart3: 'Nichts Erfundenes. Wenn wir nichts Belastbares finden, sagen wir dir das.',
+      sampleLabel: 'Eins davon haben wir selbst geprüft:',
+      sampleBody: 'die Ratgeber nennen sechs bis acht Wochen für die Verlängerung des Aufenthaltstitels. Die Behörde braucht vier bis acht Monate.',
+      ansCta: 'Diese Frage wirklich abschicken',
+      v1Title: 'Krieg mit, was du verpasst hast',
+      v1Body: 'Fristen, Schritte und Gelegenheiten, die hier zählen und auf die dich niemand hingewiesen hat.',
+      v2Title: 'Sieh auch die schöne Seite',
+      v2Body: 'Veranstaltungen, Orte und Leute in deiner Nähe. Dieses Land besteht nicht nur aus Papierkram, und das meiste davon passiert außerhalb deiner Wohnung.',
+      v3Title: 'Erzähl, was schwer war',
+      v3Body: 'Schreib die Sache auf, die dich drei Wochen gekostet hat. Die nächste Person liest es und verliert dafür einen Nachmittag.',
+      ctaTitle: 'Schau es dir an.',
+      ctaBody: 'Frag uns etwas und sieh, was zurückkommt. Oder öffne erst einmal die App und schau dich um.',
+      ctaAsk: 'Eine Frage stellen',
+      ctaApp: 'Hol dir die App',
+      footerPrivacy: 'Datenschutz',
+      footerImprint: 'Impressum',
+      privacyHref: '/privacy-de',
+      imprintHref: '/impressum-de',
+      countNote: 'Wir zählen Seitenaufrufe und Klicks auf Buttons. Ohne Cookies und ohne irgendetwas, das dich identifiziert.',
+    },
+  };
+
+  function linkFor(go) {
+    if (go === 'app') return `/get?src=${src}`;
+    return `/c?e=ask&src=${src}&lang=${lang}`;
+  }
+
+  const chipsBox = document.getElementById('chips');
+  const input = document.getElementById('q');
+  const answer = document.getElementById('answer');
+  const echo = document.getElementById('echo');
+  let lang = 'en';
+
+  // The question is the viewer's own text: it goes in as text, never as markup.
+  function reveal() {
+    const text = input.value.trim();
+    if (!text) {
+      input.focus();
+      return;
+    }
+    echo.textContent = `${STRINGS[lang].echoLead} "${text}"`;
+    answer.hidden = false;
+    answer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  document.getElementById('go').addEventListener('click', reveal);
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') reveal(); });
+
+  function renderChips(t) {
+    chipsBox.textContent = '';
+    t.chips.forEach((label) => {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'chip';
+      chip.textContent = label;
+      chip.addEventListener('click', () => {
+        input.value = label;
+        reveal();
+      });
+      chipsBox.appendChild(chip);
+    });
+  }
+
+  function apply(next) {
+    lang = next;
+    const t = STRINGS[lang];
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-s]').forEach((el) => { el.textContent = t[el.dataset.s]; });
+    document.querySelectorAll('[data-ph]').forEach((el) => { el.placeholder = t[el.dataset.ph]; });
+    document.querySelectorAll('[data-href]').forEach((el) => { el.href = t[el.dataset.href]; });
+    document.querySelectorAll('[data-go]').forEach((el) => { el.href = linkFor(el.dataset.go); });
+    document.querySelectorAll('[data-lang]').forEach((el) => {
+      el.setAttribute('aria-pressed', String(el.dataset.lang === lang));
+    });
+    renderChips(t);
+    if (!answer.hidden && input.value.trim()) {
+      echo.textContent = `${t.echoLead} "${input.value.trim()}"`;
+    }
+  }
+
+  document.querySelectorAll('[data-lang]').forEach((el) => {
+    el.addEventListener('click', () => apply(el.dataset.lang));
+  });
+
+  const params = new URLSearchParams(location.search);
+  const qLang = (params.get('lang') || '').toLowerCase();
+  // Same allowlist as the Worker. Nothing else from the URL is passed on.
+  const rawSrc = (params.get('src') || '').toLowerCase();
+  const src = /^[a-z0-9_-]{1,24}$/.test(rawSrc) ? rawSrc : 'direct';
+  const browserDe = (navigator.language || '').toLowerCase().startsWith('de');
+  apply(qLang === 'de' || qLang === 'en' ? qLang : browserDe ? 'de' : 'en');
+
+  // One page open. Best effort: if it fails, the page is unaffected.
+  try {
+    fetch(`/c?e=open-newhere&src=${src}`, { method: 'GET', keepalive: true }).catch(() => {});
+  } catch {
+    // no fetch, no count
+  }
+</script>
+</body>
+</html>
