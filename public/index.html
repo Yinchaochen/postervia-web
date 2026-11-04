@@ -548,31 +548,38 @@
     text-wrap: pretty;
   }
 
+  /* Badges on top, buttons below, on one grid: each column is exactly as wide as its badge, so both rows line
+     up edge to edge. App Store is 3:1; the Google Play PNG has 41 px of padding on 250, visible 564 x 168.
+     A long translation wraps inside its button instead of widening the column. */
   .hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 12px 18px;
+    --badge-h: 54px;
+    display: grid;
+    grid-template-columns: calc(var(--badge-h) * 3) calc(var(--badge-h) * 564 / 168);
+    gap: 12px;
     margin-top: 30px;
   }
 
   .hero .store-badge img {
-    height: 46px;
+    height: var(--badge-h);
   }
 
   .hero .store-badge.google-play img {
-    height: 68px;
-    margin: -11px;
+    max-width: none;
+    height: calc(var(--badge-h) * 250 / 168);
+    margin: calc(var(--badge-h) * -41 / 168);
   }
 
-  .hero-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 14px;
+  .hero-actions .button {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 23px;
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: center;
+    text-wrap: balance;
   }
 
-  .hero-links .button.secondary:hover {
+  .hero-actions .button.secondary:hover {
     border-color: var(--coral);
   }
 
@@ -1030,6 +1037,17 @@
       font-size: 44px;
     }
 
+    /* Shrink the whole grid with the screen: 6.357 = 3 + 564/168, the two badge widths over their height. */
+    .hero-actions {
+      --badge-h: min(50px, calc((100vw - 46px) / 6.357));
+      gap: 10px;
+    }
+
+    .hero-actions .button {
+      padding: 6px 8px;
+      font-size: 13px;
+    }
+
     .hero-tagline {
       font-size: 26px;
     }
@@ -1123,8 +1141,6 @@
         <a class="store-badge google-play" href="https://play.google.com/store/apps/details?id=app.novaku.mobile">
           <img src="/assets/google-play-badge.png" alt="Get it on Google Play" width="207" height="80">
         </a>
-      </div>
-      <div class="hero-links">
         <a class="button secondary" href="https://postervia-app.expo.app/" data-i18n="hero.secondaryCta">Explore web app</a>
         <a class="button secondary" href="/surveys?src=site" data-i18n="hero.surveyCta">Take the survey</a>
       </div>
