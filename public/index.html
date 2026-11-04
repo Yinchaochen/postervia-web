@@ -316,19 +316,133 @@
     border: 0;
   }
 
+  /* Hero, direction A (2026-11-04): the path from the logo is the main visual.
+     Prototype and reasoning: outputs/postervia-hero-prototypes, outputs/design-reference/web-design-six-techniques-2026-11.md.
+     Fonts are self-hosted subsets from scripts/build-hero-fonts.py; never load them from Google (GDPR). */
+  @font-face { font-family: "PV Hero Latin"; src: url("/assets/fonts/hero/hero-latin.woff") format("woff"); font-weight: 100 900; font-display: swap; }
+  @font-face { font-family: "PV Hero Tagline"; src: url("/assets/fonts/hero/hero-tagline.woff") format("woff"); font-style: italic; font-weight: 100 900; font-display: swap; }
+  @font-face { font-family: "PV Hero SC"; src: url("/assets/fonts/hero/hero-serif-sc.woff") format("woff"); font-weight: 100 900; font-display: swap; }
+  @font-face { font-family: "PV Hero TC"; src: url("/assets/fonts/hero/hero-serif-tc.woff") format("woff"); font-weight: 100 900; font-display: swap; }
+  @font-face { font-family: "PV Hero JP"; src: url("/assets/fonts/hero/hero-serif-jp.woff") format("woff"); font-weight: 100 900; font-display: swap; }
+  @font-face { font-family: "PV Hero KR"; src: url("/assets/fonts/hero/hero-serif-kr.woff") format("woff"); font-weight: 100 900; font-display: swap; }
+
+  html[lang="zh"] { --hero-cjk: "PV Hero SC"; }
+  html[lang="zh-TW"] { --hero-cjk: "PV Hero TC"; }
+  html[lang="ja"] { --hero-cjk: "PV Hero JP"; }
+  html[lang="ko"] { --hero-cjk: "PV Hero KR"; }
+
+  .hero-wrap {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .hero-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    opacity: 0.08;
+    mix-blend-mode: multiply;
+  }
+
   .hero {
+    position: relative;
     width: 100%;
     max-width: 1180px;
+    min-height: clamp(600px, calc(100svh - 78px), 820px);
     margin: 0 auto;
-    padding: 76px 24px 86px;
-    display: grid;
-    grid-template-columns: minmax(0, 1.02fr) minmax(340px, 0.98fr);
-    gap: 56px;
+    padding: 64px 24px 72px;
+    display: flex;
     align-items: center;
   }
 
-  .hero > div {
+  .hero-copy {
+    position: relative;
+    z-index: 3;
+    width: min(600px, 56%);
     min-width: 0;
+  }
+
+  .hero-art {
+    position: absolute;
+    z-index: 1;
+    inset-inline-end: -20px;
+    bottom: -64px;
+    height: calc(100% + 40px);
+    aspect-ratio: 500 / 640;
+    pointer-events: none;
+  }
+
+  /* The logo drawing in five stacked layers from scripts/build-hero-layers.py. */
+  .hero-art img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Intro: the arch appears, the path draws itself up into it, then the star lights and keeps a slow twinkle.
+     Without the motion preference the drawing is simply there. */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-art .logo-arch {
+      animation: logo-arch 0.9s ease-out 0.1s both;
+    }
+
+    .hero-art .logo-path {
+      -webkit-mask: linear-gradient(to top, #000 46%, transparent 54%) 0 0 / 100% 220% no-repeat;
+      mask: linear-gradient(to top, #000 46%, transparent 54%) 0 0 / 100% 220% no-repeat;
+      animation: logo-path 1.7s cubic-bezier(0.45, 0.05, 0.3, 1) 0.35s both;
+    }
+
+    .hero-art .logo-star {
+      transform-origin: 48.9% 30.8%;
+      animation: logo-star 0.9s cubic-bezier(0.2, 0.9, 0.3, 1.25) 1.8s both, logo-twinkle 5s ease-in-out 3.2s infinite;
+    }
+
+    .hero-art .logo-dots-a {
+      animation: logo-dot 0.6s ease-out 2.2s both, logo-dot-idle 3.6s ease-in-out 3.4s infinite;
+    }
+
+    .hero-art .logo-dots-b {
+      animation: logo-dot 0.6s ease-out 2.45s both, logo-dot-idle 3.6s ease-in-out 5.2s infinite;
+    }
+
+    @keyframes logo-arch {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    /* The path only spans the lower half of the layer, so most of the sweep is spent on it. */
+    @keyframes logo-path {
+      0% { -webkit-mask-position: 0 10%; mask-position: 0 10%; }
+      92% { -webkit-mask-position: 0 58%; mask-position: 0 58%; }
+      100% { -webkit-mask-position: 0 100%; mask-position: 0 100%; }
+    }
+
+    @keyframes logo-star {
+      from { opacity: 0; transform: scale(0.3) rotate(-45deg); }
+      70% { opacity: 1; transform: scale(1.08) rotate(4deg); }
+      to { opacity: 1; transform: none; }
+    }
+
+    @keyframes logo-twinkle {
+      0%, 100% { opacity: 1; transform: none; }
+      50% { opacity: 0.74; transform: scale(0.94); }
+    }
+
+    @keyframes logo-dot {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes logo-dot-idle {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
   }
 
   .eyebrow {
@@ -336,23 +450,19 @@
     align-items: center;
     gap: 8px;
     margin: 0 0 18px;
-    padding: 8px 14px;
-    border-radius: 999px;
-    background: var(--cream);
-    color: var(--coral-dark);
-    font-size: 13px;
-    font-weight: 900;
-    letter-spacing: 0;
-    text-transform: uppercase;
+    color: rgba(23, 23, 23, 0.6);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
   }
 
-  .eyebrow::before {
+  .eyebrow::before,
+  .hero-pills span::before {
     content: "";
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: var(--mint);
-    box-shadow: 0 0 0 5px rgba(125, 200, 111, 0.18);
+    flex: none;
+    width: 16px;
+    height: 16px;
+    background: url("/assets/hero/star-ink.png") center / contain no-repeat;
   }
 
   h1,
@@ -376,29 +486,130 @@
     display: block;
   }
 
+  /* Latin scripts get Instrument Serif, CJK gets the heavy Noto Serif for the page's language. Headlines Instrument
+     Serif cannot fully draw (other scripts, plus Vietnamese, Igbo, Yoruba) use one system serif for the whole line,
+     never a per-glyph mix; scripts/build-hero-fonts.py prints that lang list. */
+  .hero h1 {
+    margin: 0;
+    max-width: none;
+    color: var(--ink);
+    font-family: "PV Hero Latin", var(--hero-cjk, Georgia), Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 6.6vw, 92px);
+    font-weight: 900;
+    font-synthesis: none;
+    line-height: 1.04;
+    overflow-wrap: normal;
+  }
+
+  html[lang="ja"] .hero h1 {
+    word-break: auto-phrase;
+  }
+
+  html[lang="ko"] .hero h1 {
+    word-break: keep-all;
+  }
+
+  html:is([lang="am"], [lang="ar"], [lang="be"], [lang="bg"], [lang="bn"], [lang="el"], [lang="fa"], [lang="gu"],
+    [lang="haw"], [lang="he"], [lang="hi"], [lang="hy"], [lang="ig"], [lang="ka"], [lang="kk"], [lang="km"],
+    [lang="kn"], [lang="ku"], [lang="ky"], [lang="lo"], [lang="mk"], [lang="ml"], [lang="mn"], [lang="mr"],
+    [lang="my"], [lang="ne"], [lang="or"], [lang="pa"], [lang="ps"], [lang="ru"], [lang="sd"], [lang="si"],
+    [lang="ta"], [lang="te"], [lang="tg"], [lang="th"], [lang="tt"], [lang="ug"], [lang="uk"], [lang="ur"],
+    [lang="vi"], [lang="yi"], [lang="yo"]) .hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: 1.18;
+  }
+
+  .hero-tagline {
+    margin: 14px 0 0;
+    color: var(--coral-dark);
+    font-family: "PV Hero Tagline", Georgia, serif;
+    font-size: clamp(28px, 3.3vw, 44px);
+    font-style: italic;
+    line-height: 1.1;
+  }
+
+  html[lang="en"] .hero-tagline {
+    display: none;
+  }
+
   .lede {
-    max-width: 650px;
-    margin-bottom: 28px;
-    color: var(--soft-ink);
-    font-size: 24px;
-    font-weight: 650;
+    max-width: 30em;
+    margin: 22px 0 0;
+    color: rgba(23, 23, 23, 0.72);
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.65;
     overflow-wrap: anywhere;
+    text-wrap: pretty;
   }
 
   .hero-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
-    margin-bottom: 28px;
+    align-items: center;
+    gap: 12px 18px;
+    margin-top: 30px;
+  }
+
+  .hero .store-badge img {
+    height: 46px;
+  }
+
+  .hero .store-badge.google-play img {
+    height: 68px;
+    margin: -11px;
+  }
+
+  .hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    margin-top: 16px;
+  }
+
+  .hero-link {
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid currentColor;
+    color: rgba(23, 23, 23, 0.72);
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .hero-link::after {
+    content: " \2192";
+  }
+
+  [dir="rtl"] .hero-link::after {
+    content: " \2190";
+  }
+
+  .hero-link:hover {
+    color: var(--coral-dark);
   }
 
   .hero-pills {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px 18px;
+    margin-top: 26px;
   }
 
-  .hero-pills span,
+  .hero-pills span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(23, 23, 23, 0.6);
+    font-size: 13.5px;
+    font-weight: 600;
+  }
+
+  .hero-pills span::before {
+    width: 14px;
+    height: 14px;
+  }
+
   .mini-pill {
     display: inline-flex;
     align-items: center;
@@ -410,22 +621,6 @@
     color: var(--soft-ink);
     font-size: 13px;
     font-weight: 850;
-  }
-
-  .phone-stage {
-    position: relative;
-    min-height: 630px;
-    display: grid;
-    place-items: center;
-  }
-
-  .sun-disc {
-    position: absolute;
-    width: 430px;
-    height: 430px;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--sun) 0%, #ffd989 45%, rgba(255, 211, 119, 0) 70%);
-    filter: blur(1px);
   }
 
   .phone {
@@ -441,40 +636,6 @@
   .phone img {
     width: 100%;
     border-radius: 32px;
-  }
-
-  .phone.hero-phone {
-    transform: rotate(-2deg);
-  }
-
-  .floating-card {
-    position: absolute;
-    z-index: 2;
-    max-width: 250px;
-    padding: 16px 18px;
-    border-radius: 22px;
-    background: rgba(255, 255, 255, 0.94);
-    border: 1px solid rgba(242, 223, 204, 0.86);
-    box-shadow: var(--tight-shadow);
-    color: var(--soft-ink);
-    font-size: 14px;
-    font-weight: 750;
-  }
-
-  .floating-card strong {
-    display: block;
-    color: var(--ink);
-    font-size: 16px;
-  }
-
-  .floating-card.one {
-    top: 82px;
-    left: 0;
-  }
-
-  .floating-card.two {
-    right: 0;
-    bottom: 122px;
   }
 
   .band {
@@ -776,14 +937,26 @@
       display: none;
     }
 
-    .hero,
     .feature {
       grid-template-columns: 1fr;
       gap: 34px;
     }
 
     .hero {
-      padding-top: 54px;
+      min-height: 0;
+      padding: 48px 24px 64px;
+    }
+
+    .hero-copy {
+      width: 100%;
+    }
+
+    .hero-art {
+      top: 12px;
+      inset-inline-end: -14%;
+      bottom: auto;
+      height: min(78vw, 560px);
+      opacity: 0.2;
     }
 
     h1 {
@@ -801,10 +974,6 @@
     .feature h2,
     .cta h2 {
       font-size: 46px;
-    }
-
-    .phone-stage {
-      min-height: 560px;
     }
 
     .feature:nth-child(even) .feature-copy,
@@ -861,48 +1030,34 @@
       right: -6px;
     }
 
-    .hero,
     .section {
       padding-left: 18px;
       padding-right: 18px;
     }
 
     .hero {
-      padding-bottom: 62px;
+      padding: 36px 18px 56px;
     }
 
-    .hero-actions {
-      align-items: stretch;
-      flex-direction: column;
+    .hero h1 {
+      font-size: 44px;
+    }
+
+    .hero-tagline {
+      font-size: 26px;
+    }
+
+    .lede {
+      font-size: 17px;
+    }
+
+    .hero-art {
+      inset-inline-end: -30%;
+      height: 420px;
     }
 
     .button {
       width: 100%;
-    }
-
-    .floating-card {
-      position: relative;
-      inset: auto;
-      max-width: 100%;
-      margin-top: -18px;
-    }
-
-    .floating-card.one,
-    .floating-card.two {
-      left: auto;
-      right: auto;
-      top: auto;
-      bottom: auto;
-    }
-
-    .phone-stage {
-      min-height: auto;
-      gap: 14px;
-    }
-
-    .sun-disc {
-      width: 320px;
-      height: 320px;
     }
 
     .section {
@@ -937,29 +1092,6 @@
     }
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    .phone.hero-phone {
-      animation: float-phone 5.5s ease-in-out infinite;
-    }
-
-    .floating-card.one {
-      animation: float-card 4.8s ease-in-out infinite;
-    }
-
-    .floating-card.two {
-      animation: float-card 5.2s ease-in-out infinite reverse;
-    }
-
-    @keyframes float-phone {
-      0%, 100% { transform: rotate(-2deg) translateY(0); }
-      50% { transform: rotate(-1deg) translateY(-12px); }
-    }
-
-    @keyframes float-card {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-  }
 </style>
 </head>
 <body>
@@ -990,10 +1122,12 @@
 </header>
 
 <main id="home">
+  <div class="hero-wrap">
   <section class="hero" aria-labelledby="hero-title">
-    <div>
+    <div class="hero-copy">
       <p class="eyebrow" data-i18n="hero.eyebrow">Berlin first city companion</p>
       <h1 id="hero-title" data-i18n="hero.title"><span>Find your path.</span><span>Leave a light.</span></h1>
+      <p class="hero-tagline" lang="en" dir="ltr">Find your path. Leave a light.</p>
       <p class="lede" data-i18n="hero.lede">Postervia helps newcomers and locals turn the messy first weeks in a city into guided tasks, local stories, Buddy help, and real social connection.</p>
       <div class="hero-actions">
         <a class="store-badge" href="https://apps.apple.com/de/app/postervia/id6768678629?l=en-GB">
@@ -1002,8 +1136,10 @@
         <a class="store-badge google-play" href="https://play.google.com/store/apps/details?id=app.novaku.mobile">
           <img src="/assets/google-play-badge.png" alt="Get it on Google Play" width="207" height="80">
         </a>
-        <a class="button secondary" href="https://postervia-app.expo.app/" data-i18n="hero.secondaryCta">Explore web app</a>
-        <a class="button secondary" href="/surveys?src=site" data-i18n="hero.surveyCta">Take the survey</a>
+      </div>
+      <div class="hero-links">
+        <a class="hero-link" href="https://postervia-app.expo.app/" data-i18n="hero.secondaryCta">Explore web app</a>
+        <a class="hero-link" href="/surveys?src=site" data-i18n="hero.surveyCta">Take the survey</a>
       </div>
       <div class="hero-pills" aria-label="Product highlights" data-i18n-aria-label="a11y.productHighlights">
         <span data-i18n="hero.pillTasks">Task navigation</span>
@@ -1011,21 +1147,15 @@
         <span data-i18n="hero.pillLanguage">Multilingual community</span>
       </div>
     </div>
-    <div class="phone-stage" aria-label="Postervia app preview" data-i18n-aria-label="a11y.appPreview">
-      <div class="sun-disc" aria-hidden="true"></div>
-      <div class="floating-card one">
-        <strong data-i18n="nav.odyssey">Odyssey</strong>
-        <span data-i18n="hero.floatOdyssey">Next steps become calm, source-aware tasks.</span>
-      </div>
-      <div class="phone hero-phone">
-        <img src="/assets/screenshots/screen-8.jpeg" alt="Postervia Odyssey screen with guided city tasks" data-i18n-alt="alt.heroOdyssey">
-      </div>
-      <div class="floating-card two">
-        <strong data-i18n="nav.plaza">Plaza</strong>
-        <span data-i18n="hero.floatPlaza">Local posts can become real actions in your path.</span>
-      </div>
+    <div class="hero-art" aria-hidden="true">
+      <img class="logo-arch" src="/assets/hero/logo-arch.png" alt="" width="500" height="640" fetchpriority="high">
+      <img class="logo-path" src="/assets/hero/logo-path.png" alt="" width="500" height="640" fetchpriority="high">
+      <img class="logo-dots-a" src="/assets/hero/logo-dots-a.png" alt="" width="500" height="640">
+      <img class="logo-dots-b" src="/assets/hero/logo-dots-b.png" alt="" width="500" height="640">
+      <img class="logo-star" src="/assets/hero/logo-star.png" alt="" width="500" height="640">
     </div>
   </section>
+  </div>
 
   <section class="band">
     <div class="section">
