@@ -533,6 +533,10 @@
     display: none;
   }
 
+  [dir="rtl"] .hero-tagline {
+    text-align: right;
+  }
+
   .lede {
     max-width: 30em;
     margin: 22px 0 0;
@@ -564,29 +568,12 @@
   .hero-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 24px;
-    margin-top: 16px;
+    gap: 12px;
+    margin-top: 14px;
   }
 
-  .hero-link {
-    padding-bottom: 2px;
-    border-bottom: 1.5px solid currentColor;
-    color: rgba(23, 23, 23, 0.72);
-    font-size: 15px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-  .hero-link::after {
-    content: " \2192";
-  }
-
-  [dir="rtl"] .hero-link::after {
-    content: " \2190";
-  }
-
-  .hero-link:hover {
-    color: var(--coral-dark);
+  .hero-links .button.secondary:hover {
+    border-color: var(--coral);
   }
 
   .hero-pills {
@@ -1138,8 +1125,8 @@
         </a>
       </div>
       <div class="hero-links">
-        <a class="hero-link" href="https://postervia-app.expo.app/" data-i18n="hero.secondaryCta">Explore web app</a>
-        <a class="hero-link" href="/surveys?src=site" data-i18n="hero.surveyCta">Take the survey</a>
+        <a class="button secondary" href="https://postervia-app.expo.app/" data-i18n="hero.secondaryCta">Explore web app</a>
+        <a class="button secondary" href="/surveys?src=site" data-i18n="hero.surveyCta">Take the survey</a>
       </div>
       <div class="hero-pills" aria-label="Product highlights" data-i18n-aria-label="a11y.productHighlights">
         <span data-i18n="hero.pillTasks">Task navigation</span>
