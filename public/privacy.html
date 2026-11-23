@@ -87,7 +87,7 @@
     <header>
       <div class="brand">Postervia</div>
       <h1>Privacy Policy</h1>
-      <div class="updated">Last updated: October 3, 2026</div>
+      <div class="updated">Last updated: November 23, 2026</div>
     </header>
     <main>
 <h2>Introduction</h2>
@@ -104,6 +104,13 @@
 <li>Date of birth (used to confirm you meet the minimum age and to compute your birth year)</li>
 <li>Gender (one of male, female, non-binary, or prefer-not-to-say)</li>
 <li>Your preferred app language</li>
+</ul>
+<p><strong>Information you give us when you sign up as a shop</strong></p>
+<ul>
+<li>Instead of a date of birth: the month and year the shop opened, its category, and your confirmation that you are at least 18 and may register the shop</li>
+<li>For a shop with premises: the place you pick on the map (name, address and position from Google Maps), opening hours and phone number. We fill these in from Google Maps when you pick the place, and you can change them.</li>
+<li>For an online shop: its name, the address of its website and of its legal notice (Impressum), and a phone number if you add one</li>
+<li>The products you list: name, price, description and photos</li>
 </ul>
 <p><strong>Information you give us during onboarding and on your profile</strong></p>
 <ul>
@@ -132,6 +139,7 @@
 <li>Device information: device model, operating system version, app version, language, time zone, screen size, and a device identifier scoped to Postervia</li>
 <li>Approximate location: if you grant the location permission during onboarding or later, we store the latitude and longitude you confirm. You can also enter your city manually without sharing precise location.</li>
 <li>Interaction events on Plaza: which cards you saw (impressions), how long you viewed a post (dwell time), and whether you marked it helpful, saved it, added it to your tasks, hid it, or reported it. We use these signals to rank what we show you. We keep these events for 180 days and then delete them.</li>
+<li>Usage statistics, only if you switch them on (when you sign up, or later under Settings → Consent manager): which screens of the app you open and how long you stay on each, with the app version and platform. We use them to see which parts of the app help people and where they get stuck. We keep them for 180 days. Switching them off stops the recording and deletes what we have.</li>
 <li>Crash reports and basic diagnostic logs so we can fix bugs</li>
 <li>IP address, which we use briefly for security checks and to localize content; we do not build a long-term log of your IP history</li>
 <li>Where your device is when you publish a Plaza post, if you have granted the location permission: the app rounds the position to about a kilometre and sends it once, so we can name the city the post was written in. We keep the city, not the position. Without the permission, or when the text and the tagged places leave the city unclear, we ask an AI model to read the post and name the city it is about.</li>
@@ -157,7 +165,7 @@
 <p>We rely on the following legal bases under Article 6 of the EU General Data Protection Regulation:</p>
 <ul>
 <li><strong>Performance of a contract (Art. 6(1)(b))</strong> — for account creation, hosting your posts and chats, processing your subscription, and delivering features you've asked for.</li>
-<li><strong>Consent (Art. 6(1)(a))</strong> — for optional marketing emails, optional precise-location use, and any cookies or analytics that aren't strictly necessary. You can withdraw consent at any time without affecting prior processing.</li>
+<li><strong>Consent (Art. 6(1)(a))</strong> — for optional marketing emails, optional precise-location use, optional usage statistics, and any cookies or analytics that aren't strictly necessary. For usage statistics, consent is also our basis under § 25(1) of the German TDDDG. You can withdraw consent at any time without affecting prior processing.</li>
 <li><strong>Legitimate interest (Art. 6(1)(f))</strong> — for anti-abuse, fraud prevention, ranking quality, and aggregate analytics, where these don't override your fundamental rights.</li>
 <li><strong>Legal obligation (Art. 6(1)(c))</strong> — for tax records, lawful access requests, and statutory retention requirements.</li>
 </ul>
@@ -170,6 +178,7 @@
 <li>Posts and buddy posts you publish are visible to all users of the app, subject to your privacy preferences.</li>
 <li>A Plaza post shows the city it is filed under: the place you tagged in it, or else the city your device was in when you published, or else the city the text names.</li>
 <li>Comments and reactions you leave are attached to your profile.</li>
+<li>A shop account's name, category, opening month, address or website, opening hours, phone number, legal-notice link and products are public, because shops join Postervia to be found.</li>
 <li>If you chat one-on-one or in a group, the other participants see your messages.</li>
 </ul>
 <p><strong>On the public web, when a post is shared (share links)</strong></p>
@@ -188,6 +197,7 @@
 <li><strong>DeepL</strong> translates posts, comments, and messages on demand.</li>
 <li><strong>Perplexity</strong> and <strong>Tavily</strong> answer queries that require fresh real-world information.</li>
 <li><strong>Google Sign-In</strong> and <strong>Apple Sign-In</strong> authenticate users who choose those flows.</li>
+<li><strong>Google Maps Platform</strong> (Places) finds the places you tag in posts and the place a shop picks on the map, with its opening hours, phone number and website. We send the search text or the chosen place, not your account identity.</li>
 <li>Standard infrastructure providers (hosting, email delivery, error reporting, push-notification delivery) under written data-processing agreements.</li>
 </ul>
 <p>We require every processor to handle your data only on documented instructions, to apply appropriate security, and to delete the data when our agreement ends.</p>
@@ -207,6 +217,8 @@
 <li><strong>Account profile</strong> — for as long as your account exists. After deletion, we keep a minimal record (your numeric display ID and the fact that an account once existed) for up to 30 days so we can finish processing requests, then we hard-delete it.</li>
 <li><strong>Posts, comments, and chat messages you create</strong> — for as long as your account exists. When you delete a post, comment, or chat message, we remove it from the app immediately; backups containing it are overwritten within 30 days.</li>
 <li><strong>Recommendation events</strong> (impressions, dwell, helpful, saves, hides, reports) — 180 days, then automatically deleted.</li>
+<li><strong>Usage statistics</strong> — 180 days, or until you switch them off.</li>
+<li><strong>Shop details and products</strong> — for as long as the shop account exists.</li>
 <li><strong>Author trust score</strong> — recomputed nightly from a rolling 60-day event window. The current score is kept while your account exists.</li>
 <li><strong>Buddy posts</strong> — active posts disappear from the feed when they expire (the time window or return date has passed). The database row is retained for safety review and to inform future recommendations, unless you ask us to delete it.</li>
 <li><strong>Payment records</strong> — we keep invoices and tax records for the period required by German and EU law (currently 10 years for VAT records under § 147 AO).</li>
@@ -229,7 +241,7 @@
 <p>You can exercise the access, portability, erasure, rectification, and restriction rights directly in Postervia under Settings → Privacy → Data. We respond within 30 days as required by Article 12(3) GDPR.</p>
 <h2>Children</h2>
 <p>Postervia is intended for users aged 16 and over. We do not knowingly collect data from anyone under 16. If you are under 16, please do not register or use the app.</p>
-<p>When you sign up, we ask for your date of birth. If you appear to be under 16, we will not create an account. If we later learn that a registered user is under 16, we will delete the account and associated data.</p>
+<p>When you sign up for a personal account, we ask for your date of birth. If you appear to be under 16, we will not create an account. If we later learn that a registered user is under 16, we will delete the account and associated data. Shop accounts are for people aged 18 and over, and whoever signs up a shop confirms this.</p>
 <h2>Security</h2>
 <p>We protect your data with industry-standard measures: encrypted connections (TLS) between the app and our servers, encryption at rest for stored media, hashed passwords using a modern algorithm (Argon2), short-lived authentication tokens stored on your device using the operating system's secure storage, and access controls that limit who can see production data. No system is perfectly secure, but we take measured engineering and operational steps to reduce risk.</p>
 <p>If we detect a personal-data breach that creates a meaningful risk to your rights, we will notify the relevant data-protection authority within 72 hours and, where required, notify affected users directly.</p>
